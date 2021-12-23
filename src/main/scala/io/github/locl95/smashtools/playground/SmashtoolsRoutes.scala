@@ -1,9 +1,9 @@
-package io.github.locl95.smashtools
+package io.github.locl95.smashtools.playground
 
 import cats.effect.Sync
-import cats.implicits._
 import org.http4s.HttpRoutes
 import org.http4s.dsl.Http4sDsl
+import cats.implicits._
 
 object SmashtoolsRoutes {
 

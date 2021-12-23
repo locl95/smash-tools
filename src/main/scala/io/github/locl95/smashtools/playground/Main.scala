@@ -1,4 +1,4 @@
-package io.github.locl95.smashtools
+package io.github.locl95.smashtools.playground
 
 import cats.effect.{ExitCode, IO, IOApp}
 

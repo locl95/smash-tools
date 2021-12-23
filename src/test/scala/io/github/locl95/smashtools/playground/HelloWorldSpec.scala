@@ -1,9 +1,10 @@
-package io.github.locl95.smashtools
+package io.github.locl95.smashtools.playground
 
 import cats.effect.IO
+import io.github.locl95.smashtools.playground.SmashtoolsRoutes
+import munit.CatsEffectSuite
 import org.http4s._
 import org.http4s.implicits._
-import munit.CatsEffectSuite
 
 class HelloWorldSpec extends CatsEffectSuite {
 
