@@ -3,7 +3,7 @@ package io.github.locl95.smashtools.characters.protocol
 import cats.effect.Sync
 import io.circe.Decoder
 import io.circe.generic.semiauto.deriveDecoder
-import io.github.locl95.smashtools.characters.domain.KuroganeCharacter
+import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
 import org.http4s.EntityDecoder
 import org.http4s.circe.jsonOf
 
@@ -14,4 +14,5 @@ object Kurogane {
   implicit val kuroganeCharactersDecoder: Decoder[List[KuroganeCharacter]] = Decoder.decodeList[KuroganeCharacter]
   implicit def jokeEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacter]] =
     jsonOf
+  implicit val kuroganeMovementDecoder: Decoder[KuroganeCharacterMove] = deriveDecoder[KuroganeCharacterMove]
 }
