@@ -1,7 +1,6 @@
 package io.github.locl95.smashtools.characters.domain
 
-//TODO: Implement Kurogane Protocol (How to transform Kurogane Domain into Json)
+//TODO: Implement Kurogane Domain: Characters & Movements. Can be basic info for now.
 
-class Kurogane {
-
-}
+case class KuroganeCharacter(Name: String)
+case class KuroganeCharacterMove()

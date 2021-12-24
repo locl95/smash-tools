@@ -1,0 +1,5981 @@
+[
+  {
+    "HitboxActive": {
+      "Frames": "4-5",
+      "Adv": "-16",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "42083468d7124245b6b7f58658bb4843",
+    "Name": "Jab 1",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "24",
+    "Angle": "361/361/180/361",
+    "BaseKnockBackSetKnockback": "32/32/32/25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "30/30/20/20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/42083468d7124245b6b7f58658bb4843?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/42083468d7124245b6b7f58658bb4843?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "0.7",
+      "OneVOne": "0.84"
+    },
+    "InstanceId": "7a25432add0345549df19a577243a983",
+    "Name": "Jab 1 (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361/180",
+    "BaseKnockBackSetKnockback": "33",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "30",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7a25432add0345549df19a577243a983?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7a25432add0345549df19a577243a983?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "-17",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.5",
+      "OneVOne": "1.8"
+    },
+    "InstanceId": "9901f83ef6794fddacf7d2e5909e5396",
+    "Name": "Jab 2",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "24",
+    "Angle": "361/361/180/361",
+    "BaseKnockBackSetKnockback": "25/25/30/30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "30",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9901f83ef6794fddacf7d2e5909e5396?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9901f83ef6794fddacf7d2e5909e5396?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "0.7",
+      "OneVOne": "0.84"
+    },
+    "InstanceId": "bec3d86303d44c14bd75035625e9c708",
+    "Name": "Jab 2 (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361/180",
+    "BaseKnockBackSetKnockback": "25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "30",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bec3d86303d44c14bd75035625e9c708?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bec3d86303d44c14bd75035625e9c708?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "-26",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "501ef720af7c4a95b5c54b66d3214ed0",
+    "Name": "Jab 3",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "35",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/501ef720af7c4a95b5c54b66d3214ed0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/501ef720af7c4a95b5c54b66d3214ed0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3.1",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "a0973dac09604e569624ed143b54c9f2",
+    "Name": "Jab 3 (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "65",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "135",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a0973dac09604e569624ed143b54c9f2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a0973dac09604e569624ed143b54c9f2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "78a321e62e2e43cc866d460fb0ff41bc",
+    "Name": "Dash Attack (Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "46",
+    "Angle": "35/40/50/25/10/15",
+    "BaseKnockBackSetKnockback": "F: 70/80/50/40/30/25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "95",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/78a321e62e2e43cc866d460fb0ff41bc?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/78a321e62e2e43cc866d460fb0ff41bc?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-21",
+      "Adv": "-23",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "f975a8882442409ba306c31e1490b5c3",
+    "Name": "Dash Attack (Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "85",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f975a8882442409ba306c31e1490b5c3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f975a8882442409ba306c31e1490b5c3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "a905115ed30942bf98864e59b9b29cd1",
+    "Name": "Dash Attack (Awakened, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "85",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "82",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a905115ed30942bf98864e59b9b29cd1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a905115ed30942bf98864e59b9b29cd1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-21",
+      "Adv": "-23",
+      "SD": "",
+      "ShieldstunMultiplier": "1.1",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "fef4969d52b54fa49d0beffd2276ec23",
+    "Name": "Dash Attack (Arsene, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "85",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "82",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fef4969d52b54fa49d0beffd2276ec23?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fef4969d52b54fa49d0beffd2276ec23?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "5e80ed5c7a724efba4d6392587aedfb7",
+    "Name": "Ftilt (Hit 1, All Angles)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "35",
+    "Angle": "93/40",
+    "BaseKnockBackSetKnockback": "F: 10/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5e80ed5c7a724efba4d6392587aedfb7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5e80ed5c7a724efba4d6392587aedfb7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-15",
+      "Adv": "-15",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "c9bb88e823734f25a18a607bb71ea6f2",
+    "Name": "Ftilt (Hit 2, All Angles)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "25",
+    "BaseKnockBackSetKnockback": "45",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "105",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c9bb88e823734f25a18a607bb71ea6f2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c9bb88e823734f25a18a607bb71ea6f2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "fc9958b87476445f90ea1e3a7e23837b",
+    "Name": "Ftilt (Awakened, Hit 2, All Angles)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "25",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "106",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fc9958b87476445f90ea1e3a7e23837b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fc9958b87476445f90ea1e3a7e23837b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-19",
+      "Adv": "-11",
+      "SD": "",
+      "ShieldstunMultiplier": "2",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "025b160afab143008f58ee23f5aa8f68",
+    "Name": "Ftilt (Arsene, Hit 2, All Angles)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "25",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "106",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/025b160afab143008f58ee23f5aa8f68?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/025b160afab143008f58ee23f5aa8f68?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8",
+      "Adv": "-27",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "3",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "feafd6c4f61541bf8c58f783c971f2fa",
+    "Name": "Utilt (Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "41",
+    "Angle": "120/105/100/110/115123/115",
+    "BaseKnockBackSetKnockback": "F: 150/150/60/165/60165/60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/feafd6c4f61541bf8c58f783c971f2fa?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/feafd6c4f61541bf8c58f783c971f2fa?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "3",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "7f9dd0d849fd461eb427927aaa3f778b",
+    "Name": "Utilt (Hit 1, Late)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "130/367/133",
+    "BaseKnockBackSetKnockback": "F: 20/20 B: 0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7f9dd0d849fd461eb427927aaa3f778b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7f9dd0d849fd461eb427927aaa3f778b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "3",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1",
+      "OneVOne": "1.2"
+    },
+    "InstanceId": "17920bd967c646fbb825bc0f812b6bb3",
+    "Name": "Utilt",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "367",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/17920bd967c646fbb825bc0f812b6bb3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/17920bd967c646fbb825bc0f812b6bb3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "11-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "3",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "0.7",
+      "OneVOne": "0.84"
+    },
+    "InstanceId": "54535d694b3e416ebdce466c0f8747d1",
+    "Name": "Utilt (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "367",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/54535d694b3e416ebdce466c0f8747d1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/54535d694b3e416ebdce466c0f8747d1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-23",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1",
+      "OneVOne": "1.2"
+    },
+    "InstanceId": "0535f98b16604d5d87a5a3cf1343b86b",
+    "Name": "Utilt (Final Hit)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "270",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0535f98b16604d5d87a5a3cf1343b86b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0535f98b16604d5d87a5a3cf1343b86b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-23",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3.9",
+      "OneVOne": "4.68"
+    },
+    "InstanceId": "cefd906fa84b4614abc02bef93f0b739",
+    "Name": "Utilt (Arsene, Final Hit)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "180",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/cefd906fa84b4614abc02bef93f0b739?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/cefd906fa84b4614abc02bef93f0b739?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "-22",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "696aee79cb0947c4a51f1d20c15d9079",
+    "Name": "Dtilt (Early)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "38",
+    "Angle": "75",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/696aee79cb0947c4a51f1d20c15d9079?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/696aee79cb0947c4a51f1d20c15d9079?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-11",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "ee34ec6fac7a4d8590f576bb47ef873c",
+    "Name": "Dtilt",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "82",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ee34ec6fac7a4d8590f576bb47ef873c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ee34ec6fac7a4d8590f576bb47ef873c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "1c02bef9445543b783f04541921bcf02",
+    "Name": "Dtilt (Late)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "85",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1c02bef9445543b783f04541921bcf02?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1c02bef9445543b783f04541921bcf02?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "00355234b79f4804a65ec4eab76f8151",
+    "Name": "Dtilt (Awakened, Early)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "75",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/00355234b79f4804a65ec4eab76f8151?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/00355234b79f4804a65ec4eab76f8151?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-11",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "ac3c9839275b4c85ada66e3e8cf97976",
+    "Name": "Dtilt (Awakened)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "82",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ac3c9839275b4c85ada66e3e8cf97976?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ac3c9839275b4c85ada66e3e8cf97976?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "a5d5475af9cc4117a5d2724b224febca",
+    "Name": "Dtilt (Awakened, Late)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "85",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a5d5475af9cc4117a5d2724b224febca?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a5d5475af9cc4117a5d2724b224febca?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "-19",
+      "SD": "",
+      "ShieldstunMultiplier": "1.5",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "1b0a4fcf45bf4144b040e822389015f8",
+    "Name": "Dtilt (Arsene, Early)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "82",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "95",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1b0a4fcf45bf4144b040e822389015f8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1b0a4fcf45bf4144b040e822389015f8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-11",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "3733cd3a7bf54292ae1122c4f50db8ef",
+    "Name": "Dtilt (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "82",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "98",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3733cd3a7bf54292ae1122c4f50db8ef?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3733cd3a7bf54292ae1122c4f50db8ef?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "dcbddc2ec7464690bdec7a2a000e5297",
+    "Name": "Dtilt (Arsene, Late)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "82",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "99",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/dcbddc2ec7464690bdec7a2a000e5297?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/dcbddc2ec7464690bdec7a2a000e5297?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-18",
+      "Adv": "-21",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14",
+      "OneVOne": "16.8"
+    },
+    "InstanceId": "793da5ff2f58424d9b835dde9ff847dd",
+    "Name": "Fsmash",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "48",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "98",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/793da5ff2f58424d9b835dde9ff847dd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/793da5ff2f58424d9b835dde9ff847dd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14",
+      "OneVOne": "16.8"
+    },
+    "InstanceId": "82010e514d334e2f86138ca3b63bec9c",
+    "Name": "Fsmash (Awakened)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "98",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/82010e514d334e2f86138ca3b63bec9c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/82010e514d334e2f86138ca3b63bec9c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-19",
+      "Adv": "-19",
+      "SD": "",
+      "ShieldstunMultiplier": "0.90625",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "a46e608eb9c34dd4af711b664b0c2902",
+    "Name": "Fsmash (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "151",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a46e608eb9c34dd4af711b664b0c2902?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a46e608eb9c34dd4af711b664b0c2902?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-14",
+      "Adv": "-32",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "41ae23bedce44dcdb4ac3ffa427d99c2",
+    "Name": "Usmash",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "52",
+    "Angle": "83",
+    "BaseKnockBackSetKnockback": "43",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/41ae23bedce44dcdb4ac3ffa427d99c2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/41ae23bedce44dcdb4ac3ffa427d99c2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "10-14",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "3e2971d67b544be490c7eca02215ff61",
+    "Name": "Usmash (Awakened)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "52",
+    "Angle": "83",
+    "BaseKnockBackSetKnockback": "43",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3e2971d67b544be490c7eca02215ff61?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3e2971d67b544be490c7eca02215ff61?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-14",
+      "Adv": "-30",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "14bf54bed6d447b5a91012c5acc43ffe",
+    "Name": "Usmash (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "83",
+    "BaseKnockBackSetKnockback": "59",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "181",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/14bf54bed6d447b5a91012c5acc43ffe?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/14bf54bed6d447b5a91012c5acc43ffe?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-13",
+      "Adv": "-24",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "ab812a5088664985b8abec66dd7fdab3",
+    "Name": "Dsmash (Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "46",
+    "Angle": "32",
+    "BaseKnockBackSetKnockback": "30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "93",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ab812a5088664985b8abec66dd7fdab3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ab812a5088664985b8abec66dd7fdab3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "aface9be171844c39976146d0f98024a",
+    "Name": "Dsmash (Hit 1, Awakened)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "32",
+    "BaseKnockBackSetKnockback": "64",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "84",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/aface9be171844c39976146d0f98024a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/aface9be171844c39976146d0f98024a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "eab773c7932c4a3bbbaf7242256948be",
+    "Name": "Dsmash (Arsene, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "38",
+    "BaseKnockBackSetKnockback": "44",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "158",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/eab773c7932c4a3bbbaf7242256948be?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/eab773c7932c4a3bbbaf7242256948be?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-17",
+      "Adv": "-20",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "9030984e001e4a66b127d2b21fd66d45",
+    "Name": "Dsmash (Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "30",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "93",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9030984e001e4a66b127d2b21fd66d45?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9030984e001e4a66b127d2b21fd66d45?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-17",
+      "Adv": "-18",
+      "SD": "",
+      "ShieldstunMultiplier": "0.9425",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "86939613a2d54c32a25727ee4adc60f7",
+    "Name": "Dsmash (Arsene, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "30",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "158",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/86939613a2d54c32a25727ee4adc60f7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/86939613a2d54c32a25727ee4adc60f7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "7675073dabaf414a8642462639e29a9e",
+    "Name": "Standing Grab",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "35",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7675073dabaf414a8642462639e29a9e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7675073dabaf414a8642462639e29a9e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "e49166c03b2b4b2f81221094c9c16de6",
+    "Name": "Dash Grab",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "43",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e49166c03b2b4b2f81221094c9c16de6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e49166c03b2b4b2f81221094c9c16de6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "8b84d4c2bc7b4c85bffcb11aa820fa04",
+    "Name": "Pivot Grab",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "38",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/8b84d4c2bc7b4c85bffcb11aa820fa04?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/8b84d4c2bc7b4c85bffcb11aa820fa04?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "dbad34c863a64da3b48169771edf3090",
+    "Name": "Spotdodge",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/dbad34c863a64da3b48169771edf3090?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/dbad34c863a64da3b48169771edf3090?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "233b8495b7e242179f6038faaf292fc9",
+    "Name": "Forward Roll",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/233b8495b7e242179f6038faaf292fc9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/233b8495b7e242179f6038faaf292fc9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "f1f570465f624c028e82b6076ab74be7",
+    "Name": "Back Roll",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f1f570465f624c028e82b6076ab74be7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f1f570465f624c028e82b6076ab74be7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "5775048f3c874fa88d683c504fe4700d",
+    "Name": "Airdodge",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5775048f3c874fa88d683c504fe4700d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5775048f3c874fa88d683c504fe4700d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "732e725b390f454baa39af3ee74d4b01",
+    "Name": "Directional Airdodge (F/B)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/732e725b390f454baa39af3ee74d4b01?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/732e725b390f454baa39af3ee74d4b01?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "632e1ecea19342db96fdb169092721ac",
+    "Name": "Directional Airdodge (U)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/632e1ecea19342db96fdb169092721ac?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/632e1ecea19342db96fdb169092721ac?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "010f3bc8e7ea4900bed4865c7a409fcf",
+    "Name": "Directional Airdodge (D)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/010f3bc8e7ea4900bed4865c7a409fcf?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/010f3bc8e7ea4900bed4865c7a409fcf?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-27",
+      "Adv": "-5",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "ffc90c54fc0640388ce562f4a3358f88",
+    "Name": "Nair",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "55",
+    "Angle": "46",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": "8",
+    "AutoCancel": "1-4, 48>",
+    "KnockbackGrowth": "93",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ffc90c54fc0640388ce562f4a3358f88?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ffc90c54fc0640388ce562f4a3358f88?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-27",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "09d65b13e5714b389d97e3f70df8edc1",
+    "Name": "Nair (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "46",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "139",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/09d65b13e5714b389d97e3f70df8edc1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/09d65b13e5714b389d97e3f70df8edc1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-8",
+      "Adv": "-10",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "67bac718f62f480d8175fcf88dc5e0a8",
+    "Name": "Fair (Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "48",
+    "Angle": "367/76/367/80/367/76",
+    "BaseKnockBackSetKnockback": "70/73/70/73/70/73",
+    "LandingLag": "12",
+    "AutoCancel": "1-3, 42>",
+    "KnockbackGrowth": "25/50/5/50/25/50",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/67bac718f62f480d8175fcf88dc5e0a8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/67bac718f62f480d8175fcf88dc5e0a8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-14",
+      "Adv": "-9",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "fc1a33ddb9904768acd1092d0daf4d22",
+    "Name": "Fair (Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "46",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "125",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fc1a33ddb9904768acd1092d0daf4d22?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fc1a33ddb9904768acd1092d0daf4d22?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "c51a4000da474e6d9c4433737a292db8",
+    "Name": "Fair (Awakened, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "34",
+    "BaseKnockBackSetKnockback": "48",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "148",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c51a4000da474e6d9c4433737a292db8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c51a4000da474e6d9c4433737a292db8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-14",
+      "Adv": "-8",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "e23fea4f1d7d4068bdb0efc69f2667f9",
+    "Name": "Fair (Arsene, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "34",
+    "BaseKnockBackSetKnockback": "58",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "98",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e23fea4f1d7d4068bdb0efc69f2667f9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e23fea4f1d7d4068bdb0efc69f2667f9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-8",
+      "Adv": "-5",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "9",
+      "OneVOne": "10.8"
+    },
+    "InstanceId": "6b8512ac1e504276af40111f838ddbe8",
+    "Name": "Bair",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "32",
+    "Angle": "43",
+    "BaseKnockBackSetKnockback": "54",
+    "LandingLag": "9",
+    "AutoCancel": "1-3, 30>",
+    "KnockbackGrowth": "90",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6b8512ac1e504276af40111f838ddbe8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6b8512ac1e504276af40111f838ddbe8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "9",
+      "OneVOne": "10.8"
+    },
+    "InstanceId": "3bfb184787bf49b5b5aefc390cf32cdb",
+    "Name": "Bair (Awakened)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "35",
+    "BaseKnockBackSetKnockback": "51",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "102",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3bfb184787bf49b5b5aefc390cf32cdb?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3bfb184787bf49b5b5aefc390cf32cdb?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "08a06fdf2ca54c15a034eb425631deb6",
+    "Name": "Bair (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "35",
+    "BaseKnockBackSetKnockback": "58",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "114",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/08a06fdf2ca54c15a034eb425631deb6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/08a06fdf2ca54c15a034eb425631deb6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-18",
+      "Adv": "-12",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "4",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "0.75",
+      "OneVOne": "0.9"
+    },
+    "InstanceId": "261c11f65e214d068da2fc6ec843450b",
+    "Name": "Uair",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "40",
+    "Angle": "80/367",
+    "BaseKnockBackSetKnockback": "20/30",
+    "LandingLag": "14",
+    "AutoCancel": "1-4, 40>",
+    "KnockbackGrowth": "80/100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/261c11f65e214d068da2fc6ec843450b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/261c11f65e214d068da2fc6ec843450b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "fa9ac82f404542e695d2a052be82272c",
+    "Name": "Uair (Final Hit)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "155",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fa9ac82f404542e695d2a052be82272c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fa9ac82f404542e695d2a052be82272c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-21",
+      "Adv": "-11",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "c17d54888a90494d98401076fbb5663a",
+    "Name": "Uair (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "126",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c17d54888a90494d98401076fbb5663a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c17d54888a90494d98401076fbb5663a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-16",
+      "Adv": "-7",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "8036c8f7543d43169d88adb1b8a181cb",
+    "Name": "Dair",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "47",
+    "Angle": "38",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": "11",
+    "AutoCancel": "1-3, 40>",
+    "KnockbackGrowth": "100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/8036c8f7543d43169d88adb1b8a181cb?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/8036c8f7543d43169d88adb1b8a181cb?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "e9c172cc409040779adc86d8f35900e6",
+    "Name": "Dair (Awakened)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "38",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "60",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e9c172cc409040779adc86d8f35900e6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e9c172cc409040779adc86d8f35900e6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-16",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "ac5e8a74a0024cff818a586cabe789b5",
+    "Name": "Dair (Awakened, Late)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "38",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "50",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ac5e8a74a0024cff818a586cabe789b5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ac5e8a74a0024cff818a586cabe789b5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-16",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "b70a9b5b214249c796759cbf1cc7fba5",
+    "Name": "Dair (Arsene)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "270",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "96",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b70a9b5b214249c796759cbf1cc7fba5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b70a9b5b214249c796759cbf1cc7fba5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5/3/1",
+      "OneVOne": "6/3.6/1.2"
+    },
+    "InstanceId": "ffa8f7ee698a4590b2287778a80bb12c",
+    "Name": "Gun (Grounded)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "37",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/1/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ffa8f7ee698a4590b2287778a80bb12c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ffa8f7ee698a4590b2287778a80bb12c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/4/2",
+      "OneVOne": "7.2/4.8/2.4"
+    },
+    "InstanceId": "2e005560dacf4e2385dae561bd75c896",
+    "Name": "Gun (Grounded, Forward)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "40+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "30/4/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "67/45/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2e005560dacf4e2385dae561bd75c896?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2e005560dacf4e2385dae561bd75c896?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "22",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5/3/1",
+      "OneVOne": "6/3.6/1.2"
+    },
+    "InstanceId": "8806337692e9417c9b6a2a233ff51a9a",
+    "Name": "Gun (Grounded, Backward)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "46+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/1/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/8806337692e9417c9b6a2a233ff51a9a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/8806337692e9417c9b6a2a233ff51a9a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10, 17",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "1-6",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "f1ef6093888a431ab43a7efcfd43dde8",
+    "Name": "Gun (Grounded, Jump, Hit 1-2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "60",
+    "Angle": "365",
+    "BaseKnockBackSetKnockback": "10/20/20/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f1ef6093888a431ab43a7efcfd43dde8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f1ef6093888a431ab43a7efcfd43dde8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "24",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "f520921c4cee48358b409dd5562a4eb4",
+    "Name": "Gun (Grounded, Jump, Hit 3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "365/50/365/365",
+    "BaseKnockBackSetKnockback": "10/20/20/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f520921c4cee48358b409dd5562a4eb4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f520921c4cee48358b409dd5562a4eb4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "31",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "3125a2eaf98a41ba9b60dd1df35508b9",
+    "Name": "Gun (Grounded, Jump, Hit 4)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "125/90/45/45",
+    "BaseKnockBackSetKnockback": "50/35/35/35",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3125a2eaf98a41ba9b60dd1df35508b9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3125a2eaf98a41ba9b60dd1df35508b9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5/3/1",
+      "OneVOne": "6/3.6/1.2"
+    },
+    "InstanceId": "c32ff85b22414126b645c146ab63b13b",
+    "Name": "Gun (Aerial)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "37",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c32ff85b22414126b645c146ab63b13b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c32ff85b22414126b645c146ab63b13b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "5-16",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/4/2",
+      "OneVOne": "7.2/4.8/2.4"
+    },
+    "InstanceId": "71fdac13ae4c4bd28b430a3c471c7dca",
+    "Name": "Gun (Aerial, Forward)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "40+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "35/4/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "67/45/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/71fdac13ae4c4bd28b430a3c471c7dca?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/71fdac13ae4c4bd28b430a3c471c7dca?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "22",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "5-16",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5/3/1",
+      "OneVOne": "6/3.6/1.2"
+    },
+    "InstanceId": "cbf0be3f3f74432ea1fb800108bd3b3d",
+    "Name": "Gun (Aerial, Backward)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "46+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/cbf0be3f3f74432ea1fb800108bd3b3d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/cbf0be3f3f74432ea1fb800108bd3b3d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12, 15, 18, 24, 27, 30, 36, 39, 42, 48, 51, 54",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "63a8ba5535ac40798a66a3468b31c99d",
+    "Name": "Gun (Aerial, Up, Hits 1-12)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "70",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/63a8ba5535ac40798a66a3468b31c99d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/63a8ba5535ac40798a66a3468b31c99d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7, 21, 35, 44",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4/1.2",
+      "OneVOne": "4.8/1.44"
+    },
+    "InstanceId": "b7d5a3f1360b4cca98457026468cfb1a",
+    "Name": "Gun (Aerial, Down)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "49",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b7d5a3f1360b4cca98457026468cfb1a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b7d5a3f1360b4cca98457026468cfb1a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/3/1",
+      "OneVOne": "7.2/3.6/1.2"
+    },
+    "InstanceId": "f0441b41e3b04551a1bc85c593173df7",
+    "Name": "Gun Special 1/2/3 (Grounded, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "42",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60/1/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f0441b41e3b04551a1bc85c593173df7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f0441b41e3b04551a1bc85c593173df7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "18, 24",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "e299859c2ff148b299b8385be423367c",
+    "Name": "Gun Special 1/2/3 (Grounded, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e299859c2ff148b299b8385be423367c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e299859c2ff148b299b8385be423367c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7/4/2",
+      "OneVOne": "8.4/4.8/2.4"
+    },
+    "InstanceId": "045b445039004cb1a6cbb23160d80532",
+    "Name": "Gun Special (Grounded, Forward, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "46+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "50/4/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/045b445039004cb1a6cbb23160d80532?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/045b445039004cb1a6cbb23160d80532?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "27, 33",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "2aae807cbe474cacae775325b646881c",
+    "Name": "Gun Special (Grounded, Forward, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2aae807cbe474cacae775325b646881c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2aae807cbe474cacae775325b646881c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "23",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5/3/1",
+      "OneVOne": "6/3.6/1.2"
+    },
+    "InstanceId": "83a24e01acd649779db7ae8b4004903c",
+    "Name": "Gun Special (Grounded, Backward, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "50+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/1/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/83a24e01acd649779db7ae8b4004903c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/83a24e01acd649779db7ae8b4004903c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "29",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "203c0b409e15497ba9f564376c47077b",
+    "Name": "Gun Special (Grounded, Backward, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/203c0b409e15497ba9f564376c47077b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/203c0b409e15497ba9f564376c47077b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "35",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "328a4b79da4141da85f468d919930112",
+    "Name": "Gun Special (Grounded, Backward, Hit 3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/1/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/328a4b79da4141da85f468d919930112?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/328a4b79da4141da85f468d919930112?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "1-6",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "a4335a6ad55d4de2bc21c47dc374c46a",
+    "Name": "Gun Special (Grounded, Jump, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "60",
+    "Angle": "365",
+    "BaseKnockBackSetKnockback": "10/20/20/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a4335a6ad55d4de2bc21c47dc374c46a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a4335a6ad55d4de2bc21c47dc374c46a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1/0.5/0.5/0.5",
+      "OneVOne": "1.2/0.6/0.6/0.6"
+    },
+    "InstanceId": "eac921bb47a84b0b8d07351256cf1a55",
+    "Name": "Gun Special (Grounded, Jump, Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "365",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/eac921bb47a84b0b8d07351256cf1a55?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/eac921bb47a84b0b8d07351256cf1a55?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "17",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "340ad3b1eaa140c4b3dabe1a1d347739",
+    "Name": "Gun Special (Grounded, Jump, Hit 3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "365",
+    "BaseKnockBackSetKnockback": "10/20/20/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/340ad3b1eaa140c4b3dabe1a1d347739?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/340ad3b1eaa140c4b3dabe1a1d347739?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1/0.5/0.5/0.5",
+      "OneVOne": "1.2/0.6/0.6/0.6"
+    },
+    "InstanceId": "a1e9c3eda7e447ec99a85c614b1b1cb2",
+    "Name": "Gun Special (Grounded, Jump, Hit 4)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "365",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a1e9c3eda7e447ec99a85c614b1b1cb2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a1e9c3eda7e447ec99a85c614b1b1cb2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "24",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "a30091e06bed4c34859a122eaf2bcba9",
+    "Name": "Gun Special (Grounded, Jump, Hit 5)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "365/50/365/365",
+    "BaseKnockBackSetKnockback": "10/20/20/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a30091e06bed4c34859a122eaf2bcba9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a30091e06bed4c34859a122eaf2bcba9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "27",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1/0.5/0.5/0.5",
+      "OneVOne": "1.2/0.6/0.6/0.6"
+    },
+    "InstanceId": "05a8199ed77149e68e35fe0df3e493c6",
+    "Name": "Gun Special (Grounded, Jump, Hit 6)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "365/50/365/365",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/05a8199ed77149e68e35fe0df3e493c6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/05a8199ed77149e68e35fe0df3e493c6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "31",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3/0.8/0.8/0.8",
+      "OneVOne": "3.6/0.96/0.96/0.96"
+    },
+    "InstanceId": "c8b76b89926d4f8ba2fdabc2c21bba40",
+    "Name": "Gun Special (Grounded, Jump, Hit 7)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "125/90/45/45",
+    "BaseKnockBackSetKnockback": "60/50/50/50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70/120/120/120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c8b76b89926d4f8ba2fdabc2c21bba40?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c8b76b89926d4f8ba2fdabc2c21bba40?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/3/1",
+      "OneVOne": "7.2/3.6/1.2"
+    },
+    "InstanceId": "3f791567429c45bf9ee668c0239f1e08",
+    "Name": "Gun Special 1 (Aerial, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "38",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3f791567429c45bf9ee668c0239f1e08?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3f791567429c45bf9ee668c0239f1e08?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "19, 25",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "04195365b9774052b9e12c51a1bb2c7a",
+    "Name": "Gun Special 1 (Aerial, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/04195365b9774052b9e12c51a1bb2c7a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/04195365b9774052b9e12c51a1bb2c7a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/3/1",
+      "OneVOne": "7.2/3.6/1.2"
+    },
+    "InstanceId": "2e1982575a6c40a8a91281a0f785d302",
+    "Name": "Gun Special 2 (Aerial, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "38",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2e1982575a6c40a8a91281a0f785d302?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2e1982575a6c40a8a91281a0f785d302?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "19, 25",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "f0994494c9064faf836ce4e14fa1a1df",
+    "Name": "Gun Special 2 (Aerial, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f0994494c9064faf836ce4e14fa1a1df?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f0994494c9064faf836ce4e14fa1a1df?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/3/1",
+      "OneVOne": "7.2/3.6/1.2"
+    },
+    "InstanceId": "c67b4d5a5e1b40be82fe43b5c69e9a78",
+    "Name": "Gun Special 3 (Aerial, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "38",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c67b4d5a5e1b40be82fe43b5c69e9a78?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c67b4d5a5e1b40be82fe43b5c69e9a78?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "19, 25",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "d69e5e861c1441fe971f9d6ec4ab5dd6",
+    "Name": "Gun Special 3 (Aerial, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d69e5e861c1441fe971f9d6ec4ab5dd6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d69e5e861c1441fe971f9d6ec4ab5dd6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "5-16",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7/4/2",
+      "OneVOne": "8.4/4.8/2.4"
+    },
+    "InstanceId": "944ba409e2074a2e9ec712fe0e9f5ea3",
+    "Name": "Gun Special (Aerial, Forward, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "41+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "50/4/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/944ba409e2074a2e9ec712fe0e9f5ea3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/944ba409e2074a2e9ec712fe0e9f5ea3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "27, 33",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "d1eb52f2898b4c8ba87d0645842309ca",
+    "Name": "Gun Special (Aerial, Forward, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d1eb52f2898b4c8ba87d0645842309ca?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d1eb52f2898b4c8ba87d0645842309ca?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "23",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "5-16",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/3/1",
+      "OneVOne": "7.2/3.6/1.2"
+    },
+    "InstanceId": "873e0e87c33545b685ac8954f47fc862",
+    "Name": "Gun Special (Aerial, Backward, Hit 1)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "47+",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60/3/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50/50/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/873e0e87c33545b685ac8954f47fc862?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/873e0e87c33545b685ac8954f47fc862?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "29, 35",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2/1.5/1",
+      "OneVOne": "2.4/1.8/1.2"
+    },
+    "InstanceId": "62277ea4b48a44da93e7038170faadac",
+    "Name": "Gun Special (Aerial, Backward, Hits 2-3)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/62277ea4b48a44da93e7038170faadac?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/62277ea4b48a44da93e7038170faadac?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12, 15, 18, 24, 27, 30, 36, 39, 42, 48, 51, 54",
+      "Adv": "",
+      "SD": "-1",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4.5",
+      "OneVOne": "5.4"
+    },
+    "InstanceId": "70e5aa85ab124b4bb93e21c8c174c4c6",
+    "Name": "Gun Special (Aerial, Up, Hits 1-12)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "70",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "5/0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75/0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/70e5aa85ab124b4bb93e21c8c174c4c6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/70e5aa85ab124b4bb93e21c8c174c4c6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7, 21, 35, 44",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4/1.2",
+      "OneVOne": "4.8/1.44"
+    },
+    "InstanceId": "828ae0ef4a64467f881753e6f25ddd59",
+    "Name": "Gun Special (Aerial, Down)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "49",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/828ae0ef4a64467f881753e6f25ddd59?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/828ae0ef4a64467f881753e6f25ddd59?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "14, 28",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.6/0.8",
+      "OneVOne": "1.92/0.96"
+    },
+    "InstanceId": "c9f444e278e34e58b173fdce1de29049",
+    "Name": "Gun Special (Aerial, Down)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c9f444e278e34e58b173fdce1de29049?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c9f444e278e34e58b173fdce1de29049?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-42",
+      "Adv": "-27",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1",
+      "OneVOne": "1.2"
+    },
+    "InstanceId": "038f6def0a9c49a0b5e8984e82b7d636",
+    "Name": "Eiha (Projectile)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "50",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/038f6def0a9c49a0b5e8984e82b7d636?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/038f6def0a9c49a0b5e8984e82b7d636?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "1-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "c801924987cc422fa30e27bfa030f4fd",
+    "Name": "Eiha (Hit 2)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "75",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "210",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c801924987cc422fa30e27bfa030f4fd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c801924987cc422fa30e27bfa030f4fd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-32",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1",
+      "OneVOne": "1.2"
+    },
+    "InstanceId": "78385817a1e346ccb46ca12d3e2638d0",
+    "Name": "Eigaon (Projectile)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "58",
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/78385817a1e346ccb46ca12d3e2638d0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/78385817a1e346ccb46ca12d3e2638d0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "1-15",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "5",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "0.5",
+      "OneVOne": "0.6"
+    },
+    "InstanceId": "74728b3633c148a2ada5c7120de0e9a3",
+    "Name": "Eigaon (Hits 2-4)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "367",
+    "BaseKnockBackSetKnockback": "5",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/74728b3633c148a2ada5c7120de0e9a3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/74728b3633c148a2ada5c7120de0e9a3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-27",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.5",
+      "OneVOne": "3"
+    },
+    "InstanceId": "b0fe3c64431b4b929fac17b5b9b3ffbb",
+    "Name": "Eigaon (Hit 5)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "73",
+    "BaseKnockBackSetKnockback": "105",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "105",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b0fe3c64431b4b929fac17b5b9b3ffbb?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b0fe3c64431b4b929fac17b5b9b3ffbb?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-26",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "7e26459670cf4ba99d59e3da1d529ee5",
+    "Name": "Grappling Hook (Grounded)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "60",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7e26459670cf4ba99d59e3da1d529ee5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7e26459670cf4ba99d59e3da1d529ee5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "11",
+      "OneVOne": "13.2"
+    },
+    "InstanceId": "597a5866def340b2a41ff919c2c3e90b",
+    "Name": "Grappling Hook (Throw)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "29",
+    "Angle": "78",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "40",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/597a5866def340b2a41ff919c2c3e90b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/597a5866def340b2a41ff919c2c3e90b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-23",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "a4bde6d8be6f419495b303acbcac63b3",
+    "Name": "Grappling Hook (Aerial)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "45",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "76",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "56",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a4bde6d8be6f419495b303acbcac63b3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a4bde6d8be6f419495b303acbcac63b3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Intangible: 1-25",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "630a7f186ae749ca9988637bba52842a",
+    "Name": "Wings of Rebellion (Grounded)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/630a7f186ae749ca9988637bba52842a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/630a7f186ae749ca9988637bba52842a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Intangible: 3-25",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "23f1e77f177b4118a5248c5b7812cb57",
+    "Name": "Wings of Rebellion (Aerial)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "-",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/23f1e77f177b4118a5248c5b7812cb57?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/23f1e77f177b4118a5248c5b7812cb57?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Special Armor: 3-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "28830cf0562f445ca326a4c5e8befbf2",
+    "Name": "Rebel's Guard",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "53",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/28830cf0562f445ca326a4c5e8befbf2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/28830cf0562f445ca326a4c5e8befbf2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "1-14",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.4",
+      "OneVOne": "2.88"
+    },
+    "InstanceId": "d544cff9d282459d9d3ff730b66088da",
+    "Name": "Rebel's Guard (Counter Attack)",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "31",
+    "Angle": "50",
+    "BaseKnockBackSetKnockback": "F: 82",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d544cff9d282459d9d3ff730b66088da?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d544cff9d282459d9d3ff730b66088da?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Counter/Reflects: 4-31",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "3-4",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "63bd3ce0c1ca441e87ff50459540ec17",
+    "Name": "Tetrakarn/Makarakarn",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "53",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/63bd3ce0c1ca441e87ff50459540ec17?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/63bd3ce0c1ca441e87ff50459540ec17?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "1-8",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12|Counter Multiplier: 1.6×, Max: 50%",
+      "OneVOne": ""
+    },
+    "InstanceId": "98a1c672e6a34dd58adaba47889c4327",
+    "Name": "Tetrakarn",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "40",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "51",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/98a1c672e6a34dd58adaba47889c4327?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/98a1c672e6a34dd58adaba47889c4327?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Reflection: 1-29",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "Reflect Multiplier: 1.6×",
+      "OneVOne": ""
+    },
+    "InstanceId": "0b8ea5053bf343648f9fa8f4c63c2cd0",
+    "Name": "Makarakarn",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": "42",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0b8ea5053bf343648f9fa8f4c63c2cd0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0b8ea5053bf343648f9fa8f4c63c2cd0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "03641fbfbdc44ad7a2361df0a45dc7f4",
+    "Name": "Fthrow",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": null,
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "65",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "65",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/03641fbfbdc44ad7a2361df0a45dc7f4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/03641fbfbdc44ad7a2361df0a45dc7f4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "10",
+      "OneVOne": "12"
+    },
+    "InstanceId": "fa48a77f75b14d9db009a0dc4990a60b",
+    "Name": "Bthrow",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": null,
+    "Angle": "131",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "66",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fa48a77f75b14d9db009a0dc4990a60b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fa48a77f75b14d9db009a0dc4990a60b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "27d3b68ef2f74b0482c18948b3b91cd9",
+    "Name": "Uthrow",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": null,
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "72",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/27d3b68ef2f74b0482c18948b3b91cd9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/27d3b68ef2f74b0482c18948b3b91cd9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "5f1b8a78f12b46b7aa3ec06734cd5cac",
+    "Name": "Dthrow",
+    "OwnerId": 74,
+    "Owner": "Joker",
+    "FirstActionableFrame": null,
+    "Angle": "79",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "95",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Joker?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5f1b8a78f12b46b7aa3ec06734cd5cac?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5f1b8a78f12b46b7aa3ec06734cd5cac?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Joker?game=smash4"
+      }
+    ]
+  }
+]

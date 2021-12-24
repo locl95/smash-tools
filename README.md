@@ -10,6 +10,8 @@ Build with:
 ### Character comparison
 Provides casters useful information about the characters fighting in the match.
 
+Data from characters is retrieved from https://github.com/Frannsoft/FrannHammer/wiki
+
 ### Bracket generator
 Provides Tournament Organizers an easy way to seed their brackets.
 
