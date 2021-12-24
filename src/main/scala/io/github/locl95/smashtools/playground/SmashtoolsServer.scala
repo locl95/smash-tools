@@ -8,8 +8,8 @@ import org.http4s.server.middleware.Logger
 import org.http4s.implicits._
 
 import scala.concurrent.ExecutionContext.global
-
 import cats.implicits._
+import io.github.locl95.smashtools.characters.{CharactersRoutes, KuroganeClient}
 
 object SmashtoolsServer {
 
@@ -18,6 +18,7 @@ object SmashtoolsServer {
       client <- BlazeClientBuilder[F](global).stream
       helloWorldAlg = HelloWorld.impl[F]
       jokeAlg = Jokes.impl[F](client)
+      kuroganeClient = KuroganeClient.impl[F](client)
 
       // Combine Service Routes into an HttpApp.
       // Can also be done via a Router if you
@@ -25,7 +26,8 @@ object SmashtoolsServer {
       // in the underlying routes.
       httpApp = (
         SmashtoolsRoutes.helloWorldRoutes[F](helloWorldAlg) <+>
-        SmashtoolsRoutes.jokeRoutes[F](jokeAlg)
+        SmashtoolsRoutes.jokeRoutes[F](jokeAlg) <+>
+          CharactersRoutes.characterRoutes(kuroganeClient)
       ).orNotFound
 
       // With Middlewares in place

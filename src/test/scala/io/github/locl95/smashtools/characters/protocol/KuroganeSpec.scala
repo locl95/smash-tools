@@ -1,5 +1,6 @@
 package io.github.locl95.smashtools.characters.protocol
 import io.circe._
+import io.circe.syntax._
 import io.circe.parser._
 import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
 import munit.CatsEffectSuite
@@ -28,5 +29,16 @@ class KuroganeSpec extends CatsEffectSuite {
       } yield movements
 
     assert(movementsFromJson.map(_.take(2)).contains(expectedFirstMovements))
+  }
+
+  test("I can transform Characters to Json") {
+    val charactersJson = List(KuroganeCharacter("Sheik"), KuroganeCharacter("Bowser")).asJson
+    val expectedJson =
+      s"""[
+         |{"Name": "Sheik"}, {"Name": "Bowser"}
+         |]""".stripMargin
+
+    assert(parse(expectedJson).contains(charactersJson))
+
   }
 }
