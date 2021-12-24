@@ -30,10 +30,4 @@ object SmashtoolsRoutes {
         } yield resp
     }
   }
-
-
-
-
-
-
 }
