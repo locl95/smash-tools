@@ -3,6 +3,7 @@ val CirceVersion = "0.13.0"
 val MunitVersion = "0.7.27"
 val LogbackVersion = "1.2.5"
 val MunitCatsEffectVersion = "1.0.5"
+val DoobieVersion = "0.12.1"
 
 lazy val root = (project in file("."))
   .settings(
@@ -20,7 +21,10 @@ lazy val root = (project in file("."))
       "org.scalameta"   %% "munit"               % MunitVersion           % Test,
       "org.typelevel"   %% "munit-cats-effect-2" % MunitCatsEffectVersion % Test,
       "ch.qos.logback"  %  "logback-classic"     % LogbackVersion,
-      "org.scalameta"   %% "svm-subs"            % "20.2.0"
+      "org.scalameta"   %% "svm-subs"            % "20.2.0",
+      "org.tpolecat"    %% "doobie-core"         % DoobieVersion,
+      "org.tpolecat"    %% "doobie-postgres"     % DoobieVersion,
+      "org.flywaydb"    % "flyway-core"          % "8.3.0",
     ),
     addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.13.0" cross CrossVersion.full),
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),

@@ -6,6 +6,7 @@ Build with:
 * https://http4s.org/v0.23/index.html
 * https://circe.github.io/circe/
 * https://tpolecat.github.io/doobie/
+* https://flywaydb.org/
 
 ### Character comparison
 Provides casters useful information about the characters fighting in the match.

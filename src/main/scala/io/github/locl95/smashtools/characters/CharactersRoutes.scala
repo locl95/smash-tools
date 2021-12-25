@@ -1,26 +1,21 @@
 package io.github.locl95.smashtools.characters
 
-import cats.effect.Sync
+import cats.effect.Async
 import cats.implicits._
-import io.github.locl95.smashtools.UriHelper
-import io.github.locl95.smashtools.characters.domain.KuroganeCharacter
-import io.github.locl95.smashtools.characters.protocol.Kurogane._
-import org.http4s.HttpRoutes
-import org.http4s.dsl.Http4sDsl
 import io.circe.syntax._
+import io.github.locl95.smashtools.characters.protocol.Kurogane._
+import io.github.locl95.smashtools.characters.service.CharactersService
+import org.http4s.HttpRoutes
 import org.http4s.circe._
+import org.http4s.dsl.Http4sDsl
 
+final class CharactersRoutes[F[_]: Async](service: CharactersService[F]) extends Http4sDsl[F] {
 
-object CharactersRoutes {
-
-  def characterRoutes[F[_]: Sync](K: KuroganeClient[F]): HttpRoutes[F] = {
-    val dsl = new Http4sDsl[F] {}
-    import dsl._
+  val characterRoutes: HttpRoutes[F] = {
     HttpRoutes.of[F] {
       case GET -> Root / "characters" =>
         for {
-          uri <- UriHelper.fromString("https://api.kuroganehammer.com/api/characters?game=ultimate")
-          characters <- K.get[List[KuroganeCharacter]](uri)
+          characters <- service.getCharacters
           resp <- Ok(characters.asJson).adaptError(KuroganeClientError(_))
         } yield resp
     }

@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:12.6
+    environment:
+      - POSTGRES_DB=smashtools
+      - POSTGRES_USER=test
+      - POSTGRES_PASSWORD=test
+    ports:
+      - "5432:5432"
+    command: -p 5432
