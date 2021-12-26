@@ -1,4 +1,5 @@
 package io.github.locl95.smashtools.characters.protocol
+
 import io.circe._
 import io.circe.syntax._
 import io.circe.parser._
@@ -9,7 +10,8 @@ import io.github.locl95.smashtools.characters.protocol.Kurogane._
 class KuroganeSpec extends CatsEffectSuite {
   test("I can transform Kurogane Characters Json") {
     val charactersJson = scala.io.Source.fromFile(s"src/test/resources/characters.json")
-    val expectedFirstCharacters: List[KuroganeCharacter] = List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
+    val expectedFirstCharacters: List[KuroganeCharacter] =
+      List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
 
     val charactersFromJson = for {
       json <- parse(charactersJson.getLines().mkString)
@@ -20,7 +22,11 @@ class KuroganeSpec extends CatsEffectSuite {
 
   test("I can transform Kurogane Character's Moves Json") {
     val movementsJson = scala.io.Source.fromFile(s"src/test/resources/character-moves.json")
-    val expectedFirstMovements: List[KuroganeCharacterMove] = List(KuroganeCharacterMove("Jab 1"), KuroganeCharacterMove("Jab 1 (Arsene)"))
+    val expectedFirstMovements: List[KuroganeCharacterMove] =
+      List(
+        KuroganeCharacterMove("Jab 1", Some(-16), "ground", Some(4)),
+        KuroganeCharacterMove("Jab 1 (Arsene)", None, "ground", Some(4))
+      )
 
     val movementsFromJson =
       for {
