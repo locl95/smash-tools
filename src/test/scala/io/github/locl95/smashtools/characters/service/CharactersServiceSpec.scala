@@ -27,7 +27,7 @@ final class CharactersInMemoryRepository[F[_]: Sync] extends CharactersRepositor
 }
 
 class CharactersServiceSpec extends CatsEffectSuite {
-  test("Get Characters should insert them in database when cache is false") {
+  test("Get Characters should retrieve them from api and insert them in database when cache is false") {
     val repository = new CharactersInMemoryRepository[IO]
     val program = for {
       client <- BlazeClientBuilder[IO](global).stream
