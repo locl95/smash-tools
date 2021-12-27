@@ -17,12 +17,12 @@ final case class CharactersService[F[_]: Sync](charactersRepository: CharactersR
 
   override def getCharacters: F[List[KuroganeCharacter]] = {
     for {
-      uri <- UriHelper.fromString("https://api.kuroganehammer.com/api/characters?game=ultimate")
       cached <- charactersRepository.isCached("characters")
       characters <- {
         if (cached) charactersRepository.get
         else {
           for {
+            uri <- UriHelper.fromString("https://api.kuroganehammer.com/api/characters?game=ultimate")
             c <- client.get[List[KuroganeCharacter]](uri)
             _ <- charactersRepository.insert(c)
             _ <- charactersRepository.cache("characters")

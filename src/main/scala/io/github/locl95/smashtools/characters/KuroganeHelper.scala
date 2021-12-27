@@ -15,14 +15,14 @@ object KuroganeHelper {
       .fold[Either[Throwable, List[KuroganeCharacterMove]]](Left(new Throwable("nonpunishable.move"))) {
         frameAdvantage =>
           Right(availableMoves.filter { move =>
-            val foo = (move.name, move.`type`) match {
+            val framesAfterPenalty = (move.name, move.`type`) match {
               case ("USmash", _) => move.firstFrame
-              case ("Standing Grab", _) => move.firstFrame
+              case ("Standing Grab", _) => move.firstFrame.map(_ + 4)
               case (_, "ground") => move.firstFrame.map(_ + 11)
               case (_, "special") => move.firstFrame.map(_ + 3)
               case (_, "aerial") => move.firstFrame.map(_ + 3)
             }
-            foo.exists(frame => frameAdvantage + frame <= 0)
+            framesAfterPenalty.exists(frame => frameAdvantage + frame <= 0)
           })
       }
   }
