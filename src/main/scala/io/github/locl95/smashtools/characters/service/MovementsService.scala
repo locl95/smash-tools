@@ -12,15 +12,15 @@ final case class MovementsService[F[_]: Sync](movementsRepository: MovementsRepo
 
   def get(character: String): F[List[KuroganeCharacterMove]] = {
     for {
-      cached <- movementsRepository.isCached
+      cached <- movementsRepository.isCached(character)
       movements <- {
-        if (cached) movementsRepository.get
+        if (cached) movementsRepository.get(character)
         else {
           for {
             uri <- UriHelper.fromString(s"https://api.kuroganehammer.com/api/characters/name/$character/moves?expand=true&game=ultimate")
             m <- client.get[List[KuroganeCharacterMove]](uri)
             _ <- movementsRepository.insert(m)
-            _ <- movementsRepository.cache
+            _ <- movementsRepository.cache(character)
           } yield m
         }
       }

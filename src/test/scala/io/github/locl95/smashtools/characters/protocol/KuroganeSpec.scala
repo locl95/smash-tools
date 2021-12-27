@@ -41,4 +41,27 @@ class KuroganeSpec extends CatsEffectSuite {
     assert(parse(expectedJson).contains(charactersJson))
 
   }
+
+  test("I can transform Movements to Json") {
+    val charactersJson = TestHelper.movements.asJson
+    val expectedJson =
+      s"""[
+         |  {
+         |    "character" : "Joker",
+         |    "name" : "Jab 1",
+         |    "advantage" : -16,
+         |    "type" : "ground",
+         |    "firstFrame" : 4
+         |  },
+         |  {
+         |    "character" : "Joker",
+         |    "name" : "Jab 1 (Arsene)",
+         |    "advantage" : null,
+         |    "type" : "ground",
+         |    "firstFrame" : 4
+         |  }
+         |]""".stripMargin
+
+    assert(parse(expectedJson).contains(charactersJson))
+  }
 }

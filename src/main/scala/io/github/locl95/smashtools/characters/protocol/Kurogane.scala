@@ -28,12 +28,14 @@ object Kurogane {
     val counterRegex = "^Counter/Reflects: ([0-9])+-[0-9]+$".r
     val reflectionRegex = "^Reflection: ([0-9])+-[0-9]+$".r
     for {
+      owner <- c.downField("Owner").as[String]
       name <- c.downField("Name").as[String]
       activeFrames <- c.downField("HitboxActive").withFocus(avoidNullHitbox).downField("Frames").as[Option[String]]
       advantage <- c.downField("HitboxActive").withFocus(avoidNullHitbox).downField("Adv").as[Option[String]]
       moveType <- c.downField("MoveType").as[String]
     } yield {
       KuroganeCharacterMove(
+        owner,
         name,
         advantage match {
           case Some("") => None
@@ -56,4 +58,6 @@ object Kurogane {
   implicit val kuroganeMovementsDecoder: Decoder[List[KuroganeCharacterMove]] = Decoder.decodeList[KuroganeCharacterMove]
   implicit def kuroganeMovementsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacterMove]] =
     jsonOf
+  implicit val kuroganeMovementEncoder: Encoder[KuroganeCharacterMove] = deriveEncoder[KuroganeCharacterMove]
+  implicit val kuroganeMovementsEncoder: Encoder[List[KuroganeCharacterMove]] = Encoder.encodeList[KuroganeCharacterMove]
 }

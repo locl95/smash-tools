@@ -26,7 +26,7 @@ class KuroganeClientSpec extends CatsEffectSuite {
     val program: fs2.Stream[IO, List[KuroganeCharacterMove]] = for {
       client <- BlazeClientBuilder[IO](global).stream
       kuroganeClient = KuroganeClient.impl(client)
-      uri <- fs2.Stream.eval(UriHelper.fromString[IO]("https://api.kuroganehammer.com/api/characters/name/Joker/moves?expand=true&game=ultimate"))
+      uri <- fs2.Stream.eval(UriHelper.fromString[IO]("https://api.kuroganehammer.com/api/characters/name/joker/moves?expand=true&game=ultimate"))
       movements <- fs2.Stream.eval(kuroganeClient.get[List[KuroganeCharacterMove]](uri))
     } yield movements
 

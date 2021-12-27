@@ -8,7 +8,7 @@ object TestHelper {
 
   val movements: List[KuroganeCharacterMove] =
     List(
-      KuroganeCharacterMove("Jab 1", Some(-16), "ground", Some(4)),
-      KuroganeCharacterMove("Jab 1 (Arsene)", None, "ground", Some(4))
+      KuroganeCharacterMove("Joker", "Jab 1", Some(-16), "ground", Some(4)),
+      KuroganeCharacterMove("Joker", "Jab 1 (Arsene)", None, "ground", Some(4))
     )
 }

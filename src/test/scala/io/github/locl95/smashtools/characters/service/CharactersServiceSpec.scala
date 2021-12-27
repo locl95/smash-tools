@@ -34,11 +34,11 @@ final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[
     1.pure[F]
   }
 
-  override def isCached: F[Boolean] = false.pure[F]
+  override def isCached(character:String): F[Boolean] = false.pure[F]
 
-  override def get: F[List[KuroganeCharacterMove]] = movementsList.toList.pure[F]
+  override def get(character:String): F[List[KuroganeCharacterMove]] = movementsList.toList.filter(_.character.toLowerCase == character).pure[F]
 
-  override def cache: F[Int] = 1.pure[F]
+  override def cache(character:String): F[Int] = 1.pure[F]
 }
 
 
@@ -67,8 +67,8 @@ class CharactersServiceSpec extends CatsEffectSuite {
     val program = for {
       client <- BlazeClientBuilder[IO](global).stream
       kuroganeClient = KuroganeClient.impl(client)
-      apiMovements <- fs2.Stream.eval(MovementsService(repository, kuroganeClient).get("Joker"))
-      dbMovements <- fs2.Stream.eval(repository.get)
+      apiMovements <- fs2.Stream.eval(MovementsService(repository, kuroganeClient).get("joker"))
+      dbMovements <- fs2.Stream.eval(repository.get("joker"))
     } yield (apiMovements, dbMovements)
 
     assertIO(
