@@ -15,7 +15,7 @@ final class CharactersRoutes[F[_]: Async](service: CharactersService[F]) extends
     HttpRoutes.of[F] {
       case GET -> Root / "characters" =>
         for {
-          characters <- service.getCharacters
+          characters <- service.get
           resp <- Ok(characters.asJson).adaptError(KuroganeClientError(_))
         } yield resp
     }

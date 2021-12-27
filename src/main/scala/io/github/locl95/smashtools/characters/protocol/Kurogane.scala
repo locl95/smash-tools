@@ -12,9 +12,10 @@ import org.http4s.circe.jsonOf
 object Kurogane {
   implicit val kuroganeCharacterDecoder: Decoder[KuroganeCharacter] = deriveDecoder[KuroganeCharacter]
   implicit val kuroganeCharactersDecoder: Decoder[List[KuroganeCharacter]] = Decoder.decodeList[KuroganeCharacter]
-
-  implicit def KuroganeCharactersDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacter]] =
+  implicit def kuroganeCharactersEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacter]] =
     jsonOf
+  implicit val kuroganeCharacterEncoder: Encoder[KuroganeCharacter] = deriveEncoder[KuroganeCharacter]
+  implicit val kuroganeCharactersEncoder: Encoder[List[KuroganeCharacter]] = Encoder.encodeList[KuroganeCharacter]
 
   implicit val kuroganeMovementDecoder: Decoder[KuroganeCharacterMove] = (c: HCursor) => {
     def avoidNullHitbox(json: Json): Json =
@@ -52,7 +53,7 @@ object Kurogane {
       )
     }
   }
-
-  implicit val kuroganeCharacterEncoder: Encoder[KuroganeCharacter] = deriveEncoder[KuroganeCharacter]
-  implicit val kuroganeCharactersEncoder: Encoder[List[KuroganeCharacter]] = Encoder.encodeList[KuroganeCharacter]
+  implicit val kuroganeMovementsDecoder: Decoder[List[KuroganeCharacterMove]] = Decoder.decodeList[KuroganeCharacterMove]
+  implicit def kuroganeMovementsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacterMove]] =
+    jsonOf
 }
