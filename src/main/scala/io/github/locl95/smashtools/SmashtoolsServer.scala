@@ -1,6 +1,6 @@
 package io.github.locl95.smashtools
 
-import cats.effect.{ConcurrentEffect, ContextShift, Timer}
+import cats.effect.{Async, ConcurrentEffect, ContextShift, Timer}
 import fs2.Stream
 import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
 import org.http4s.server.blaze.BlazeServerBuilder
@@ -24,8 +24,10 @@ object SmashtoolsServer {
       // With Middlewares in place
       finalHttpApp = Logger.httpApp(true, true)(httpApp)
 
+      port <- Stream.eval(Async[F].delay(Option(System.getenv("PORT")).getOrElse("8080").toInt))
+
       exitCode <- BlazeServerBuilder[F](global)
-        .bindHttp(8080, "0.0.0.0")
+        .bindHttp(port, "0.0.0.0")
         .withHttpApp(finalHttpApp)
         .serve
     } yield exitCode
