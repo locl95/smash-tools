@@ -5,6 +5,8 @@ val LogbackVersion = "1.2.5"
 val MunitCatsEffectVersion = "1.0.5"
 val DoobieVersion = "0.12.1"
 
+enablePlugins(JavaAppPackaging)
+
 lazy val root = (project in file("."))
   .settings(
     organization := "io.github.locl95",
