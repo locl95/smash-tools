@@ -10,8 +10,8 @@ import io.github.locl95.smashtools.characters.domain.KuroganeCharacter
 trait CharactersRepository[F[_]] {
   def insert(character: List[KuroganeCharacter]): F[Int]
   def get: F[List[KuroganeCharacter]]
-  def cache(table: String): F[Int]
-  def isCached(table: String): F[Boolean]
+  def cache: F[Int]
+  def isCached: F[Boolean]
 }
 
 final class CharacterPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends CharactersRepository[F] {
@@ -23,15 +23,15 @@ final class CharacterPostgresRepository[F[_]: Sync](transactor: Transactor[F]) e
       .transact(transactor)
   }
 
-  override def isCached(table: String): F[Boolean] =
-    sql"""select valid from cache where "table"=$table"""
+  override def isCached: F[Boolean] =
+    sql"""select valid from cache where "table"='characters'"""
       .query[Boolean]
       .option
       .transact(transactor)
       .map(_.contains(true))
 
-  override def cache(table: String): F[Int] = {
-    sql"""insert into cache ("table", valid) values ($table, true) on conflict ("table") do update set valid=true"""
+  override def cache: F[Int] = {
+    sql"""insert into cache ("table", valid) values ('characters', true) on conflict ("table") do update set valid=true"""
       .update
       .run
       .transact(transactor)

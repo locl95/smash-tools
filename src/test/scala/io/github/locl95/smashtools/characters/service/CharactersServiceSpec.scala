@@ -1,11 +1,11 @@
 package io.github.locl95.smashtools.characters.service
 
 import cats.effect.{IO, Sync}
-import io.github.locl95.smashtools.characters.domain.KuroganeCharacter
-import io.github.locl95.smashtools.characters.repository.CharactersRepository
+import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
+import io.github.locl95.smashtools.characters.repository.{CharactersRepository, MovementsRepository}
 import munit.CatsEffectSuite
 import cats.implicits._
-import io.github.locl95.smashtools.characters.KuroganeClient
+import io.github.locl95.smashtools.characters.{KuroganeClient, TestHelper}
 import org.http4s.client.blaze.BlazeClientBuilder
 
 import scala.collection.mutable
@@ -19,12 +19,28 @@ final class CharactersInMemoryRepository[F[_]: Sync] extends CharactersRepositor
     1.pure[F]
   }
 
-  override def isCached(table: String): F[Boolean] = false.pure[F]
+  override def isCached: F[Boolean] = false.pure[F]
 
   override def get: F[List[KuroganeCharacter]] = charactersList.toList.pure[F]
 
-  override def cache(table: String): F[Int] = 1.pure[F]
+  override def cache: F[Int] = 1.pure[F]
 }
+
+final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[F] {
+  private val movementsList: mutable.ArrayDeque[KuroganeCharacterMove] = mutable.ArrayDeque.empty
+
+  override def insert(movements: List[KuroganeCharacterMove]): F[Int] = {
+    movementsList.appendAll(movements).pure[F]
+    1.pure[F]
+  }
+
+  override def isCached(character:String): F[Boolean] = false.pure[F]
+
+  override def get(character:String): F[List[KuroganeCharacterMove]] = movementsList.toList.filter(_.character.toLowerCase == character).pure[F]
+
+  override def cache(character:String): F[Int] = 1.pure[F]
+}
+
 
 class CharactersServiceSpec extends CatsEffectSuite {
   test("Get Characters should retrieve them from api and insert them in database when cache is false") {
@@ -32,17 +48,36 @@ class CharactersServiceSpec extends CatsEffectSuite {
     val program = for {
       client <- BlazeClientBuilder[IO](global).stream
       kuroganeClient = KuroganeClient.impl(client)
-      apiCharacters <- fs2.Stream.eval(CharactersService(repository, kuroganeClient).getCharacters)
+      apiCharacters <- fs2.Stream.eval(CharactersService(repository, kuroganeClient).get)
       dbCharacters <- fs2.Stream.eval(repository.get)
     } yield (apiCharacters, dbCharacters)
     assertIO(
       program.compile.foldMonoid.map(_._1.take(2)),
-      List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
+      TestHelper.characters
     )
     assertIO(
       program.compile.foldMonoid.map(_._2.take(2)),
-      List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
+      TestHelper.characters
     )
 
+  }
+
+  test("Get Movements should retrieve them from api and insert them in database when cache is false") {
+    val repository = new MovementsInMemoryRepository[IO]
+    val program = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      kuroganeClient = KuroganeClient.impl(client)
+      apiMovements <- fs2.Stream.eval(MovementsService(repository, kuroganeClient).get("joker"))
+      dbMovements <- fs2.Stream.eval(repository.get("joker"))
+    } yield (apiMovements, dbMovements)
+
+    assertIO(
+      program.compile.foldMonoid.map(_._1.take(2)),
+      TestHelper.movements
+    )
+    assertIO(
+      program.compile.foldMonoid.map(_._2.take(2)),
+      TestHelper.movements
+    )
   }
 }

@@ -12,9 +12,10 @@ import org.http4s.circe.jsonOf
 object Kurogane {
   implicit val kuroganeCharacterDecoder: Decoder[KuroganeCharacter] = deriveDecoder[KuroganeCharacter]
   implicit val kuroganeCharactersDecoder: Decoder[List[KuroganeCharacter]] = Decoder.decodeList[KuroganeCharacter]
-
-  implicit def KuroganeCharactersDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacter]] =
+  implicit def kuroganeCharactersEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacter]] =
     jsonOf
+  implicit val kuroganeCharacterEncoder: Encoder[KuroganeCharacter] = deriveEncoder[KuroganeCharacter]
+  implicit val kuroganeCharactersEncoder: Encoder[List[KuroganeCharacter]] = Encoder.encodeList[KuroganeCharacter]
 
   implicit val kuroganeMovementDecoder: Decoder[KuroganeCharacterMove] = (c: HCursor) => {
     def avoidNullHitbox(json: Json): Json =
@@ -27,12 +28,16 @@ object Kurogane {
     val counterRegex = "^Counter/Reflects: ([0-9])+-[0-9]+$".r
     val reflectionRegex = "^Reflection: ([0-9])+-[0-9]+$".r
     for {
+      id <- c.downField("InstanceId").as[String]
+      owner <- c.downField("Owner").as[String]
       name <- c.downField("Name").as[String]
       activeFrames <- c.downField("HitboxActive").withFocus(avoidNullHitbox).downField("Frames").as[Option[String]]
       advantage <- c.downField("HitboxActive").withFocus(avoidNullHitbox).downField("Adv").as[Option[String]]
       moveType <- c.downField("MoveType").as[String]
     } yield {
       KuroganeCharacterMove(
+        id,
+        owner,
         name,
         advantage match {
           case Some("") => None
@@ -52,7 +57,9 @@ object Kurogane {
       )
     }
   }
-
-  implicit val kuroganeCharacterEncoder: Encoder[KuroganeCharacter] = deriveEncoder[KuroganeCharacter]
-  implicit val kuroganeCharactersEncoder: Encoder[List[KuroganeCharacter]] = Encoder.encodeList[KuroganeCharacter]
+  implicit val kuroganeMovementsDecoder: Decoder[List[KuroganeCharacterMove]] = Decoder.decodeList[KuroganeCharacterMove]
+  implicit def kuroganeMovementsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[KuroganeCharacterMove]] =
+    jsonOf
+  implicit val kuroganeMovementEncoder: Encoder[KuroganeCharacterMove] = deriveEncoder[KuroganeCharacterMove]
+  implicit val kuroganeMovementsEncoder: Encoder[List[KuroganeCharacterMove]] = Encoder.encodeList[KuroganeCharacterMove]
 }

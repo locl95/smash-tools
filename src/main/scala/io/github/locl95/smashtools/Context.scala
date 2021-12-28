@@ -6,8 +6,8 @@ import doobie.Transactor
 import doobie.util.ExecutionContexts
 import doobie.util.transactor.Transactor.Aux
 import io.github.locl95.smashtools.characters.{CharactersRoutes, KuroganeClient}
-import io.github.locl95.smashtools.characters.repository.CharacterPostgresRepository
-import io.github.locl95.smashtools.characters.service.CharactersService
+import io.github.locl95.smashtools.characters.repository.{CharacterPostgresRepository, MovementPostgresRepository}
+import io.github.locl95.smashtools.characters.service.{CharactersService, MovementsService}
 import org.flywaydb.core.Flyway
 import org.http4s.client.blaze.BlazeClientBuilder
 
@@ -44,7 +44,8 @@ final case class Context[F[_]: ContextShift: ConcurrentEffect]() {
     kuroganeClient = KuroganeClient.impl[F](client)
     database <- fs2.Stream.eval(databaseProgram)
   } yield new CharactersRoutes[F](
-    new CharactersService[F](new CharacterPostgresRepository[F](database.transactor), kuroganeClient)
+    new CharactersService[F](new CharacterPostgresRepository[F](database.transactor), kuroganeClient),
+    new MovementsService[F](new MovementPostgresRepository[F](database.transactor), kuroganeClient)
   )
 
 }

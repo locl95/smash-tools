@@ -3,6 +3,7 @@ package io.github.locl95.smashtools.characters.protocol
 import io.circe._
 import io.circe.syntax._
 import io.circe.parser._
+import io.github.locl95.smashtools.characters.TestHelper
 import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
 import munit.CatsEffectSuite
 import io.github.locl95.smashtools.characters.protocol.Kurogane._
@@ -10,23 +11,16 @@ import io.github.locl95.smashtools.characters.protocol.Kurogane._
 class KuroganeSpec extends CatsEffectSuite {
   test("I can transform Kurogane Characters Json") {
     val charactersJson = scala.io.Source.fromFile(s"src/test/resources/characters.json")
-    val expectedFirstCharacters: List[KuroganeCharacter] =
-      List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
 
     val charactersFromJson = for {
       json <- parse(charactersJson.getLines().mkString)
       characters <- Decoder.decodeList[KuroganeCharacter].decodeJson(json)
     } yield characters
-    assert(charactersFromJson.map(_.take(2)).contains(expectedFirstCharacters))
+    assert(charactersFromJson.map(_.take(2)).contains(TestHelper.characters))
   }
 
   test("I can transform Kurogane Character's Moves Json") {
     val movementsJson = scala.io.Source.fromFile(s"src/test/resources/character-moves.json")
-    val expectedFirstMovements: List[KuroganeCharacterMove] =
-      List(
-        KuroganeCharacterMove("Jab 1", Some(-16), "ground", Some(4)),
-        KuroganeCharacterMove("Jab 1 (Arsene)", None, "ground", Some(4))
-      )
 
     val movementsFromJson =
       for {
@@ -34,7 +28,7 @@ class KuroganeSpec extends CatsEffectSuite {
         movements <- Decoder.decodeList[KuroganeCharacterMove].decodeJson(json)
       } yield movements
 
-    assert(movementsFromJson.map(_.take(2)).contains(expectedFirstMovements))
+    assert(movementsFromJson.map(_.take(2)).contains(TestHelper.movements))
   }
 
   test("I can transform Characters to Json") {
@@ -46,5 +40,30 @@ class KuroganeSpec extends CatsEffectSuite {
 
     assert(parse(expectedJson).contains(charactersJson))
 
+  }
+
+  test("I can transform Movements to Json") {
+    val charactersJson = TestHelper.movements.asJson
+    val expectedJson =
+      s"""[
+         |  {
+         |    "id" : "42083468d7124245b6b7f58658bb4843",
+         |    "character" : "Joker",
+         |    "name" : "Jab 1",
+         |    "advantage" : -16,
+         |    "type" : "ground",
+         |    "firstFrame" : 4
+         |  },
+         |  {
+         |    "id" : "7a25432add0345549df19a577243a983",
+         |    "character" : "Joker",
+         |    "name" : "Jab 1 (Arsene)",
+         |    "advantage" : null,
+         |    "type" : "ground",
+         |    "firstFrame" : 4
+         |  }
+         |]""".stripMargin
+
+    assert(parse(expectedJson).contains(charactersJson))
   }
 }
