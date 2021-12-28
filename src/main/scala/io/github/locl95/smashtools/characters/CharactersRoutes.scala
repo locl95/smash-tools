@@ -20,7 +20,7 @@ final class CharactersRoutes[F[_]: Async](characterService: CharactersService[F]
         } yield resp
       case GET -> Root / "characters" / character / "moves" =>
         for {
-          characterMovements <- movementsService.get(character)
+          characterMovements <- movementsService.get(character.toLowerCase)
           resp <- Ok(characterMovements.asJson).adaptError(KuroganeClientError(_))
         } yield resp
     }
