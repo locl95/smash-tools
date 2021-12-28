@@ -17,28 +17,31 @@ trait MovementsRepository[F[_]] {
 final class MovementPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends MovementsRepository[F] {
 
   override def insert(movements: List[KuroganeCharacterMove]): F[Int] = {
-    val sql = "insert into movements (character,name,advantage,type,first_frame) values (?,?,?,?,?)"
+    val sql = "insert into movements (id,character,name,advantage,type,first_frame) values (?,?,?,?,?,?)"
     Update[KuroganeCharacterMove](sql)
       .updateMany(movements)
       .transact(transactor)
   }
 
-  override def isCached(character:String): F[Boolean] =
-    sql"""select valid from cache where "table"="${character}_movements""""
+  override def isCached(character:String): F[Boolean] = {
+    val foo = s"${character}_movements"
+    sql"""select valid from cache where "table"=$foo"""
       .query[Boolean]
       .option
       .transact(transactor)
       .map(_.contains(true))
+  }
 
   override def cache(character:String): F[Int] = {
-    sql"""insert into cache ("table", valid) values ("${character}_movements", true) on conflict ("table") do update set valid=true"""
+    val foo = s"${character}_movements"
+    sql"""insert into cache ("table", valid) values ($foo, true) on conflict ("table") do update set valid=true"""
       .update
       .run
       .transact(transactor)
   }
 
   override def get(character:String): F[List[KuroganeCharacterMove]] =
-    sql"""select character,name,advantage,type,first_frame from movements where character="character""""
+    sql"""select id,character,name,advantage,type,first_frame from movements where character=$character"""
       .query[KuroganeCharacterMove]
       .to[List]
       .transact(transactor)

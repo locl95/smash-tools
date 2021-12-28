@@ -47,6 +47,7 @@ class KuroganeSpec extends CatsEffectSuite {
     val expectedJson =
       s"""[
          |  {
+         |    "id" : "42083468d7124245b6b7f58658bb4843",
          |    "character" : "Joker",
          |    "name" : "Jab 1",
          |    "advantage" : -16,
@@ -54,6 +55,7 @@ class KuroganeSpec extends CatsEffectSuite {
          |    "firstFrame" : 4
          |  },
          |  {
+         |    "id" : "7a25432add0345549df19a577243a983",
          |    "character" : "Joker",
          |    "name" : "Jab 1 (Arsene)",
          |    "advantage" : null,

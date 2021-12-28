@@ -28,6 +28,7 @@ object Kurogane {
     val counterRegex = "^Counter/Reflects: ([0-9])+-[0-9]+$".r
     val reflectionRegex = "^Reflection: ([0-9])+-[0-9]+$".r
     for {
+      id <- c.downField("InstanceId").as[String]
       owner <- c.downField("Owner").as[String]
       name <- c.downField("Name").as[String]
       activeFrames <- c.downField("HitboxActive").withFocus(avoidNullHitbox).downField("Frames").as[Option[String]]
@@ -35,6 +36,7 @@ object Kurogane {
       moveType <- c.downField("MoveType").as[String]
     } yield {
       KuroganeCharacterMove(
+        id,
         owner,
         name,
         advantage match {

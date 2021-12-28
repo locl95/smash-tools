@@ -1,6 +1,5 @@
 package io.github.locl95.smashtools.characters
 import cats.effect.Sync
-import cats.implicits._
 import org.http4s.{EntityDecoder, Uri}
 import org.http4s.Method.GET
 import org.http4s.client.Client
@@ -20,7 +19,7 @@ object KuroganeClient {
     val dsl: Http4sClientDsl[F] = new Http4sClientDsl[F]{}
     import dsl._
     def get[A](uri: Uri)(implicit decoder: EntityDecoder[F, A]): F[A] = {
-        C.expect[A](GET(uri)).adaptError{ case t => KuroganeClientError(t)}
+        C.expect[A](GET(uri))
     }
   }
 }

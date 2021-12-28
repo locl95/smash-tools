@@ -24,14 +24,14 @@ final class CharacterPostgresRepository[F[_]: Sync](transactor: Transactor[F]) e
   }
 
   override def isCached: F[Boolean] =
-    sql"""select valid from cache where "table"="characters""""
+    sql"""select valid from cache where "table"='characters'"""
       .query[Boolean]
       .option
       .transact(transactor)
       .map(_.contains(true))
 
   override def cache: F[Int] = {
-    sql"""insert into cache ("table", valid) values ("characters", true) on conflict ("table") do update set valid=true"""
+    sql"""insert into cache ("table", valid) values ('characters', true) on conflict ("table") do update set valid=true"""
       .update
       .run
       .transact(transactor)

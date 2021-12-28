@@ -1,9 +1,8 @@
 create table movements(
-    character text,
+    "id" text not null primary key,
+    "character" text,
     name text,
     advantage integer,
     "type" text not null,
     first_frame integer
-    primary key (character, name),
-    foreign key(character) references characters(name)
 );
