@@ -1,0 +1,2649 @@
+[
+  {
+    "HitboxActive": {
+      "Frames": "2-3",
+      "Adv": "-13",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.4",
+      "OneVOne": "2.88"
+    },
+    "InstanceId": "33f6bbc0d9104d74918b37894b4efcc2",
+    "Name": "Jab 1",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "20",
+    "Angle": "361/361/180/361",
+    "BaseKnockBackSetKnockback": "20/18/18/18",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "25/25/20/20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/33f6bbc0d9104d74918b37894b4efcc2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/33f6bbc0d9104d74918b37894b4efcc2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "2-3",
+      "Adv": "-15",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.2",
+      "OneVOne": "2.64"
+    },
+    "InstanceId": "cc79c4f18cc54b7ebe86fe0ba233c374",
+    "Name": "Jab 2",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "21",
+    "Angle": "361/361/180/361",
+    "BaseKnockBackSetKnockback": "18/18/15/15",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "30/30/25/15",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/cc79c4f18cc54b7ebe86fe0ba233c374?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/cc79c4f18cc54b7ebe86fe0ba233c374?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-8",
+      "Adv": "-13",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4.4",
+      "OneVOne": "5.28"
+    },
+    "InstanceId": "b64724b08f37491795ac25bc48be4bd2",
+    "Name": "Jab 3",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "26",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b64724b08f37491795ac25bc48be4bd2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b64724b08f37491795ac25bc48be4bd2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "9?",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "0.6",
+      "OneVOne": "0.72"
+    },
+    "InstanceId": "6ff7e7a84e824a0786194fde59a8b1b4",
+    "Name": "Rapid Jab",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "8",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "10",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6ff7e7a84e824a0786194fde59a8b1b4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6ff7e7a84e824a0786194fde59a8b1b4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "-29",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3.4",
+      "OneVOne": "4.08"
+    },
+    "InstanceId": "4f6679f86f9a4d2d9c3d47298f1ffab0",
+    "Name": "Rapid Jab Finisher",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "40",
+    "Angle": "50",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "150",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4f6679f86f9a4d2d9c3d47298f1ffab0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4f6679f86f9a4d2d9c3d47298f1ffab0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "-28",
+      "SD": "+1",
+      "ShieldstunMultiplier": "1.3",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "10",
+      "OneVOne": "12"
+    },
+    "InstanceId": "ab9a1de3a6e84cba8f67f577d15db08a",
+    "Name": "Dash Attack",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "48",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "43",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ab9a1de3a6e84cba8f67f577d15db08a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ab9a1de3a6e84cba8f67f577d15db08a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-14",
+      "Adv": "",
+      "SD": "+1",
+      "ShieldstunMultiplier": "1.3",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "4fdc05de907d43d1b56a70ebc713e8a5",
+    "Name": "Dash Attack (Late)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "43",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4fdc05de907d43d1b56a70ebc713e8a5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4fdc05de907d43d1b56a70ebc713e8a5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-8",
+      "Adv": "-14",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "7-8",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5.5",
+      "OneVOne": "6.6"
+    },
+    "InstanceId": "4cc9f18e7b9c438e81b0fb01ccf60cf0",
+    "Name": "Ftilt 1",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "28",
+    "Angle": "366",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4cc9f18e7b9c438e81b0fb01ccf60cf0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4cc9f18e7b9c438e81b0fb01ccf60cf0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-6",
+      "Adv": "-19",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "ffc649977f9e4ee894eef2cbdf5dd267",
+    "Name": "Ftilt 2",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "32",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "110",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ffc649977f9e4ee894eef2cbdf5dd267?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ffc649977f9e4ee894eef2cbdf5dd267?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-15",
+      "Adv": "-14",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "8-15",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7/7/7/9",
+      "OneVOne": "8.4/8.4/8.4/10.8"
+    },
+    "InstanceId": "421d85a3b075464ab02a5425946fe520",
+    "Name": "Utilt",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "32",
+    "Angle": "80/80/80/85",
+    "BaseKnockBackSetKnockback": "55/55/55/28",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100/100/100/120",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/421d85a3b075464ab02a5425946fe520?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/421d85a3b075464ab02a5425946fe520?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "-12",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6/6/7",
+      "OneVOne": "7.2/7.2/8.4"
+    },
+    "InstanceId": "cf390c579d5c4bd0afd8455a14e92501",
+    "Name": "Dtilt",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "29",
+    "Angle": "73/73/78/78",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "85",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/cf390c579d5c4bd0afd8455a14e92501?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/cf390c579d5c4bd0afd8455a14e92501?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-17",
+      "Adv": "-22",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "16-17",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "15/15/19",
+      "OneVOne": "18/18/22.8"
+    },
+    "InstanceId": "4535f5a9d7424992ae96a9b4bd34ab19",
+    "Name": "Fsmash",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "52",
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "103/103/99",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4535f5a9d7424992ae96a9b4bd34ab19?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4535f5a9d7424992ae96a9b4bd34ab19?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-15",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "12-18",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "28bd5a7fa39b47b68d12e5e32b51f5b9",
+    "Name": "Usmash (Hit 1)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "52",
+    "Angle": "75/105",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/28bd5a7fa39b47b68d12e5e32b51f5b9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/28bd5a7fa39b47b68d12e5e32b51f5b9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-18",
+      "Adv": "-26",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "7e229cfce45146bbb0200b4394e7d02d",
+    "Name": "Usmash (Hit 2)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "90",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "82",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7e229cfce45146bbb0200b4394e7d02d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7e229cfce45146bbb0200b4394e7d02d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12-13",
+      "Adv": "-24",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "4fe594365be44e7cb914260de5d384f3",
+    "Name": "Dsmash (Hit 1)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "46",
+    "Angle": "30",
+    "BaseKnockBackSetKnockback": "25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4fe594365be44e7cb914260de5d384f3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4fe594365be44e7cb914260de5d384f3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-17",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14",
+      "OneVOne": "16.8"
+    },
+    "InstanceId": "9ccb3c4678784aecb54e7e68460ff483",
+    "Name": "Dsmash (Hit 2)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "30",
+    "BaseKnockBackSetKnockback": "25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9ccb3c4678784aecb54e7e68460ff483?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9ccb3c4678784aecb54e7e68460ff483?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-6",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "2dbccb386a6d4029bf60e4842dc34c33",
+    "Name": "Footstool Attack",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "12",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2dbccb386a6d4029bf60e4842dc34c33?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2dbccb386a6d4029bf60e4842dc34c33?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "14ac9d639b954ea885543b689fb19b7b",
+    "Name": "Standing Grab",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "35",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/14ac9d639b954ea885543b689fb19b7b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/14ac9d639b954ea885543b689fb19b7b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "c2ea8e2ae6de419d8b2861e200be203c",
+    "Name": "Dash Grab",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "43",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c2ea8e2ae6de419d8b2861e200be203c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c2ea8e2ae6de419d8b2861e200be203c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "16b2e2fc3c92426fa0fe6a665fd3a80b",
+    "Name": "Pivot Grab",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "37",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/16b2e2fc3c92426fa0fe6a665fd3a80b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/16b2e2fc3c92426fa0fe6a665fd3a80b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-17",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "0a9d4b1f6f254ba1a90709d52f694e28",
+    "Name": "Spotdodge",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "26",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0a9d4b1f6f254ba1a90709d52f694e28?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0a9d4b1f6f254ba1a90709d52f694e28?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-15",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "b8262c37c69845f4a8384809606db007",
+    "Name": "Forward Roll",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "30",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b8262c37c69845f4a8384809606db007?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b8262c37c69845f4a8384809606db007?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-16",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "fbf36f58af48417aa369e81ccd29e88b",
+    "Name": "Back Roll",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "35",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fbf36f58af48417aa369e81ccd29e88b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fbf36f58af48417aa369e81ccd29e88b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-30",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "1e114232a1014bf79d8304fb1dffcfcf",
+    "Name": "Airdodge",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "43",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1e114232a1014bf79d8304fb1dffcfcf?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1e114232a1014bf79d8304fb1dffcfcf?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "472e2aa4c9c64ca1b24bfa60a1429026",
+    "Name": "Directional Airdodge (F/B)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "70",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/472e2aa4c9c64ca1b24bfa60a1429026?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/472e2aa4c9c64ca1b24bfa60a1429026?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "b47761906eb247fa9a7b09fc92c1b36e",
+    "Name": "Directional Airdodge (U)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "88",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b47761906eb247fa9a7b09fc92c1b36e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b47761906eb247fa9a7b09fc92c1b36e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "4f1578acf29d453caa872c81b4d1859e",
+    "Name": "Directional Airdodge (D)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "59",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4f1578acf29d453caa872c81b4d1859e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4f1578acf29d453caa872c81b4d1859e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-17",
+      "Adv": "-13",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "3",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "305a9488feb442979c39b8021b3d9603",
+    "Name": "Nair",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "48",
+    "Angle": "367",
+    "BaseKnockBackSetKnockback": "10",
+    "LandingLag": "15",
+    "AutoCancel": "",
+    "KnockbackGrowth": "100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/305a9488feb442979c39b8021b3d9603?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/305a9488feb442979c39b8021b3d9603?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "18-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "0b6ae2789dce448da727198265700d74",
+    "Name": "Nair (Final Hit)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "45",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "140",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0b6ae2789dce448da727198265700d74?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0b6ae2789dce448da727198265700d74?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-12",
+      "Adv": "-8",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "9/11",
+      "OneVOne": "10.8/13.2"
+    },
+    "InstanceId": "ea9993b4504540dd9c217462ed7e2b3d",
+    "Name": "Fair",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "48",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "50/55",
+    "LandingLag": "13",
+    "AutoCancel": "",
+    "KnockbackGrowth": "60",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ea9993b4504540dd9c217462ed7e2b3d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ea9993b4504540dd9c217462ed7e2b3d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "14-15",
+      "Adv": "-10",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14.5",
+      "OneVOne": "17.4"
+    },
+    "InstanceId": "014df676bfaa4990851ac4385303d3ec",
+    "Name": "Bair",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "62",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "23",
+    "LandingLag": "16",
+    "AutoCancel": "",
+    "KnockbackGrowth": "100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/014df676bfaa4990851ac4385303d3ec?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/014df676bfaa4990851ac4385303d3ec?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "-6",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "59a390ded1c7408998f98ea0e5df4e27",
+    "Name": "Uair",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "39",
+    "Angle": "85",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": "10",
+    "AutoCancel": "",
+    "KnockbackGrowth": "110",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/59a390ded1c7408998f98ea0e5df4e27?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/59a390ded1c7408998f98ea0e5df4e27?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "-13",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "11",
+      "OneVOne": "13.2"
+    },
+    "InstanceId": "aa3f19ca2ae547bb89296ff526dd5108",
+    "Name": "Dair",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "45",
+    "Angle": "361/270",
+    "BaseKnockBackSetKnockback": "15/25",
+    "LandingLag": "18",
+    "AutoCancel": "",
+    "KnockbackGrowth": "92/90",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/aa3f19ca2ae547bb89296ff526dd5108?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/aa3f19ca2ae547bb89296ff526dd5108?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "11-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "9",
+      "OneVOne": "10.8"
+    },
+    "InstanceId": "4fbec8f2220542dfba3ef9bbec5bc15c",
+    "Name": "Dair (Late)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "15",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "92",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4fbec8f2220542dfba3ef9bbec5bc15c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4fbec8f2220542dfba3ef9bbec5bc15c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14",
+      "OneVOne": "16.8"
+    },
+    "InstanceId": "7454cdf614084122ba3d20db0a4d905e",
+    "Name": "Ptooie",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7454cdf614084122ba3d20db0a4d905e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7454cdf614084122ba3d20db0a4d905e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "18",
+      "OneVOne": "21.6"
+    },
+    "InstanceId": "cdd99ab947444ed29836dbf85e850618",
+    "Name": "Ptooie",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/cdd99ab947444ed29836dbf85e850618?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/cdd99ab947444ed29836dbf85e850618?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "fac271acb3b842d9b6074aafd8ee375e",
+    "Name": "Ptooie (Throw)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "42",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fac271acb3b842d9b6074aafd8ee375e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fac271acb3b842d9b6074aafd8ee375e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "6f55972ede2e42c68baae81122471ed4",
+    "Name": "Ptooie (Swallow)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "21",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6f55972ede2e42c68baae81122471ed4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6f55972ede2e42c68baae81122471ed4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "88f8b86146804b358970d7b72318b094",
+    "Name": "Ptooie (Failure)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "71",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/88f8b86146804b358970d7b72318b094?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/88f8b86146804b358970d7b72318b094?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "23-119",
+      "Adv": "",
+      "SD": "+0.1",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "4",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.2/0.6",
+      "OneVOne": "1.44/0.72"
+    },
+    "InstanceId": "251405b732954f18840b26fc644eac2e",
+    "Name": "Poison Breath (Uncharged)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "49",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/251405b732954f18840b26fc644eac2e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/251405b732954f18840b26fc644eac2e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "23-156",
+      "Adv": "",
+      "SD": "+0.1",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "7",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.8/1.6",
+      "OneVOne": "3.36/1.92"
+    },
+    "InstanceId": "41fca7e1b0ab4c9a8f9ab1635c45717c",
+    "Name": "Poison Breath (Charged)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "0",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/41fca7e1b0ab4c9a8f9ab1635c45717c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/41fca7e1b0ab4c9a8f9ab1635c45717c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.2",
+      "OneVOne": "1.44"
+    },
+    "InstanceId": "1c226432883444c99f5728a71372cad8",
+    "Name": "Piranhacopter",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "145",
+    "BaseKnockBackSetKnockback": "F: 40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1c226432883444c99f5728a71372cad8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1c226432883444c99f5728a71372cad8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "6",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.2",
+      "OneVOne": "1.44"
+    },
+    "InstanceId": "99b42ca962424aa5b684129645e47938",
+    "Name": "Piranhacopter",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "100",
+    "BaseKnockBackSetKnockback": "F: 20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/99b42ca962424aa5b684129645e47938?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/99b42ca962424aa5b684129645e47938?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-55",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "6",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.2",
+      "OneVOne": "1.44"
+    },
+    "InstanceId": "fce356bcbc4c4d719c1a9ef793138060",
+    "Name": "Piranhacopter",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "367",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fce356bcbc4c4d719c1a9ef793138060?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fce356bcbc4c4d719c1a9ef793138060?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "56-67",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "6",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4/0.8/0.8",
+      "OneVOne": "4.8/0.96/0.96"
+    },
+    "InstanceId": "400cd61f3a9e4df0b6ccb1e4ae20b39a",
+    "Name": "Piranhacopter",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "60/367/367",
+    "BaseKnockBackSetKnockback": "90/15/15",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "60/90/90",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/400cd61f3a9e4df0b6ccb1e4ae20b39a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/400cd61f3a9e4df0b6ccb1e4ae20b39a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Damage Based Armor (15%): 18-86",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": "|"
+    },
+    "InstanceId": "2a83ac2f1f4743e781aa259db6566d46",
+    "Name": "Long-Stem Strike (Charging)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2a83ac2f1f4743e781aa259db6566d46?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2a83ac2f1f4743e781aa259db6566d46?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Inert Detector: 19-24",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "21-26",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "c40ff01920be42f69ae9aeb182e9b705",
+    "Name": "Long-Stem Strike",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "65",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c40ff01920be42f69ae9aeb182e9b705?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c40ff01920be42f69ae9aeb182e9b705?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "1-2",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "21-26",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": "|"
+    },
+    "InstanceId": "630f7e5fb9574b89a7d72efd3fe3d873",
+    "Name": "Long-Stem Strike",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "41",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/630f7e5fb9574b89a7d72efd3fe3d873?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/630f7e5fb9574b89a7d72efd3fe3d873?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Inert Detector: 78-84",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "80-86",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": "|"
+    },
+    "InstanceId": "99484f1bff6c4b6cabf844d3b3b46757",
+    "Name": "Long-Stem Strike (Full Charge)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/99484f1bff6c4b6cabf844d3b3b46757?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/99484f1bff6c4b6cabf844d3b3b46757?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "85-86",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "26",
+      "OneVOne": "31.2"
+    },
+    "InstanceId": "76ea04cf7c064368a8f7d227071ccacd",
+    "Name": "Long-Stem Strike (Full Charge)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "126",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "55",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/76ea04cf7c064368a8f7d227071ccacd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/76ea04cf7c064368a8f7d227071ccacd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "85-86",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "26",
+      "OneVOne": "31.2"
+    },
+    "InstanceId": "b325d8d12525405ba453c0b15df8c1f8",
+    "Name": "Long-Stem Strike (Full Charge, Sideways)",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": "136",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "55",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b325d8d12525405ba453c0b15df8c1f8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b325d8d12525405ba453c0b15df8c1f8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "3, 8",
+      "OneVOne": "3.6, 9.6"
+    },
+    "InstanceId": "3e57f45e78074074b5f81f469f94ffa7",
+    "Name": "Fthrow",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": null,
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "65",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3e57f45e78074074b5f81f469f94ffa7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3e57f45e78074074b5f81f469f94ffa7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "11",
+      "OneVOne": "13.2"
+    },
+    "InstanceId": "3bf9b07d34be4bca80f694b19946be36",
+    "Name": "Bthrow",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": null,
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "54",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "60",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3bf9b07d34be4bca80f694b19946be36?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3bf9b07d34be4bca80f694b19946be36?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "88a680cac5d54357b4d0306157f556e5",
+    "Name": "Uthrow",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": null,
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "64",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "67",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/88a680cac5d54357b4d0306157f556e5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/88a680cac5d54357b4d0306157f556e5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "2.5, 2.5, 3",
+      "OneVOne": "3, 3, 3.6"
+    },
+    "InstanceId": "f0c74c92a64a4b3b99ba15074f69cd26",
+    "Name": "Dthrow",
+    "OwnerId": 69,
+    "Owner": "PiranhaPlant",
+    "FirstActionableFrame": null,
+    "Angle": "66",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f0c74c92a64a4b3b99ba15074f69cd26?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f0c74c92a64a4b3b99ba15074f69cd26?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/PiranhaPlant?game=smash4"
+      }
+    ]
+  }
+]

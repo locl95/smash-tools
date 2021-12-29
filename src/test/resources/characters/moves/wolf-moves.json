@@ -1,0 +1,2110 @@
+[
+  {
+    "HitboxActive": {
+      "Frames": "4",
+      "Adv": "-14",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "f189d8a2b2a0485ab892310cb2149dd8",
+    "Name": "Jab 1",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "22",
+    "Angle": "361/361/180/361",
+    "BaseKnockBackSetKnockback": "25/25/20/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "25/25/15/15",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f189d8a2b2a0485ab892310cb2149dd8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f189d8a2b2a0485ab892310cb2149dd8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4",
+      "Adv": "-14",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "0017ac939a18419191e1d2dcdb43b0a5",
+    "Name": "Jab 2",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "22",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "25/25/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "25/25/20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0017ac939a18419191e1d2dcdb43b0a5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0017ac939a18419191e1d2dcdb43b0a5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4",
+      "Adv": "-25",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "a54e25c8fd794b9bbb204b3e6dde1ed9",
+    "Name": "Jab 3",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "35",
+    "Angle": "55",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "176",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a54e25c8fd794b9bbb204b3e6dde1ed9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a54e25c8fd794b9bbb204b3e6dde1ed9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "11-14",
+      "Adv": "-15",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "11",
+      "OneVOne": "13.2"
+    },
+    "InstanceId": "d7ea9e9db0ea4470a44c1741c6aea747",
+    "Name": "Dash Attack",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "38",
+    "Angle": "80/50/361",
+    "BaseKnockBackSetKnockback": "40/40/45",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "92/91/85",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d7ea9e9db0ea4470a44c1741c6aea747?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d7ea9e9db0ea4470a44c1741c6aea747?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-18",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "e46228694af54859a6df543fcb06e0c9",
+    "Name": "Dash Attack  (Late)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "80/50/361",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "60",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e46228694af54859a6df543fcb06e0c9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e46228694af54859a6df543fcb06e0c9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "fdfe0add3dcb4e9eaf0bf016ae494386",
+    "Name": "Ftilt (Hit 1, All Angles)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "35",
+    "Angle": "60",
+    "BaseKnockBackSetKnockback": "10",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fdfe0add3dcb4e9eaf0bf016ae494386?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fdfe0add3dcb4e9eaf0bf016ae494386?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "-18",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "62795ed3ecaa4623baa22eba3181ad8d",
+    "Name": "Ftilt (Hit 2, All Angles)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "106",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/62795ed3ecaa4623baa22eba3181ad8d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/62795ed3ecaa4623baa22eba3181ad8d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-11",
+      "Adv": "-18",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "10/8/9/10",
+      "OneVOne": "12/9.6/10.8/12"
+    },
+    "InstanceId": "42ab77f8f5f549328470ec67c9fde319",
+    "Name": "Utilt",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "36",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "115/115/115/120",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/42ab77f8f5f549328470ec67c9fde319?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/42ab77f8f5f549328470ec67c9fde319?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-6",
+      "Adv": "-15",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2, 40% Trip"
+    },
+    "InstanceId": "08e5d34b0d554475aafbcfc10bcc4800",
+    "Name": "Dtilt",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "28",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "25",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/08e5d34b0d554475aafbcfc10bcc4800?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/08e5d34b0d554475aafbcfc10bcc4800?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-23",
+      "Adv": "-10",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "15",
+      "OneVOne": "18"
+    },
+    "InstanceId": "b509ef9cd72a4ab09d0d155541381578",
+    "Name": "Fsmash",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "42",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "106",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b509ef9cd72a4ab09d0d155541381578?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b509ef9cd72a4ab09d0d155541381578?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-15",
+      "Adv": "-29",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "b63f3db53d264f6382ac9d0469e584ad",
+    "Name": "Usmash (Hit 1)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "48",
+    "Angle": "110/110/125/125",
+    "BaseKnockBackSetKnockback": "70/70/80/80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "15",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b63f3db53d264f6382ac9d0469e584ad?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b63f3db53d264f6382ac9d0469e584ad?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-23",
+      "Adv": "-18",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "c7ed02df400b46f7a1ee86e60696efc9",
+    "Name": "Usmash (Hit 2)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "95",
+    "BaseKnockBackSetKnockback": "85",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "65",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c7ed02df400b46f7a1ee86e60696efc9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c7ed02df400b46f7a1ee86e60696efc9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "14-15",
+      "Adv": "-19",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14/16/16",
+      "OneVOne": "16.8/19.2/19.2"
+    },
+    "InstanceId": "3b691e2bdadf4296bd041f0b7c33b20b",
+    "Name": "Dsmash (Hit 1)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "44",
+    "Angle": "35/30/30",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80/90/90",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3b691e2bdadf4296bd041f0b7c33b20b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3b691e2bdadf4296bd041f0b7c33b20b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "21-22",
+      "Adv": "-13",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12/14/14",
+      "OneVOne": "14.4/16.8/16.8"
+    },
+    "InstanceId": "f04ce3b7b97b47efb8acdee5b9bcda9a",
+    "Name": "Dsmash (Hit 2)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "35/30/30",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80/90/90",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f04ce3b7b97b47efb8acdee5b9bcda9a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f04ce3b7b97b47efb8acdee5b9bcda9a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "b568ccbee7824c61b7188c86f10ce15c",
+    "Name": "Standing Grab",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "37",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b568ccbee7824c61b7188c86f10ce15c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b568ccbee7824c61b7188c86f10ce15c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "14d6fe4a0b4a4e14aa527fb9e7b72720",
+    "Name": "Dash Grab",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "45",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/14d6fe4a0b4a4e14aa527fb9e7b72720?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/14d6fe4a0b4a4e14aa527fb9e7b72720?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "54b95d1f4e3e4fad80a90cc96b0cb4dd",
+    "Name": "Pivot Grab",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "40",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/54b95d1f4e3e4fad80a90cc96b0cb4dd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/54b95d1f4e3e4fad80a90cc96b0cb4dd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "12c1bb6f803f41478680671564037014",
+    "Name": "Spotdodge",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/12c1bb6f803f41478680671564037014?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/12c1bb6f803f41478680671564037014?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "ff50c65670d24779b143f3ab4df04ede",
+    "Name": "Forward Roll",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ff50c65670d24779b143f3ab4df04ede?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ff50c65670d24779b143f3ab4df04ede?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "adebf28aa45141bea57b83ab2975c814",
+    "Name": "Back Roll",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/adebf28aa45141bea57b83ab2975c814?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/adebf28aa45141bea57b83ab2975c814?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "a25eb21cebd14e709996b511df070514",
+    "Name": "Airdodge",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a25eb21cebd14e709996b511df070514?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a25eb21cebd14e709996b511df070514?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "a9e6597433bd44939cc72d7e28b3a560",
+    "Name": "Directional Airdodge (F/B)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a9e6597433bd44939cc72d7e28b3a560?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a9e6597433bd44939cc72d7e28b3a560?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "bcff267e1b064a249335127ae46cd4a7",
+    "Name": "Directional Airdodge (U)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bcff267e1b064a249335127ae46cd4a7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bcff267e1b064a249335127ae46cd4a7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "564f301414ad4b1380d210de342383f1",
+    "Name": "Directional Airdodge (D)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/564f301414ad4b1380d210de342383f1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/564f301414ad4b1380d210de342383f1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "-4",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "5d57d656f8f9473bb11dca8dcbf33536",
+    "Name": "Nair",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "43",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "30",
+    "LandingLag": "9",
+    "AutoCancel": "1-6, 38>",
+    "KnockbackGrowth": "75",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5d57d656f8f9473bb11dca8dcbf33536?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5d57d656f8f9473bb11dca8dcbf33536?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-26",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "f12f84fd0fe8405dbffb66d76f144a14",
+    "Name": "Nair (Late)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f12f84fd0fe8405dbffb66d76f144a14?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f12f84fd0fe8405dbffb66d76f144a14?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "-6",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "9",
+      "OneVOne": "10.8"
+    },
+    "InstanceId": "7d06cbc8914d422d9bc7b7ac0b1846eb",
+    "Name": "Fair",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "41",
+    "Angle": "60",
+    "BaseKnockBackSetKnockback": "45",
+    "LandingLag": "10",
+    "AutoCancel": "29>",
+    "KnockbackGrowth": "85",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7d06cbc8914d422d9bc7b7ac0b1846eb?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7d06cbc8914d422d9bc7b7ac0b1846eb?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-15",
+      "Adv": "-9",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "11/13/15",
+      "OneVOne": "13.2/15.6/18"
+    },
+    "InstanceId": "c48d76fe3d4548fdb040517b77eff6f3",
+    "Name": "Bair",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "45",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "37",
+    "LandingLag": "15",
+    "AutoCancel": "1-7, 18>",
+    "KnockbackGrowth": "96",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c48d76fe3d4548fdb040517b77eff6f3?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c48d76fe3d4548fdb040517b77eff6f3?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "-5",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "bcce292e73474244a042e89a286e650e",
+    "Name": "Uair",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "39",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "30",
+    "LandingLag": "10",
+    "AutoCancel": "1-3, 30>",
+    "KnockbackGrowth": "85",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bcce292e73474244a042e89a286e650e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bcce292e73474244a042e89a286e650e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-17",
+      "Adv": "-13",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "13/15",
+      "OneVOne": "15.6/18"
+    },
+    "InstanceId": "04ab060d3475446e9e8afe5e6bbb1f3b",
+    "Name": "Dair",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "54",
+    "Angle": "270",
+    "BaseKnockBackSetKnockback": "6",
+    "LandingLag": "19",
+    "AutoCancel": "1-4, 34>",
+    "KnockbackGrowth": "90",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/04ab060d3475446e9e8afe5e6bbb1f3b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/04ab060d3475446e9e8afe5e6bbb1f3b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "272eb93b1ecd4329be22ccdf3f054c49",
+    "Name": "Blaster (Bayonet)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "53",
+    "Angle": "60",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "37",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/272eb93b1ecd4329be22ccdf3f054c49?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/272eb93b1ecd4329be22ccdf3f054c49?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16-50",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": "|"
+    },
+    "InstanceId": "f5f7cc02274c4b028c4fdf7e01b5c38e",
+    "Name": "Blaster (Shot)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f5f7cc02274c4b028c4fdf7e01b5c38e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f5f7cc02274c4b028c4fdf7e01b5c38e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": ""
+    },
+    "InstanceId": "61e87c4ed34d490ea39119b25f1f8589",
+    "Name": "Wolf Flash (Travel)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "60",
+    "BaseKnockBackSetKnockback": "68",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "60",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/61e87c4ed34d490ea39119b25f1f8589?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/61e87c4ed34d490ea39119b25f1f8589?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "20/15",
+      "OneVOne": "24/18"
+    },
+    "InstanceId": "3e9421b99bc0485ebd28bce391a5665e",
+    "Name": "Wolf Flash (Sweetspot)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "270/28",
+    "BaseKnockBackSetKnockback": "20/30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100/85",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3e9421b99bc0485ebd28bce391a5665e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3e9421b99bc0485ebd28bce391a5665e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "18-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "056e888c56574b32a2cd432f343d61e0",
+    "Name": "Fire Wolf (Hit 1)",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "93",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "25",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/056e888c56574b32a2cd432f343d61e0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/056e888c56574b32a2cd432f343d61e0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "?",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.5",
+      "OneVOne": "3"
+    },
+    "InstanceId": "5adbcb9eed9547e982ae7f276e949f35",
+    "Name": "Fire Wolf",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "40/367/40/367",
+    "BaseKnockBackSetKnockback": "60/98/60/88",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5adbcb9eed9547e982ae7f276e949f35?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5adbcb9eed9547e982ae7f276e949f35?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "?",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.5",
+      "OneVOne": "3"
+    },
+    "InstanceId": "278d9fa23ba94e8eb82862327d0752f5",
+    "Name": "Fire Wolf",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "40/367/40/367",
+    "BaseKnockBackSetKnockback": "70/88/70/78",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/278d9fa23ba94e8eb82862327d0752f5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/278d9fa23ba94e8eb82862327d0752f5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "?",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "125863b6c63845fb84083db230194f0d",
+    "Name": "Fire Wolf",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "148",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/125863b6c63845fb84083db230194f0d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/125863b6c63845fb84083db230194f0d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "?",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "32b7b35052354827a3f41d703cac4225",
+    "Name": "Fire Wolf",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "136",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/32b7b35052354827a3f41d703cac4225?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/32b7b35052354827a3f41d703cac4225?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9 (Intangible: 6-9, Reflects 10-, ?× 50% Break Threshold)",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4",
+      "OneVOne": "4.8"
+    },
+    "InstanceId": "9957095c66c04438b142a1c353121c4d",
+    "Name": "Reflector",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": "31",
+    "Angle": "65",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "85",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9957095c66c04438b142a1c353121c4d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9957095c66c04438b142a1c353121c4d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "5, 4",
+      "OneVOne": "6, 4.8"
+    },
+    "InstanceId": "464118cdcaa34fb18a124b6b4c74893d",
+    "Name": "Fthrow",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": null,
+    "Angle": "37",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "57",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/464118cdcaa34fb18a124b6b4c74893d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/464118cdcaa34fb18a124b6b4c74893d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "6, 5",
+      "OneVOne": "7.2, 6"
+    },
+    "InstanceId": "04962e701e064ba785873859ef14714b",
+    "Name": "Bthrow",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": null,
+    "Angle": "50",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "150",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/04962e701e064ba785873859ef14714b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/04962e701e064ba785873859ef14714b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "5, 2",
+      "OneVOne": "6, 2.4"
+    },
+    "InstanceId": "cdeed5e66c31406e88af0226fd97d7e1",
+    "Name": "Uthrow",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": null,
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "110",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/cdeed5e66c31406e88af0226fd97d7e1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/cdeed5e66c31406e88af0226fd97d7e1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "8.5",
+      "OneVOne": "10.2"
+    },
+    "InstanceId": "350d0cb497c746828a5237fc64848a7c",
+    "Name": "Dthrow",
+    "OwnerId": 68,
+    "Owner": "Wolf",
+    "FirstActionableFrame": null,
+    "Angle": "44",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "65",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/350d0cb497c746828a5237fc64848a7c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/350d0cb497c746828a5237fc64848a7c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Wolf?game=smash4"
+      }
+    ]
+  }
+]

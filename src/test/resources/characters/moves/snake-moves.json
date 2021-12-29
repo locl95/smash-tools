@@ -1,0 +1,2208 @@
+[
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "hover here please\n  |\n",
+      "OneVOne": ""
+    },
+    "InstanceId": "a862793940974e2484e979267459765c",
+    "Name": "Jab 1",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "16",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a862793940974e2484e979267459765c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a862793940974e2484e979267459765c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "3be8ada2afba44318cfb4b46648a6170",
+    "Name": "Jab 2",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "25",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3be8ada2afba44318cfb4b46648a6170?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3be8ada2afba44318cfb4b46648a6170?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "6cb9f5bffea44c359a2533acd203f24a",
+    "Name": "Jab 3",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "47",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6cb9f5bffea44c359a2533acd203f24a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6cb9f5bffea44c359a2533acd203f24a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-8 (Head and Arms Intangible: 5-12)",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "2a9d679565434e0aa95d7b3f98c3c4b9",
+    "Name": "Dash Attack",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "42",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2a9d679565434e0aa95d7b3f98c3c4b9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2a9d679565434e0aa95d7b3f98c3c4b9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "9d5ce827867944d093eb9d0748c1cc9e",
+    "Name": "Dash Attack (Late)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9d5ce827867944d093eb9d0748c1cc9e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9d5ce827867944d093eb9d0748c1cc9e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "76c366f6958240ee95be31a7cfecd9d8",
+    "Name": "Ftilt 1",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "32",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/76c366f6958240ee95be31a7cfecd9d8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/76c366f6958240ee95be31a7cfecd9d8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "39fd3f5cd9a643e096c07d3b48aacf28",
+    "Name": "Ftilt 2",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "40",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/39fd3f5cd9a643e096c07d3b48aacf28?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/39fd3f5cd9a643e096c07d3b48aacf28?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "2f8cab17813042889c98f882943a55c4",
+    "Name": "Utilt",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "38",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2f8cab17813042889c98f882943a55c4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2f8cab17813042889c98f882943a55c4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-13",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "2b0317bfc4704a4a8912321a9cf9e13d",
+    "Name": "Utilt (Late)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2b0317bfc4704a4a8912321a9cf9e13d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2b0317bfc4704a4a8912321a9cf9e13d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "690f5d26b10f4f368ca1b90fb7aaefe2",
+    "Name": "Dtilt",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "31",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/690f5d26b10f4f368ca1b90fb7aaefe2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/690f5d26b10f4f368ca1b90fb7aaefe2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "41-43",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "d77f775658c445ec9403786e6d8aeb0f",
+    "Name": "Fsmash",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "74",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d77f775658c445ec9403786e6d8aeb0f?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d77f775658c445ec9403786e6d8aeb0f?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "11-12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "3866c5e6b9b54c3db2e332eb7c1d2594",
+    "Name": "Usmash (Launcher)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "51",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3866c5e6b9b54c3db2e332eb7c1d2594?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3866c5e6b9b54c3db2e332eb7c1d2594?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "36-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "36795ffb6dc4401b85d6c95e72706e7d",
+    "Name": "Usmash (Projectile)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/36795ffb6dc4401b85d6c95e72706e7d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/36795ffb6dc4401b85d6c95e72706e7d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "c162dd0c11614a20bc6044ea58e428d2",
+    "Name": "Dsmash (Hit 1)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "45",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c162dd0c11614a20bc6044ea58e428d2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c162dd0c11614a20bc6044ea58e428d2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "20-22",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "9a5d15321b004bb9b7a22786542fdbc9",
+    "Name": "Dsmash (Hit 2)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9a5d15321b004bb9b7a22786542fdbc9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9a5d15321b004bb9b7a22786542fdbc9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "fcdcaaa190ef441cadd59f45aa196f3a",
+    "Name": "Standing Grab",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "35",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fcdcaaa190ef441cadd59f45aa196f3a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fcdcaaa190ef441cadd59f45aa196f3a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "11-12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "2fdbb6e5dc4944389bacf852ab6e7389",
+    "Name": "Dash Grab",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "43",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2fdbb6e5dc4944389bacf852ab6e7389?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2fdbb6e5dc4944389bacf852ab6e7389?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "645d9f41c5b24d3ca4ccc0467d2d1dfe",
+    "Name": "Pivot Grab",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "38",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/645d9f41c5b24d3ca4ccc0467d2d1dfe?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/645d9f41c5b24d3ca4ccc0467d2d1dfe?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "78637a5eaa1b401f9fc2e577b67a308c",
+    "Name": "Spotdodge",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/78637a5eaa1b401f9fc2e577b67a308c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/78637a5eaa1b401f9fc2e577b67a308c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "ba5bcda30333433fb69ca1c3837fec4b",
+    "Name": "Forward Roll",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ba5bcda30333433fb69ca1c3837fec4b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ba5bcda30333433fb69ca1c3837fec4b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "bcab46084c0f4d0faa5dfac0d6ceb187",
+    "Name": "Back Roll",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bcab46084c0f4d0faa5dfac0d6ceb187?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bcab46084c0f4d0faa5dfac0d6ceb187?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "358dc519698547ad8bfbf70baa112880",
+    "Name": "Airdodge",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/358dc519698547ad8bfbf70baa112880?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/358dc519698547ad8bfbf70baa112880?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "dc9e2fffae2047cf89f15a4eef3c810c",
+    "Name": "Directional Airdodge",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/dc9e2fffae2047cf89f15a4eef3c810c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/dc9e2fffae2047cf89f15a4eef3c810c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-11, 18-19, 26-27",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "671b7331a8cb402fa63ecd7e60e01bb6",
+    "Name": "Nair (Hits 1-3)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "60",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "16",
+    "AutoCancel": "",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/671b7331a8cb402fa63ecd7e60e01bb6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/671b7331a8cb402fa63ecd7e60e01bb6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "36-38",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "a09c9da046dc42d1a664d124fe841370",
+    "Name": "Nair (Hit 4)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a09c9da046dc42d1a664d124fe841370?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a09c9da046dc42d1a664d124fe841370?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "23-26",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "1c39b810093c4daca58c4af06d2f5ffa",
+    "Name": "Fair",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "70",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "19",
+    "AutoCancel": "",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1c39b810093c4daca58c4af06d2f5ffa?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1c39b810093c4daca58c4af06d2f5ffa?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "03fe3392e6be468b80835f696e1b0eb7",
+    "Name": "Bair",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "43",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "19",
+    "AutoCancel": "",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/03fe3392e6be468b80835f696e1b0eb7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/03fe3392e6be468b80835f696e1b0eb7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-26",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "ab8d8fd322104c89bdaa105803004a8a",
+    "Name": "Bair (Late)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ab8d8fd322104c89bdaa105803004a8a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ab8d8fd322104c89bdaa105803004a8a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "71737078c0174205aaab0fed02ccfa2f",
+    "Name": "Uair",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "48",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "15",
+    "AutoCancel": "",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/71737078c0174205aaab0fed02ccfa2f?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/71737078c0174205aaab0fed02ccfa2f?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-23",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "562cbdfaecd24459971fc5ea0e100273",
+    "Name": "Uair (Late)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/562cbdfaecd24459971fc5ea0e100273?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/562cbdfaecd24459971fc5ea0e100273?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "191fc2a1a5ae40b395441fdaf75ac5e1",
+    "Name": "Dair (Hit 1)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "60",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "20",
+    "AutoCancel": "",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/191fc2a1a5ae40b395441fdaf75ac5e1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/191fc2a1a5ae40b395441fdaf75ac5e1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-11, 17-18",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "99223090059940749341c3725a369092",
+    "Name": "Dair (Hits 2-3)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/99223090059940749341c3725a369092?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/99223090059940749341c3725a369092?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "25-26",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "abaee92a17c94c0e9a730ed43c3aa6f9",
+    "Name": "Dair (Hit 4)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/abaee92a17c94c0e9a730ed43c3aa6f9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/abaee92a17c94c0e9a730ed43c3aa6f9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Generated: 1",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "b1ade0ed64c04528b77e99e1e9d8e70e",
+    "Name": "Hand Grenade (Generation)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "22",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b1ade0ed64c04528b77e99e1e9d8e70e?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b1ade0ed64c04528b77e99e1e9d8e70e?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Thrown: 10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "e3832c88325f40ee98abddc5e969f2c6",
+    "Name": "Hand Grenade (Throw Forward)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "32",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e3832c88325f40ee98abddc5e969f2c6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e3832c88325f40ee98abddc5e969f2c6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Thrown: 8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "19cb797b658b4304886bd6638a06b923",
+    "Name": "Hand Grenade (Throw)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "28",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/19cb797b658b4304886bd6638a06b923?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/19cb797b658b4304886bd6638a06b923?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Thrown: 9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "3d16b4f76dbc47938ba249304491b779",
+    "Name": "Hand Grenade (Throw Backward)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "26",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3d16b4f76dbc47938ba249304491b779?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3d16b4f76dbc47938ba249304491b779?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "From Generation: 150-151",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "6b37d08635874f91b3b2a74f3d01a1db",
+    "Name": "Hand Grenade (Explosion)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6b37d08635874f91b3b2a74f3d01a1db?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6b37d08635874f91b3b2a74f3d01a1db?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "41-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "eb85c9d0061c443381f2a9568671ebc9",
+    "Name": "Remote Missile",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "35f Endlag",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/eb85c9d0061c443381f2a9568671ebc9?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/eb85c9d0061c443381f2a9568671ebc9?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Damage Based Armor (8%): 7-94",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "04f9e2dec3a3435d91b466bb1eb24829",
+    "Name": "Cypher",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/04f9e2dec3a3435d91b466bb1eb24829?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/04f9e2dec3a3435d91b466bb1eb24829?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9 (Automatic Detonation: 1600 frames)",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "161a45a181b043dd94fbfd94ef2f2547",
+    "Name": "C4 (Plant)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "25",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/161a45a181b043dd94fbfd94ef2f2547?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/161a45a181b043dd94fbfd94ef2f2547?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "25-27",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "3c9bc8f17ff34ee0a984076815b6e1de",
+    "Name": "C4 (Detonation)",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": "33",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3c9bc8f17ff34ee0a984076815b6e1de?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3c9bc8f17ff34ee0a984076815b6e1de?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "6c5903573b9746a1bb817320c9a8d8a0",
+    "Name": "Fthrow",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": null,
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6c5903573b9746a1bb817320c9a8d8a0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6c5903573b9746a1bb817320c9a8d8a0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "efc5c9d1529e4305ae747a48515ad380",
+    "Name": "Bthrow",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": null,
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/efc5c9d1529e4305ae747a48515ad380?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/efc5c9d1529e4305ae747a48515ad380?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "ea757de2bb254e75b63f49e47785cb88",
+    "Name": "Uthrow",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": null,
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ea757de2bb254e75b63f49e47785cb88?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ea757de2bb254e75b63f49e47785cb88?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "57cdbdfc23684ce2af4ba1c2245a5c99",
+    "Name": "Dthrow",
+    "OwnerId": 65,
+    "Owner": "Snake",
+    "FirstActionableFrame": null,
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Snake?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/57cdbdfc23684ce2af4ba1c2245a5c99?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/57cdbdfc23684ce2af4ba1c2245a5c99?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Snake?game=smash4"
+      }
+    ]
+  }
+]
