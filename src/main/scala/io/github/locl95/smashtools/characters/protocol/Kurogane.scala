@@ -21,12 +21,15 @@ object Kurogane {
     def avoidNullHitbox(json: Json): Json =
       if (json.isNull) Json.fromJsonObject(JsonObject("Frames" -> Json.Null, "Adv" -> Json.Null)) else json
 
-    val activeFramesRegex = "^([0-9])+-[0-9]+$".r
+    val activeFramesRegex = "^([0-9]+)-[0-9]+$".r
     val commaSeparatedFramesRegex = "^([0-9]+)(, [0-9]+)+$".r
-    val intangibleFrameRegex = "^Intangible: ([0-9])+-[0-9]+$".r
-    val specialArmorRegex = "^Special Armor: ([0-9])+-[0-9]+$".r
-    val counterRegex = "^Counter/Reflects: ([0-9])+-[0-9]+$".r
-    val reflectionRegex = "^Reflection: ([0-9])+-[0-9]+$".r
+    val counterRegex = "^Counter/Reflects: ([0-9])+-[0-9]+$".r //Suspicious that is never used
+    //val frameWithDash = "^([0-9]+)-$".r
+    val noFrameSpecified = "^(.*:)+$".r
+    val frameWithCharactersBehind = "^([0-9]+).*$".r
+    val framesWithCharactersBehind = "^([0-9]+)-[0-9]+.*$".r
+    val wordsAndThenFrames = "^.*: ([0-9]+).*+$".r
+    val wordsAndThenFrame = "^.*: ([0-9]+)+$".r
     for {
       id <- c.downField("InstanceId").as[String]
       owner <- c.downField("Owner").as[String]
@@ -46,12 +49,16 @@ object Kurogane {
         moveType,
         activeFrames match {
           case Some("") => None
+          case Some("?") => None
+          case Some("-") => None
+          case Some(noFrameSpecified(_)) => None
           case Some(activeFramesRegex(f)) => Some(f.toInt)
           case Some(commaSeparatedFramesRegex(f, _)) => Some(f.toInt)
-          case Some(intangibleFrameRegex(f)) => Some(f.toInt)
-          case Some(specialArmorRegex(f)) => Some(f.toInt)
           case Some(counterRegex(f)) => Some(f.toInt)
-          case Some(reflectionRegex(f)) => Some(f.toInt)
+          case Some(frameWithCharactersBehind(f)) => Some(f.toInt)
+          case Some(framesWithCharactersBehind(f)) => Some(f.toInt)
+          case Some(wordsAndThenFrame(f)) => Some(f.toInt)
+          case Some(wordsAndThenFrames(f)) => Some(f.toInt)
           case s => s.map(_.toInt)
         }
       )

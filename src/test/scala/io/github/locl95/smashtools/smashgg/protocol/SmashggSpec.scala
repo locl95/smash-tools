@@ -12,7 +12,7 @@ class SmashggSpec extends CatsEffectSuite {
     assert(json.hcursor.downField("query").as[String].exists(_.contains("tournament(slug: \"mst-4\")")))
   }
   test("I can decode smash.gg tournament") {
-    val tournamentJson = scala.io.Source.fromFile(s"src/test/resources/smashgg-tournament.json")
+    val tournamentJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-tournament.json")
     val expectedTournament = Tournament("MST 4")
 
     val tournamentFromJson =
@@ -26,7 +26,7 @@ class SmashggSpec extends CatsEffectSuite {
   }
 
   test("I can decode smash.gg participants") {
-    val participants = scala.io.Source.fromFile(s"src/test/resources/smashgg-participants.json")
+    val participants = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-participants.json")
     val expectedFirstParticipants = List(
       Participant(List(8022537)),
       Participant(List(7914930)),
