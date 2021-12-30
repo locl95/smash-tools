@@ -1,0 +1,18 @@
+name: pull-request
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+
+jobs:
+  test:
+    name: sbt test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Run sbt test
+        run: |
+          sbt compile
+          sbt test
