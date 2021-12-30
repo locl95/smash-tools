@@ -4,7 +4,7 @@ import cats.Traverse
 import cats.effect.Sync
 import io.circe.generic.semiauto.deriveEncoder
 import io.circe.{Decoder, Encoder, HCursor, Json}
-import io.github.locl95.smashtools.smashgg.domain.{Participant, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Event, Participant, SmashggQuery, Tournament}
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.{EntityDecoder, EntityEncoder}
 
@@ -38,4 +38,12 @@ object Smashgg {
     } yield ids.flatten.map(Participant)
   }
   implicit def participantsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[Participant]] = jsonOf
+
+  implicit val eventDecoder: Decoder[Event] = (c: HCursor) => {
+    for {
+      name <- c.downField("data").downField("event").downField("name").as[String]
+    } yield Event(name)
+  }
+  implicit def eventEntityDecoder[F[_]: Sync]: EntityDecoder[F, Event] = jsonOf
+
 }

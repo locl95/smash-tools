@@ -3,7 +3,7 @@ package io.github.locl95.smashtools.smashgg.protocol
 import munit.CatsEffectSuite
 import io.circe.syntax._
 import io.circe.parser._
-import io.github.locl95.smashtools.smashgg.domain.{Participant, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Event, Participant, SmashggQuery, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.Smashgg._
 
 class SmashggSpec extends CatsEffectSuite {
@@ -40,6 +40,19 @@ class SmashggSpec extends CatsEffectSuite {
       } yield participants
 
     assert(participantsFromJson.map(_.take(3)).contains(expectedFirstParticipants))
+
+  }
+
+  test("I can decode smash.gg events") {
+    val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg-events.json")
+
+    val eventFromJson =
+      for {
+        json <- parse(eventJson.getLines().mkString)
+        event <- eventDecoder.decodeJson(json)
+      } yield event
+
+    assert(eventFromJson.contains(Event("Ultimate Singles")))
 
   }
 }
