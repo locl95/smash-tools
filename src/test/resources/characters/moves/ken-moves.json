@@ -1,0 +1,3629 @@
+[
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "-10",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.5",
+      "OneVOne": "1.8"
+    },
+    "InstanceId": "b369b879b66f4d4e98ea731516e35d7b",
+    "Name": "Light Jab 1",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "17",
+    "Angle": "180/361/361/361",
+    "BaseKnockBackSetKnockback": "20/30/25/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "20/30/28/20",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b369b879b66f4d4e98ea731516e35d7b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b369b879b66f4d4e98ea731516e35d7b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7",
+      "Adv": "-18",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "4-10",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12/12/12/8",
+      "OneVOne": "14.4/14.4/14.4/9.6"
+    },
+    "InstanceId": "f15b5c5b6c9e4bc2b2191990cc11dd91",
+    "Name": "Medium Jab 1",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "38",
+    "Angle": "85",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f15b5c5b6c9e4bc2b2191990cc11dd91?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f15b5c5b6c9e4bc2b2191990cc11dd91?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-11",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "b4fd47fbe16845e7a395e23d772076c1",
+    "Name": "Medium Jab 1 (Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "85",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b4fd47fbe16845e7a395e23d772076c1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b4fd47fbe16845e7a395e23d772076c1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "0d97848bfe454e8f9e93507a278754b4",
+    "Name": "Inazuma Kick (Held, Far, Hit 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "33",
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "F: 30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "120",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0d97848bfe454e8f9e93507a278754b4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0d97848bfe454e8f9e93507a278754b4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "16",
+      "Adv": "-9",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "14e7aaaa05bd46bab2612f133503c6b4",
+    "Name": "Inazuma Kick (Held, Far, Hit 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "30",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "130",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/14e7aaaa05bd46bab2612f133503c6b4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/14e7aaaa05bd46bab2612f133503c6b4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "-21",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.5",
+      "OneVOne": "1.8"
+    },
+    "InstanceId": "8ee1d9ff492b48edb32cc01e4f85e8a1",
+    "Name": "Jab 2",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "28",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "25/20",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "25",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/8ee1d9ff492b48edb32cc01e4f85e8a1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/8ee1d9ff492b48edb32cc01e4f85e8a1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-10",
+      "Adv": "-21",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "c3a65aa717a444bf84c8b2702bfcea44",
+    "Name": "Jab 3",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "36",
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c3a65aa717a444bf84c8b2702bfcea44?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c3a65aa717a444bf84c8b2702bfcea44?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7-9",
+      "Adv": "-21",
+      "SD": "+2",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "1855c9e8e42f4a1fb05617a5b5723ffe",
+    "Name": "Dash Attack",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "41",
+    "Angle": "50",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "65",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1855c9e8e42f4a1fb05617a5b5723ffe?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1855c9e8e42f4a1fb05617a5b5723ffe?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-15",
+      "Adv": "",
+      "SD": "+2",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "88b546ef43344b1faae7cae7512b7499",
+    "Name": "Dash Attack (Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "60",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/88b546ef43344b1faae7cae7512b7499?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/88b546ef43344b1faae7cae7512b7499?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-12",
+      "Adv": "-8",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6.8",
+      "OneVOne": "8.16"
+    },
+    "InstanceId": "dbf53a3db0c34043bfe4a1351a31124d",
+    "Name": "Light Ftilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "25",
+    "Angle": "55/72",
+    "BaseKnockBackSetKnockback": "66",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "46",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/dbf53a3db0c34043bfe4a1351a31124d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/dbf53a3db0c34043bfe4a1351a31124d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-13",
+      "Adv": "-14",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5/10",
+      "OneVOne": "6/12"
+    },
+    "InstanceId": "0c3e74e488da4940a24ede98c75eea16",
+    "Name": "Medium Ftilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "35",
+    "Angle": "38",
+    "BaseKnockBackSetKnockback": "47",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "104",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0c3e74e488da4940a24ede98c75eea16?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0c3e74e488da4940a24ede98c75eea16?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-5",
+      "Adv": "-19",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "9e8a055abdd144e7a7afd97faca59f5f",
+    "Name": "Close Ftilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "31",
+    "Angle": "180/75",
+    "BaseKnockBackSetKnockback": "F: 10/B: 16",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100/23",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9e8a055abdd144e7a7afd97faca59f5f?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9e8a055abdd144e7a7afd97faca59f5f?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-7",
+      "Adv": "-8",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "d837f33c1d8b464aa3583d220eeee292",
+    "Name": "Light Utilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "16",
+    "Angle": "90/90/66/66",
+    "BaseKnockBackSetKnockback": "19",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d837f33c1d8b464aa3583d220eeee292?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d837f33c1d8b464aa3583d220eeee292?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "7",
+      "Adv": "-18",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "4-10",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12/12/12/8",
+      "OneVOne": "14.4/14.4/14.4/9.6"
+    },
+    "InstanceId": "f740889bffb44e7abe0dbed1a296d7c7",
+    "Name": "Medium Utilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "38",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/f740889bffb44e7abe0dbed1a296d7c7?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/f740889bffb44e7abe0dbed1a296d7c7?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-11",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "e37961fd42ce41a09284436419e8751d",
+    "Name": "Medium Utilt (Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/e37961fd42ce41a09284436419e8751d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/e37961fd42ce41a09284436419e8751d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-4",
+      "Adv": "-9",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "1.6",
+      "OneVOne": "1.92"
+    },
+    "InstanceId": "2578a72151b841c998022850e4c5568d",
+    "Name": "Light Dtilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "16",
+    "Angle": "65/65/60",
+    "BaseKnockBackSetKnockback": "F: 9/11/5",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2578a72151b841c998022850e4c5568d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2578a72151b841c998022850e4c5568d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "-14",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7/5.5",
+      "OneVOne": "8.4/6.6"
+    },
+    "InstanceId": "3836c3a92ae5487f93b84d4264e05289",
+    "Name": "Medium Dtilt",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "28",
+    "Angle": "64",
+    "BaseKnockBackSetKnockback": "70",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "23",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3836c3a92ae5487f93b84d4264e05289?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3836c3a92ae5487f93b84d4264e05289?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-15",
+      "Adv": "-21",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12/16",
+      "OneVOne": "14.4/19.2"
+    },
+    "InstanceId": "3953a907a2384dc5bc4a69c6f08d2dbd",
+    "Name": "Fsmash",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "46",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "26",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/3953a907a2384dc5bc4a69c6f08d2dbd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/3953a907a2384dc5bc4a69c6f08d2dbd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9",
+      "Adv": "-23",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "9-12",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "17",
+      "OneVOne": "20.4"
+    },
+    "InstanceId": "19bd87205ac54590858a3e5198a5f947",
+    "Name": "Usmash",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "45",
+    "Angle": "83",
+    "BaseKnockBackSetKnockback": "32",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "82",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/19bd87205ac54590858a3e5198a5f947?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/19bd87205ac54590858a3e5198a5f947?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "13.5",
+      "OneVOne": "16.2"
+    },
+    "InstanceId": "dcb1b0ed829142f49600a73310c5c841",
+    "Name": "Usmash (Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "83",
+    "BaseKnockBackSetKnockback": "32",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "86",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/dcb1b0ed829142f49600a73310c5c841?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/dcb1b0ed829142f49600a73310c5c841?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-6",
+      "Adv": "-25",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "16/12/12",
+      "OneVOne": "19.2/14.4/14.4"
+    },
+    "InstanceId": "1257d5a817824b4b886a03dad2bb0358",
+    "Name": "Dsmash",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "42",
+    "Angle": "35/80/80",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "47/50/50",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1257d5a817824b4b886a03dad2bb0358?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1257d5a817824b4b886a03dad2bb0358?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-7",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "7443b44c32a8434c9344957123b56e8f",
+    "Name": "Standing Grab",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "35",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/7443b44c32a8434c9344957123b56e8f?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/7443b44c32a8434c9344957123b56e8f?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "84d89f225893485bb4c7090b1745701f",
+    "Name": "Dash Grab",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "43",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/84d89f225893485bb4c7090b1745701f?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/84d89f225893485bb4c7090b1745701f?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-11",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "13a82d06021f407aa8e49891c5c64588",
+    "Name": "Pivot Grab",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "38",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/13a82d06021f407aa8e49891c5c64588?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/13a82d06021f407aa8e49891c5c64588?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-17",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "135877dd62c4436c8e0f3a3f64e7519d",
+    "Name": "Spotdodge",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "27",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/135877dd62c4436c8e0f3a3f64e7519d?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/135877dd62c4436c8e0f3a3f64e7519d?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "4-15",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "4378ee65002a4aeca174814d401dd90c",
+    "Name": "Forward Roll",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "31",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4378ee65002a4aeca174814d401dd90c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4378ee65002a4aeca174814d401dd90c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-16",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "21e0d95e9f5442b191fb4557cb4885e5",
+    "Name": "Back Roll",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "36",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/21e0d95e9f5442b191fb4557cb4885e5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/21e0d95e9f5442b191fb4557cb4885e5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-27",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "1875a6daae45495a88c6c0420e503f17",
+    "Name": "Airdodge",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "50",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/1875a6daae45495a88c6c0420e503f17?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/1875a6daae45495a88c6c0420e503f17?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "41e2f57741d54974af593def7f313c50",
+    "Name": "Directional Airdodge (F/B)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "81",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/41e2f57741d54974af593def7f313c50?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/41e2f57741d54974af593def7f313c50?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "94916f56772249deb30bda2bb8d3347b",
+    "Name": "Directional Airdodge (U)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "103",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/94916f56772249deb30bda2bb8d3347b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/94916f56772249deb30bda2bb8d3347b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "3-21",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "",
+      "OneVOne": ""
+    },
+    "InstanceId": "2c298482555c41d98e43071f23fbc18c",
+    "Name": "Directional Airdodge (D)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "68",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "ground",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2c298482555c41d98e43071f23fbc18c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2c298482555c41d98e43071f23fbc18c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "-1",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6.5/8",
+      "OneVOne": "7.8/9.6"
+    },
+    "InstanceId": "8cb807fc077e41678a28f1f40c9137dd",
+    "Name": "Nair",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "28",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": "5",
+    "AutoCancel": "",
+    "KnockbackGrowth": "100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/8cb807fc077e41678a28f1f40c9137dd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/8cb807fc077e41678a28f1f40c9137dd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-17",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4/6.5",
+      "OneVOne": "4.8/7.8"
+    },
+    "InstanceId": "99e643bfac974e00b5cd37575d8c4c88",
+    "Name": "Nair (Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "90",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/99e643bfac974e00b5cd37575d8c4c88?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/99e643bfac974e00b5cd37575d8c4c88?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "-6",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "14/9",
+      "OneVOne": "16.8/10.8"
+    },
+    "InstanceId": "9236db9f1ef145379c728ff9e13567f6",
+    "Name": "Fair",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "37",
+    "Angle": "61/70",
+    "BaseKnockBackSetKnockback": "82/65",
+    "LandingLag": "11",
+    "AutoCancel": "",
+    "KnockbackGrowth": "56/25",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9236db9f1ef145379c728ff9e13567f6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9236db9f1ef145379c728ff9e13567f6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "10-14",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12/8",
+      "OneVOne": "14.4/9.6"
+    },
+    "InstanceId": "38ae33b0fcef4095bfaaf3eee95088f0",
+    "Name": "Fair (Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "61/70",
+    "BaseKnockBackSetKnockback": "82/65",
+    "LandingLag": "-",
+    "AutoCancel": "-",
+    "KnockbackGrowth": "56/25",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/38ae33b0fcef4095bfaaf3eee95088f0?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/38ae33b0fcef4095bfaaf3eee95088f0?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "-4",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "4",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "16/13",
+      "OneVOne": "19.2/15.6"
+    },
+    "InstanceId": "349422bccab0496eb9e54029388636a2",
+    "Name": "Bair",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "42",
+    "Angle": "361",
+    "BaseKnockBackSetKnockback": "21",
+    "LandingLag": "10",
+    "AutoCancel": "",
+    "KnockbackGrowth": "90",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/349422bccab0496eb9e54029388636a2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/349422bccab0496eb9e54029388636a2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5-9",
+      "Adv": "-8",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6.5",
+      "OneVOne": "7.8"
+    },
+    "InstanceId": "81a6b0ea8501406fbc20def447cd44c4",
+    "Name": "Uair",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "36",
+    "Angle": "75",
+    "BaseKnockBackSetKnockback": "20",
+    "LandingLag": "11",
+    "AutoCancel": "",
+    "KnockbackGrowth": "100",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/81a6b0ea8501406fbc20def447cd44c4?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/81a6b0ea8501406fbc20def447cd44c4?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-12",
+      "Adv": "-9",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "15/12/11",
+      "OneVOne": "18/14.4/13.2"
+    },
+    "InstanceId": "bfa74db2b9454d9cb33d11bb3f1c2c71",
+    "Name": "Dair",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "46",
+    "Angle": "300/84/48",
+    "BaseKnockBackSetKnockback": "10/60/20",
+    "LandingLag": "15",
+    "AutoCancel": "",
+    "KnockbackGrowth": "80/14/80",
+    "MoveType": "aerial",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bfa74db2b9454d9cb33d11bb3f1c2c71?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bfa74db2b9454d9cb33d11bb3f1c2c71?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "12",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "2e6f233f2b76422c8a717a1846314826",
+    "Name": "Nata Otoshi Geri (Hit 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "29",
+    "Angle": "75",
+    "BaseKnockBackSetKnockback": "10",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2e6f233f2b76422c8a717a1846314826?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2e6f233f2b76422c8a717a1846314826?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "15-16",
+      "Adv": "-6",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "d12cd53c2a6e4b80b8d4c9b0cd5702fa",
+    "Name": "Nata Otoshi Geri (Hit 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "63",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "30",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/d12cd53c2a6e4b80b8d4c9b0cd5702fa?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/d12cd53c2a6e4b80b8d4c9b0cd5702fa?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-10",
+      "Adv": "",
+      "SD": "-5",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "9-10",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "10",
+      "OneVOne": "12"
+    },
+    "InstanceId": "62bf49c9d446446388be1709be29222c",
+    "Name": "Oosoto Mawashi Geri",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "33",
+    "Angle": "50",
+    "BaseKnockBackSetKnockback": "40",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "120",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/62bf49c9d446446388be1709be29222c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/62bf49c9d446446388be1709be29222c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-10",
+      "Adv": "-19",
+      "SD": "+7",
+      "ShieldstunMultiplier": "1.25",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "1",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "10",
+      "OneVOne": "12"
+    },
+    "InstanceId": "082169976c654076ad12c66491f496a2",
+    "Name": "Inazuma Kick Followup",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "40",
+    "Angle": "30",
+    "BaseKnockBackSetKnockback": "35",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "80",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/082169976c654076ad12c66491f496a2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/082169976c654076ad12c66491f496a2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "-",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "Multiplier: 1.25",
+      "OneVOne": ""
+    },
+    "InstanceId": "6ae79365ae6b4663820b44bd2b6ba8a2",
+    "Name": "Hadoken (Command, All Versions)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/6ae79365ae6b4663820b44bd2b6ba8a2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/6ae79365ae6b4663820b44bd2b6ba8a2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-75",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "4.5",
+      "OneVOne": "5.4"
+    },
+    "InstanceId": "be3b70fedd70424b875b4f2da8b40545",
+    "Name": "Light Hadouken",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "58",
+    "Angle": "0/60",
+    "BaseKnockBackSetKnockback": "45/65",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "10",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/be3b70fedd70424b875b4f2da8b40545?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/be3b70fedd70424b875b4f2da8b40545?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-67",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5",
+      "OneVOne": "6"
+    },
+    "InstanceId": "9f346d7bdbe34b1b97649ef22743704b",
+    "Name": "Medium Hadouken",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "0/60",
+    "BaseKnockBackSetKnockback": "50/65",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "10",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9f346d7bdbe34b1b97649ef22743704b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9f346d7bdbe34b1b97649ef22743704b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-60",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "5.5",
+      "OneVOne": "6.6"
+    },
+    "InstanceId": "fa0cdb3eac044769a83eadd4b9ab107c",
+    "Name": "Heavy Hadouken",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "0/60",
+    "BaseKnockBackSetKnockback": "55/65",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "10",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/fa0cdb3eac044769a83eadd4b9ab107c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/fa0cdb3eac044769a83eadd4b9ab107c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "8-9",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "590c5ac4c9064500ababd2b4d8ec6977",
+    "Name": "Tatsumaki Senpukyaku (Early, All Versions)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "0",
+    "BaseKnockBackSetKnockback": "F: 100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "50",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/590c5ac4c9064500ababd2b4d8ec6977?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/590c5ac4c9064500ababd2b4d8ec6977?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-14, 18-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "2050b6f5bb4f4b4f8c7685ea2ba25823",
+    "Name": "Light Tatsumaki Senpukyaku (Grounded)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/2050b6f5bb4f4b4f8c7685ea2ba25823?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/2050b6f5bb4f4b4f8c7685ea2ba25823?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-14, 18-19, 23-24, 28-29, 33-34, 38-39",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "bff9955c29e74764804b5d91ed0f78e8",
+    "Name": "Medium Tatsumaki Senpukyaku (Grounded)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bff9955c29e74764804b5d91ed0f78e8?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bff9955c29e74764804b5d91ed0f78e8?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-14, 18-19, 23-24, 28-29, 33-34, 38-39",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "3",
+      "OneVOne": "3.6"
+    },
+    "InstanceId": "43bbbf713d7b4f36b17134fffe709ecc",
+    "Name": "Heavy Tatsumaki Senpukyaku (Grounded)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/43bbbf713d7b4f36b17134fffe709ecc?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/43bbbf713d7b4f36b17134fffe709ecc?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "13-14, 18-19, 23-24, 28-29, 33-34, 38-39",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "13-42",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2",
+      "OneVOne": "2.4"
+    },
+    "InstanceId": "b180de235cff4acaac304b090185c8bc",
+    "Name": "Tatsumaki Senpukyaku (Aerial)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "78",
+    "Angle": "",
+    "BaseKnockBackSetKnockback": "",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b180de235cff4acaac304b090185c8bc?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b180de235cff4acaac304b090185c8bc?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Intangible: 5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "ccd26c174c2243db885a519a2db7d1f5",
+    "Name": "Shoryuken (All Versions)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ccd26c174c2243db885a519a2db7d1f5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ccd26c174c2243db885a519a2db7d1f5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Right Arm Intangible: 1-3, 7-14, Intangible: 4-6",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "Multiplier: 1.2",
+      "OneVOne": ""
+    },
+    "InstanceId": "48bcfcaa19c64c18951a5ac5de74b5d5",
+    "Name": "Shoryuken (Command, All Versions)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/48bcfcaa19c64c18951a5ac5de74b5d5?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/48bcfcaa19c64c18951a5ac5de74b5d5?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "13",
+      "OneVOne": "15.6"
+    },
+    "InstanceId": "5b315e6cc51b42f1af2fc45ff0247fd2",
+    "Name": "Light Shoryuken (Grounded)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "58",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5b315e6cc51b42f1af2fc45ff0247fd2?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5b315e6cc51b42f1af2fc45ff0247fd2?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "016e4fdd5a95495296901abec78c0405",
+    "Name": "Light Shoryuken (Grounded, Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "70",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "90",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/016e4fdd5a95495296901abec78c0405?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/016e4fdd5a95495296901abec78c0405?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "73abbee7902a4034ac48c377e23c6706",
+    "Name": "Medium Shoryuken (Grounded, Hit 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "F: 100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/73abbee7902a4034ac48c377e23c6706?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/73abbee7902a4034ac48c377e23c6706?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "4c8930aea6514826829a10f6710a229c",
+    "Name": "Medium Shoryuken (Grounded, Hit 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "70",
+    "BaseKnockBackSetKnockback": "78",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "121",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/4c8930aea6514826829a10f6710a229c?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/4c8930aea6514826829a10f6710a229c?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.2",
+      "OneVOne": "2.64"
+    },
+    "InstanceId": "50ea892d83144efe84eb84d3bea75bce",
+    "Name": "Heavy Shoryuken (Grounded, Hit 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "100",
+    "BaseKnockBackSetKnockback": "F: 100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/50ea892d83144efe84eb84d3bea75bce?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/50ea892d83144efe84eb84d3bea75bce?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "a6e967acf72643e3ac14ab617096840b",
+    "Name": "Heavy Shoryuken (Grounded, Hit 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "110",
+    "BaseKnockBackSetKnockback": "F: 100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a6e967acf72643e3ac14ab617096840b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a6e967acf72643e3ac14ab617096840b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6.5",
+      "OneVOne": "7.8"
+    },
+    "InstanceId": "25a94510fa2c470098a3f3c7dde14383",
+    "Name": "Heavy Shoryuken (Grounded, Hit 3)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "70",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "122",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/25a94510fa2c470098a3f3c7dde14383?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/25a94510fa2c470098a3f3c7dde14383?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "9d20219b0af94244abc2268f9fe27bdd",
+    "Name": "Light Shoryuken (Aerial)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "49",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/9d20219b0af94244abc2268f9fe27bdd?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/9d20219b0af94244abc2268f9fe27bdd?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "0691e85a0086474d9aa94252a6d4d04f",
+    "Name": "Light Shoryuken (Aerial, Late)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "70",
+    "BaseKnockBackSetKnockback": "60",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "70",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0691e85a0086474d9aa94252a6d4d04f?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0691e85a0086474d9aa94252a6d4d04f?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "7",
+      "OneVOne": "8.4"
+    },
+    "InstanceId": "5369def7b22c4293a48d6ac715532d28",
+    "Name": "Medium Shoryuken (Aerial, Hit 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "80",
+    "BaseKnockBackSetKnockback": "80",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "54",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/5369def7b22c4293a48d6ac715532d28?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/5369def7b22c4293a48d6ac715532d28?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "c4ee6f6ca52c4fc88001f4e7ad0ce40a",
+    "Name": "Medium Shoryuken (Aerial, Hit 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "70",
+    "BaseKnockBackSetKnockback": "78",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "121",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/c4ee6f6ca52c4fc88001f4e7ad0ce40a?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/c4ee6f6ca52c4fc88001f4e7ad0ce40a?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "5",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "2.2",
+      "OneVOne": "2.64"
+    },
+    "InstanceId": "910933d843dd431487218c49be6e3151",
+    "Name": "Heavy Shoryuken (Aerial, Hit 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "90",
+    "BaseKnockBackSetKnockback": "F: 90",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/910933d843dd431487218c49be6e3151?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/910933d843dd431487218c49be6e3151?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "6-8",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "a1350d63e3e246d3952d87bd6d1f1a33",
+    "Name": "Heavy Shoryuken (Aerial, Hit 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "110",
+    "BaseKnockBackSetKnockback": "F: 100",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/a1350d63e3e246d3952d87bd6d1f1a33?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/a1350d63e3e246d3952d87bd6d1f1a33?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "9-19",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "6",
+      "OneVOne": "7.2"
+    },
+    "InstanceId": "0ee8656d6aab43c3ab6ae48dab10bf48",
+    "Name": "Heavy Shoryuken (Aerial, Hit 3)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "70",
+    "BaseKnockBackSetKnockback": "76",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/0ee8656d6aab43c3ab6ae48dab10bf48?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/0ee8656d6aab43c3ab6ae48dab10bf48?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "Damage Based Armor: 1-70, 14%-28?%, Dash Cancelable from 26",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "-",
+      "OneVOne": ""
+    },
+    "InstanceId": "15f8931f24b64be284e4b2c9131c55b6",
+    "Name": "Focus Attack",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "-",
+    "Angle": "-",
+    "BaseKnockBackSetKnockback": "-",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "-",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/15f8931f24b64be284e4b2c9131c55b6?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/15f8931f24b64be284e4b2c9131c55b6?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "33-34",
+      "Adv": "-31",
+      "SD": "+15",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "af64c61bb6f34ceb95995125176fcf16",
+    "Name": "Focus Attack (Stage 1)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "77",
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "110",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "10",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/af64c61bb6f34ceb95995125176fcf16?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/af64c61bb6f34ceb95995125176fcf16?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "43-44",
+      "Adv": "-33",
+      "SD": "+22",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "10",
+      "OneVOne": "12"
+    },
+    "InstanceId": "31d83e617c464a0abe98b4aa6c79ed7b",
+    "Name": "Focus Attack (Stage 2)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "87",
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/31d83e617c464a0abe98b4aa6c79ed7b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/31d83e617c464a0abe98b4aa6c79ed7b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": {
+      "Frames": "71-72",
+      "Adv": "",
+      "SD": "",
+      "ShieldstunMultiplier": "",
+      "RehitRate": "",
+      "FacingRestrict": "",
+      "SuperArmor": "",
+      "HeadMultiplier": "",
+      "Intangible": "",
+      "SetWeight": false,
+      "GroundOnly": false
+    },
+    "BaseDamage": {
+      "Normal": "17",
+      "OneVOne": "20.4"
+    },
+    "InstanceId": "bab5853624fd429283ae84b3453dbf40",
+    "Name": "Focus Attack (Stage 3)",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": "115",
+    "Angle": "45",
+    "BaseKnockBackSetKnockback": "0",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "100",
+    "MoveType": "special",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/bab5853624fd429283ae84b3453dbf40?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/bab5853624fd429283ae84b3453dbf40?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "9",
+      "OneVOne": "10.8"
+    },
+    "InstanceId": "ccd796672295454e932ac1a6c4a8f38b",
+    "Name": "Fthrow",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": null,
+    "Angle": "50",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "45",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/ccd796672295454e932ac1a6c4a8f38b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/ccd796672295454e932ac1a6c4a8f38b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "12",
+      "OneVOne": "14.4"
+    },
+    "InstanceId": "58dda82d3dd349e5be9c8bd0130b42f1",
+    "Name": "Bthrow",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": null,
+    "Angle": "52",
+    "BaseKnockBackSetKnockback": "75",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "45",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/58dda82d3dd349e5be9c8bd0130b42f1?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/58dda82d3dd349e5be9c8bd0130b42f1?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "8",
+      "OneVOne": "9.6"
+    },
+    "InstanceId": "b52323f2ccc64d99920d33789e636935",
+    "Name": "Uthrow",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": null,
+    "Angle": "88",
+    "BaseKnockBackSetKnockback": "55",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "75",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/b52323f2ccc64d99920d33789e636935?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/b52323f2ccc64d99920d33789e636935?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  },
+  {
+    "HitboxActive": null,
+    "BaseDamage": {
+      "Normal": "3, 3",
+      "OneVOne": "3.6, 3.6"
+    },
+    "InstanceId": "8a717aae8150441cb11627ebfa80200b",
+    "Name": "Dthrow",
+    "OwnerId": 70,
+    "Owner": "Ken",
+    "FirstActionableFrame": null,
+    "Angle": "76",
+    "BaseKnockBackSetKnockback": "50",
+    "LandingLag": null,
+    "AutoCancel": null,
+    "KnockbackGrowth": "157",
+    "MoveType": "throw",
+    "IsWeightDependent": false,
+    "Game": "Ultimate",
+    "Related": {
+      "Smash4": null,
+      "Ultimate": {
+        "Character": "http://api.kuroganehammer.com/api/characters/name/Ken?game=ultimate",
+        "Self": "http://api.kuroganehammer.com/api/moves/8a717aae8150441cb11627ebfa80200b?game=ultimate"
+      }
+    },
+    "Links": [
+      {
+        "Rel": "self",
+        "Href": "http://api.kuroganehammer.com/api/moves/8a717aae8150441cb11627ebfa80200b?game=smash4"
+      },
+      {
+        "Rel": "character",
+        "Href": "http://api.kuroganehammer.com/api/characters/name/Ken?game=smash4"
+      }
+    ]
+  }
+]
