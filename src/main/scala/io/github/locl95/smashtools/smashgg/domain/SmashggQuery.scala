@@ -39,4 +39,30 @@ object SmashggQuery {
        |  }
        |}""".stripMargin.filter(_ >= ' ')
   )
+
+  def getEvent(tournament: String, event: String, page: Int): SmashggQuery = SmashggQuery(
+    s"""query getTournament {
+     | event(slug: \"tournament/$tournament/event/$event\") { 
+     |  name 
+     |  state 
+     |  id 
+     |  sets 
+     |  (page: $page perPage: 50) { 
+     |    nodes { 
+     |      id 
+     |      phaseGroup { id } 
+     |      round 
+     |      identifier 
+     |      totalGames 
+     |      fullRoundText 
+     |      completedAt 
+     |      slots { 
+     |        entrant { id name } 
+     |        standing { stats { score {value} } }
+     |      } 
+     |    }
+     |  } 
+     |}
+     |}""".stripMargin
+  )
 }
