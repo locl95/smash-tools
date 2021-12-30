@@ -23,13 +23,13 @@ object Kurogane {
 
     val activeFramesRegex = "^([0-9]+)-[0-9]+$".r
     val commaSeparatedFramesRegex = "^([0-9]+)(, [0-9]+)+$".r
-    val counterRegex = "^Counter/Reflects: ([0-9])+-[0-9]+$".r //Suspicious that is never used
-    //val frameWithDash = "^([0-9]+)-$".r
     val noFrameSpecified = "^(.*:)+$".r
-    val frameWithCharactersBehind = "^([0-9]+).*$".r
-    val framesWithCharactersBehind = "^([0-9]+)-[0-9]+.*$".r
+    val wordsAndThenFrameBetweenParenthesis = "^.*: ([0-9]+)- \\(.*: [0-9]+-[0-9]+\\)$".r
+    val frameAndThenWords = "^([0-9]+).*$".r
+    val framesAndThenWords = "^([0-9]+)-[0-9]+.*$".r
     val wordsAndThenFrames = "^.*: ([0-9]+).*+$".r
     val wordsAndThenFrame = "^.*: ([0-9]+)+$".r
+
     for {
       id <- c.downField("InstanceId").as[String]
       owner <- c.downField("Owner").as[String]
@@ -52,11 +52,11 @@ object Kurogane {
           case Some("?") => None
           case Some("-") => None
           case Some(noFrameSpecified(_)) => None
+          case Some(wordsAndThenFrameBetweenParenthesis(f)) => Some(f.toInt)
           case Some(activeFramesRegex(f)) => Some(f.toInt)
           case Some(commaSeparatedFramesRegex(f, _)) => Some(f.toInt)
-          case Some(counterRegex(f)) => Some(f.toInt)
-          case Some(frameWithCharactersBehind(f)) => Some(f.toInt)
-          case Some(framesWithCharactersBehind(f)) => Some(f.toInt)
+          case Some(frameAndThenWords(f)) => Some(f.toInt)
+          case Some(framesAndThenWords(f)) => Some(f.toInt)
           case Some(wordsAndThenFrame(f)) => Some(f.toInt)
           case Some(wordsAndThenFrames(f)) => Some(f.toInt)
           case s => s.map(_.toInt)
