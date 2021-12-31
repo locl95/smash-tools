@@ -1,8 +1,66 @@
 package io.github.locl95.smashtools.characters
 
+import cats.effect.Sync
 import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
+import io.github.locl95.smashtools.characters.repository.{CharactersRepository, MovementsRepository}
+import cats.implicits._
+
+import scala.collection.mutable
+
+trait InMemoryRepository {
+  def clean(): Unit
+}
+
+final class CharactersInMemoryRepository[F[_]: Sync] extends CharactersRepository[F] with InMemoryRepository {
+  private val charactersList: mutable.ArrayDeque[KuroganeCharacter] = mutable.ArrayDeque.empty
+  private var cached: Boolean = false
+
+  override def toString: String = "CharactersInMemoryRepository"
+
+  override def insert(characters: List[KuroganeCharacter]): F[Int] = {
+    charactersList.appendAll(characters).pure[F]
+    charactersList.size.pure[F]
+  }
+
+  override def isCached: F[Boolean] = cached.pure[F]
+
+  override def get: F[List[KuroganeCharacter]] = charactersList.toList.pure[F]
+
+  override def cache: F[Int] = {
+    cached = true
+    1.pure[F]
+  }
+
+  override def clean(): Unit = {
+    charactersList.clearAndShrink()
+    cached = false
+  }
+}
+
+final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[F] with InMemoryRepository {
+  private val movementsList: mutable.ArrayDeque[KuroganeCharacterMove] = mutable.ArrayDeque.empty
+
+  override def toString: String = "MovementsInMemoryRepository"
+
+  override def insert(movements: List[KuroganeCharacterMove]): F[Int] = {
+    movementsList.appendAll(movements).pure[F]
+    movementsList.size.pure[F]
+  }
+
+  override def isCached(character: String): F[Boolean] = false.pure[F]
+
+  override def get(character: String): F[List[KuroganeCharacterMove]] =
+    movementsList.toList.filter(_.character.toLowerCase == character).pure[F]
+
+  override def cache(character: String): F[Int] = 1.pure[F]
+
+  override def clean(): Unit = {
+    movementsList.clearAndShrink()
+  }
+}
 
 object TestHelper {
+
   val characters: List[KuroganeCharacter] =
     List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
 

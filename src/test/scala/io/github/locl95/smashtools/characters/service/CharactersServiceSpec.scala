@@ -1,46 +1,17 @@
 package io.github.locl95.smashtools.characters.service
 
-import cats.effect.{IO, Sync}
-import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
-import io.github.locl95.smashtools.characters.repository.{CharactersRepository, MovementsRepository}
-import munit.CatsEffectSuite
+import cats.effect.IO
 import cats.implicits._
-import io.github.locl95.smashtools.characters.{KuroganeClient, TestHelper}
+import io.github.locl95.smashtools.characters.{
+  CharactersInMemoryRepository,
+  KuroganeClient,
+  MovementsInMemoryRepository,
+  TestHelper
+}
+import munit.CatsEffectSuite
 import org.http4s.client.blaze.BlazeClientBuilder
 
-import scala.collection.mutable
 import scala.concurrent.ExecutionContext.global
-
-final class CharactersInMemoryRepository[F[_]: Sync] extends CharactersRepository[F] {
-  private val charactersList: mutable.ArrayDeque[KuroganeCharacter] = mutable.ArrayDeque.empty
-
-  override def insert(characters: List[KuroganeCharacter]): F[Int] = {
-    charactersList.appendAll(characters).pure[F]
-    1.pure[F]
-  }
-
-  override def isCached: F[Boolean] = false.pure[F]
-
-  override def get: F[List[KuroganeCharacter]] = charactersList.toList.pure[F]
-
-  override def cache: F[Int] = 1.pure[F]
-}
-
-final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[F] {
-  private val movementsList: mutable.ArrayDeque[KuroganeCharacterMove] = mutable.ArrayDeque.empty
-
-  override def insert(movements: List[KuroganeCharacterMove]): F[Int] = {
-    movementsList.appendAll(movements).pure[F]
-    1.pure[F]
-  }
-
-  override def isCached(character:String): F[Boolean] = false.pure[F]
-
-  override def get(character:String): F[List[KuroganeCharacterMove]] = movementsList.toList.filter(_.character.toLowerCase == character).pure[F]
-
-  override def cache(character:String): F[Int] = 1.pure[F]
-}
-
 
 class CharactersServiceSpec extends CatsEffectSuite {
   test("Get Characters should retrieve them from api and insert them in database when cache is false") {
