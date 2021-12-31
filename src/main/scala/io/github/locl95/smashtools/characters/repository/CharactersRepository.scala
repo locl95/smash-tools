@@ -16,6 +16,8 @@ trait CharactersRepository[F[_]] {
 
 final class CharacterPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends CharactersRepository[F] {
 
+  override def toString: String = "CharacterPostgresRepository"
+
   override def insert(characters: List[KuroganeCharacter]): F[Int] = {
     val sql = "insert into characters (name) values (?)"
     Update[KuroganeCharacter](sql)
