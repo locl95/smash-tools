@@ -24,6 +24,7 @@ object Kurogane {
     val activeFramesRegex = "^([0-9]+)-[0-9]+$".r
     val commaSeparatedFramesRegex = "^([0-9]+)(, [0-9]+)+$".r
     val noFrameSpecified = "^(.*:)+$".r
+    val wordsAndThenFrameBetweenWordsParenthesis = "^.*\\(.*([0-9]+).*\\)$".r
     val wordsAndThenFrameBetweenParenthesis = "^.*: ([0-9]+)- \\(.*: [0-9]+-[0-9]+\\)$".r
     val frameAndThenWords = "^([0-9]+).*$".r
     val framesAndThenWords = "^([0-9]+)-[0-9]+.*$".r
@@ -59,6 +60,7 @@ object Kurogane {
           case Some(framesAndThenWords(f)) => Some(f.toInt)
           case Some(wordsAndThenFrame(f)) => Some(f.toInt)
           case Some(wordsAndThenFrames(f)) => Some(f.toInt)
+          case Some(wordsAndThenFrameBetweenWordsParenthesis(f)) => Some(f.toInt)
           case s => s.map(_.toInt)
         }
       )

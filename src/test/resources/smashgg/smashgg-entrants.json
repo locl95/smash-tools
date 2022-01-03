@@ -1,0 +1,581 @@
+{
+  "data": {
+    "event": {
+      "id": 615463,
+      "entrants": {
+        "nodes": [
+          {
+            "id": 8348984,
+            "name": "Raiden's | Zandark",
+            "participants": [
+              {
+                "id": 8022537,
+                "player": {
+                  "id": 2120732
+                }
+              }
+            ]
+          },
+          {
+            "id": 8346516,
+            "name": "FS | Sevro",
+            "participants": [
+              {
+                "id": 8020042,
+                "player": {
+                  "id": 1418970
+                }
+              }
+            ]
+          },
+          {
+            "id": 8338996,
+            "name": "Rextone",
+            "participants": [
+              {
+                "id": 8012397,
+                "player": {
+                  "id": 426312
+                }
+              }
+            ]
+          },
+          {
+            "id": 8338417,
+            "name": "Foxy",
+            "participants": [
+              {
+                "id": 8011778,
+                "player": {
+                  "id": 1079662
+                }
+              }
+            ]
+          },
+          {
+            "id": 8332947,
+            "name": "Kiro",
+            "participants": [
+              {
+                "id": 8006090,
+                "player": {
+                  "id": 156098
+                }
+              }
+            ]
+          },
+          {
+            "id": 8331682,
+            "name": "dammer",
+            "participants": [
+              {
+                "id": 8004850,
+                "player": {
+                  "id": 1122911
+                }
+              }
+            ]
+          },
+          {
+            "id": 8331515,
+            "name": "Mik",
+            "participants": [
+              {
+                "id": 8004671,
+                "player": {
+                  "id": 33397
+                }
+              }
+            ]
+          },
+          {
+            "id": 8330916,
+            "name": "Jorah",
+            "participants": [
+              {
+                "id": 8003849,
+                "player": {
+                  "id": 38177
+                }
+              }
+            ]
+          },
+          {
+            "id": 8319533,
+            "name": "LC | Link_Z",
+            "participants": [
+              {
+                "id": 7993432,
+                "player": {
+                  "id": 1045801
+                }
+              }
+            ]
+          },
+          {
+            "id": 8316911,
+            "name": "ElSantoGTZ",
+            "participants": [
+              {
+                "id": 7990865,
+                "player": {
+                  "id": 558130
+                }
+              }
+            ]
+          },
+          {
+            "id": 8303328,
+            "name": "Quique",
+            "participants": [
+              {
+                "id": 7978518,
+                "player": {
+                  "id": 1189149
+                }
+              }
+            ]
+          },
+          {
+            "id": 8287203,
+            "name": "Nekuness",
+            "participants": [
+              {
+                "id": 7963623,
+                "player": {
+                  "id": 28092
+                }
+              }
+            ]
+          },
+          {
+            "id": 8286867,
+            "name": "Casy",
+            "participants": [
+              {
+                "id": 7963289,
+                "player": {
+                  "id": 550339
+                }
+              }
+            ]
+          },
+          {
+            "id": 8280761,
+            "name": "OST | Kynois",
+            "participants": [
+              {
+                "id": 7957755,
+                "player": {
+                  "id": 149166
+                }
+              }
+            ]
+          },
+          {
+            "id": 8280705,
+            "name": "CMT | Pocafeiner",
+            "participants": [
+              {
+                "id": 7957702,
+                "player": {
+                  "id": 136008
+                }
+              }
+            ]
+          },
+          {
+            "id": 8280489,
+            "name": "VGIA | MVL",
+            "participants": [
+              {
+                "id": 7957496,
+                "player": {
+                  "id": 156099
+                }
+              }
+            ]
+          },
+          {
+            "id": 8266055,
+            "name": "Lacarta",
+            "participants": [
+              {
+                "id": 7943985,
+                "player": {
+                  "id": 904898
+                }
+              }
+            ]
+          },
+          {
+            "id": 8252439,
+            "name": "DMP | Dar\u00edo",
+            "participants": [
+              {
+                "id": 7931674,
+                "player": {
+                  "id": 586658
+                }
+              }
+            ]
+          },
+          {
+            "id": 8251399,
+            "name": "LC | Vilxs",
+            "participants": [
+              {
+                "id": 7930682,
+                "player": {
+                  "id": 151275
+                }
+              }
+            ]
+          },
+          {
+            "id": 8246323,
+            "name": "RoberWars",
+            "participants": [
+              {
+                "id": 7925829,
+                "player": {
+                  "id": 156374
+                }
+              }
+            ]
+          },
+          {
+            "id": 8245276,
+            "name": "*FER*",
+            "participants": [
+              {
+                "id": 7924837,
+                "player": {
+                  "id": 1321886
+                }
+              }
+            ]
+          },
+          {
+            "id": 8242867,
+            "name": "Raiden's | aston",
+            "participants": [
+              {
+                "id": 7922509,
+                "player": {
+                  "id": 2401616
+                }
+              }
+            ]
+          },
+          {
+            "id": 8242154,
+            "name": "Diedan",
+            "participants": [
+              {
+                "id": 7921857,
+                "player": {
+                  "id": 1433472
+                }
+              }
+            ]
+          },
+          {
+            "id": 8241837,
+            "name": "DAC power",
+            "participants": [
+              {
+                "id": 7921608,
+                "player": {
+                  "id": 1222236
+                }
+              }
+            ]
+          },
+          {
+            "id": 8241084,
+            "name": "RamonWars",
+            "participants": [
+              {
+                "id": 7921017,
+                "player": {
+                  "id": 153463
+                }
+              }
+            ]
+          },
+          {
+            "id": 8241064,
+            "name": "Akuex",
+            "participants": [
+              {
+                "id": 7920997,
+                "player": {
+                  "id": 150050
+                }
+              }
+            ]
+          },
+          {
+            "id": 8240251,
+            "name": "LC | Ghandy el Dandy",
+            "participants": [
+              {
+                "id": 7920302,
+                "player": {
+                  "id": 538760
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239875,
+            "name": "LC | Monchi",
+            "participants": [
+              {
+                "id": 7919947,
+                "player": {
+                  "id": 997574
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239850,
+            "name": "Spize",
+            "participants": [
+              {
+                "id": 7919929,
+                "player": {
+                  "id": 1200147
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239744,
+            "name": "OmegaPit",
+            "participants": [
+              {
+                "id": 7919825,
+                "player": {
+                  "id": 922321
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239632,
+            "name": "DR.DVD",
+            "participants": [
+              {
+                "id": 7919731,
+                "player": {
+                  "id": 154543
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239568,
+            "name": "Garrote",
+            "participants": [
+              {
+                "id": 7919671,
+                "player": {
+                  "id": 368245
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239397,
+            "name": "YI BI YI SI",
+            "participants": [
+              {
+                "id": 7919511,
+                "player": {
+                  "id": 1964106
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239376,
+            "name": "LC | Osuma",
+            "participants": [
+              {
+                "id": 7919491,
+                "player": {
+                  "id": 491204
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239145,
+            "name": "Zilva",
+            "participants": [
+              {
+                "id": 7919272,
+                "player": {
+                  "id": 68552
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239113,
+            "name": "WBYB | Pepo",
+            "participants": [
+              {
+                "id": 7919243,
+                "player": {
+                  "id": 137380
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239088,
+            "name": "WIZ | AndresFn",
+            "participants": [
+              {
+                "id": 7919225,
+                "player": {
+                  "id": 140568
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239048,
+            "name": "LC | C-bus",
+            "participants": [
+              {
+                "id": 7919188,
+                "player": {
+                  "id": 538767
+                }
+              }
+            ]
+          },
+          {
+            "id": 8239022,
+            "name": "Falcon Poncho",
+            "participants": [
+              {
+                "id": 7919165,
+                "player": {
+                  "id": 853024
+                }
+              }
+            ]
+          },
+          {
+            "id": 8238992,
+            "name": "Tropped",
+            "participants": [
+              {
+                "id": 7919133,
+                "player": {
+                  "id": 38092
+                }
+              }
+            ]
+          },
+          {
+            "id": 8238189,
+            "name": "MYS | MTsergi",
+            "participants": [
+              {
+                "id": 7918345,
+                "player": {
+                  "id": 135875
+                }
+              }
+            ]
+          },
+          {
+            "id": 8238163,
+            "name": "MYS | Ark Klemens",
+            "participants": [
+              {
+                "id": 7918357,
+                "player": {
+                  "id": 155195
+                }
+              }
+            ]
+          },
+          {
+            "id": 8234478,
+            "name": "TJ",
+            "participants": [
+              {
+                "id": 7914930,
+                "player": {
+                  "id": 1149184
+                }
+              }
+            ]
+          },
+          {
+            "id": 8233149,
+            "name": "marcpq",
+            "participants": [
+              {
+                "id": 7913685,
+                "player": {
+                  "id": 33425
+                }
+              }
+            ]
+          },
+          {
+            "id": 8232866,
+            "name": "sisqui",
+            "participants": [
+              {
+                "id": 7913438,
+                "player": {
+                  "id": 539193
+                }
+              }
+            ]
+          },
+          {
+            "id": 8232833,
+            "name": "Marcbri",
+            "participants": [
+              {
+                "id": 7913401,
+                "player": {
+                  "id": 11342
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "extensions": {
+    "cacheControl": {
+      "version": 1,
+      "hints": [
+        {
+          "path": [
+            "event"
+          ],
+          "maxAge": 60,
+          "scope": "PRIVATE"
+        }
+      ]
+    },
+    "queryComplexity": 93
+  },
+  "actionRecords": [
+
+  ]
+}
