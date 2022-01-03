@@ -1,35 +1,33 @@
 package io.github.locl95.smashtools.characters
 
-import cats.effect.IO
-import cats.implicits._
-import io.github.locl95.smashtools.UriHelper
-import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
+import cats.effect.{Blocker, ContextShift, IO, Timer}
 import io.github.locl95.smashtools.characters.protocol.Kurogane._
 import munit.CatsEffectSuite
-import org.http4s.client.blaze.BlazeClientBuilder
+import org.http4s.client.JavaNetClientBuilder
 
+import java.util.concurrent.Executors
+import scala.concurrent.ExecutionContext
 import scala.concurrent.ExecutionContext.global
 
 class KuroganeClientSpec extends CatsEffectSuite {
-  test("Should be able to retreat characters from Kurogane API") {
-      val program: fs2.Stream[IO, List[KuroganeCharacter]] = for {
-        client <- BlazeClientBuilder[IO](global).stream
-        kuroganeClient = KuroganeClient.impl(client)
-        uri <- fs2.Stream.eval(UriHelper.fromString[IO]("https://api.kuroganehammer.com/api/characters?game=ultimate"))
-        characters <- fs2.Stream.eval(kuroganeClient.get[List[KuroganeCharacter]](uri))
-      } yield characters
+  implicit val cs: ContextShift[IO] = IO.contextShift(global)
+  implicit val timer: Timer[IO] = IO.timer(global)
+  private val blockingEC = ExecutionContext.fromExecutorService(Executors.newFixedThreadPool(5))
+  private val blocker: Blocker = Blocker.liftExecutionContext(blockingEC)
 
-    assertIO(program.compile.foldMonoid.map(_.take(2)), TestHelper.characters)
-  }
+  private val client = JavaNetClientBuilder[IO](blocker).create
+  private val kuroganeClient = KuroganeClient.impl[IO](client)
+  private val kuroganeClientMock = new KuroganeClientMock[IO]
+  private val clients = List(kuroganeClient, kuroganeClientMock)
 
-  test("Should be able to retreat movements from Kurogane API") {
-    val program: fs2.Stream[IO, List[KuroganeCharacterMove]] = for {
-      client <- BlazeClientBuilder[IO](global).stream
-      kuroganeClient = KuroganeClient.impl(client)
-      uri <- fs2.Stream.eval(UriHelper.fromString[IO]("https://api.kuroganehammer.com/api/characters/name/joker/moves?expand=true&game=ultimate"))
-      movements <- fs2.Stream.eval(kuroganeClient.get[List[KuroganeCharacterMove]](uri))
-    } yield movements
+  private val getCharactersTest = (client: KuroganeClient[IO]) =>
+    assertIO(client.getCharacters.map(_.take(2)), TestHelper.characters)
 
-    assertIO(program.compile.foldMonoid.map(_.take(2)), TestHelper.movements)
+  private val getMovementsTest = (client: KuroganeClient[IO]) =>
+    assertIO(client.getMovements("joker").map(_.take(2)), TestHelper.movements)
+
+  clients.foreach { c =>
+    test(s"Should be able to retreat characters from Kurogane API with $c") { getCharactersTest(c) }
+    test(s"Should be able to retreat movements from Kurogane API with $c") { getMovementsTest(c) }
   }
 }

@@ -9,7 +9,8 @@ import io.github.locl95.smashtools.characters.domain.KuroganeCharacterMove
 
 trait MovementsRepository[F[_]] {
   def insert(movements: List[KuroganeCharacterMove]): F[Int]
-  def get(character: String): F[List[KuroganeCharacterMove]]
+  def getMove(moveId: String): F[Option[KuroganeCharacterMove]]
+  def getMoves(character: String): F[List[KuroganeCharacterMove]]
   def cache(character: String): F[Int]
   def isCached(character: String): F[Boolean]
 }
@@ -42,9 +43,15 @@ final class MovementPostgresRepository[F[_]: Sync](transactor: Transactor[F]) ex
       .transact(transactor)
   }
 
-  override def get(character: String): F[List[KuroganeCharacterMove]] =
+  override def getMoves(character: String): F[List[KuroganeCharacterMove]] =
     sql"""select id,character,name,advantage,type,first_frame from movements where lower(character)=$character"""
       .query[KuroganeCharacterMove]
       .to[List]
+      .transact(transactor)
+
+  override def getMove(moveId: String): F[Option[KuroganeCharacterMove]] =
+    sql"""select id,character,name,advantage,type,first_frame from movements where id=$moveId"""
+      .query[KuroganeCharacterMove]
+      .option
       .transact(transactor)
 }
