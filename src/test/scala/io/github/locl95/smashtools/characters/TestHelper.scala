@@ -1,9 +1,11 @@
 package io.github.locl95.smashtools.characters
 
-import cats.effect.Sync
+import cats.Applicative
+import cats.effect.{IO, Sync}
 import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
 import io.github.locl95.smashtools.characters.repository.{CharactersRepository, MovementsRepository}
 import cats.implicits._
+import org.http4s.{EntityDecoder, Response, Status}
 
 import scala.collection.mutable
 
@@ -49,7 +51,7 @@ final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[
 
   override def isCached(character: String): F[Boolean] = false.pure[F]
 
-  override def get(character: String): F[List[KuroganeCharacterMove]] =
+  override def getMoves(character: String): F[List[KuroganeCharacterMove]] =
     movementsList.toList.filter(_.character.toLowerCase == character).pure[F]
 
   override def cache(character: String): F[Int] = 1.pure[F]
@@ -57,6 +59,22 @@ final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[
   override def clean(): Unit = {
     movementsList.clearAndShrink()
   }
+
+  override def getMove(moveId: String): F[Option[KuroganeCharacterMove]] = movementsList.find(_.id == moveId).pure[F]
+}
+
+final class KuroganeClientMock[F[_]: Applicative] extends KuroganeClient[F] {
+
+  override def toString: String = "KuroganeClientMock"
+
+  override def getCharacters(implicit decoder: EntityDecoder[F, List[KuroganeCharacter]]): F[List[KuroganeCharacter]] =
+    TestHelper.characters.pure[F]
+
+  override def getMovements(
+      character: String
+    )(
+      implicit decoder: EntityDecoder[F, List[KuroganeCharacterMove]]
+    ): F[List[KuroganeCharacterMove]] = TestHelper.movements.pure[F]
 }
 
 object TestHelper {
@@ -69,4 +87,20 @@ object TestHelper {
       KuroganeCharacterMove("42083468d7124245b6b7f58658bb4843", "Joker", "Jab 1", Some(-16), "ground", Some(4)),
       KuroganeCharacterMove("7a25432add0345549df19a577243a983", "Joker", "Jab 1 (Arsene)", None, "ground", Some(4))
     )
+
+  def check[A](
+      actual: IO[Response[IO]],
+      expectedStatus: Status,
+      expectedBody: Option[A]
+    )(
+      implicit ev: EntityDecoder[IO, A]
+    ): Boolean = {
+    val actualResp = actual.unsafeRunSync()
+    actualResp.status == expectedStatus && expectedBody.fold[Boolean](
+      actualResp.body.compile.toVector.unsafeRunSync().isEmpty
+    )(expected => {
+      val a = actualResp.as[A].unsafeRunSync()
+      a == expected
+    })
+  }
 }
