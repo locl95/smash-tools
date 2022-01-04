@@ -28,8 +28,14 @@ class TournamentRepositorySpec extends CatsEffectSuite{
       result <- repo.insert(TestHelper.tournament)
     } yield result == 1)
 
+  private val getTest = (repo: TournamentRepository[IO]) =>
+    assertIOBoolean(for {
+      _ <- repo.insert(TestHelper.tournament)
+      result <- repo.get
+    } yield result.take(1) == List(TestHelper.tournament))
+
 
   repositories.foreach { r =>
-    test(s"Given some tournaments I can insert them with $r") { insertTest(r) }
-  }
+    test(s"Given some tournaments I can insert them with $r") { insertTest(r)}
+    test(s"Given some tournaments in bdd I can retrieve them with $r") { getTest(r)}}
 }

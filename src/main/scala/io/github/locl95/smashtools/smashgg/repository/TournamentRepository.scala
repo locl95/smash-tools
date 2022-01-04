@@ -7,7 +7,7 @@ import io.github.locl95.smashtools.smashgg.domain.Tournament
 
 trait TournamentRepository[F[_]] {
   def insert(tournament: Tournament): F[Int]
-  //def getTournament(tournamentName: String): F[Option[Tournament]]
+  def get: F[List[Tournament]]
 }
 
 final class TournamentPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends TournamentRepository[F] {
@@ -16,6 +16,16 @@ final class TournamentPostgresRepository[F[_]: Sync](transactor: Transactor[F]) 
   override def insert(tournament: Tournament): F[Int] =
     sql"insert into tournaments (name) values ($tournament.name)".update.run.transact(transactor)
 
-//
-  //override def getTournament(tournamentName: String): F[Option[Tournament]] = ???
+  override def get: F[List[Tournament]] =
+    sql"select name from tournaments"
+      .query[Tournament]
+      .to[List]
+      .transact(transactor)
+
+
+  /*override def get: F[List[KuroganeCharacter]] =
+    sql"select name from characters"
+      .query[KuroganeCharacter]
+      .to[List]
+      .transact(transactor)*/
 }

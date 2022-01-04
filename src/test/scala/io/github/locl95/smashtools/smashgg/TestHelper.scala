@@ -28,7 +28,11 @@ final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentReposito
   override def clean(): Unit = {
     tournamentsList.clearAndShrink()
   }
+
+  override def get: F[List[Tournament]] =
+    tournamentsList.toList.pure[F]
 }
+
 /*
 final class SmashggClientMock[F[_]: Applicative] extends SmashggClient[F]{
   override def toString: String = "SmashggClientMock"
