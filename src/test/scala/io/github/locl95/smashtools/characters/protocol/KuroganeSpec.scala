@@ -129,6 +129,22 @@ class KuroganeSpec extends CatsEffectSuite {
     ))
   }
 
+  test("I can transform Kurogane Bowser's Moves Json patterns") {
+    val movementsJson = scala.io.Source.fromFile(s"src/test/resources/characters/moves/bowser-moves.json")
+
+    val movementsFromJson =
+      for {
+        json <- parse(movementsJson.getLines().mkString)
+        movements <- Decoder.decodeList[KuroganeCharacterMove].decodeJson(json)
+      } yield movements
+
+    assert(movementsFromJson.map(_.take(2)).contains(    List(
+      KuroganeCharacterMove("0a7b493026c74f67b5ceff78fe2af791", "Bowser", "Jab 1", Some(-13), "ground", Some(7)),
+      KuroganeCharacterMove("f9cc908254ac4e63ab156ccf90009afa", "Bowser", "Jab 2", Some(-9), "ground", Some(9))
+    )
+    ))
+  }
+
   test("I can transform Characters to Json") {
     val charactersJson = List(KuroganeCharacter("Sheik"), KuroganeCharacter("Bowser")).asJson
     val expectedJson =

@@ -3,7 +3,7 @@ package io.github.locl95.smashtools.smashgg.protocol
 import munit.CatsEffectSuite
 import io.circe.syntax._
 import io.circe.parser._
-import io.github.locl95.smashtools.smashgg.domain.{Event, Participant, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.Smashgg._
 
 class SmashggSpec extends CatsEffectSuite {
@@ -11,6 +11,7 @@ class SmashggSpec extends CatsEffectSuite {
     val json = SmashggQuery.getTournamentQuery("mst-4").asJson
     assert(json.hcursor.downField("query").as[String].exists(_.contains("tournament(slug: \"mst-4\")")))
   }
+
   test("I can decode smash.gg tournament") {
     val tournamentJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-tournament.json")
     val expectedTournament = Tournament("MST 4")
@@ -40,7 +41,6 @@ class SmashggSpec extends CatsEffectSuite {
       } yield participants
 
     assert(participantsFromJson.map(_.take(3)).contains(expectedFirstParticipants))
-
   }
 
   test("I can decode smash.gg events") {
@@ -53,6 +53,46 @@ class SmashggSpec extends CatsEffectSuite {
       } yield event
 
     assert(eventFromJson.contains(Event("Ultimate Singles")))
+  }
+
+  test("I can decode smash.gg entrants"){
+    val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-entrants.json")
+    val expectedTwoFirstEntrants = List(Entrant("Raiden's | Zandark"), Entrant("FS | Sevro"))
+
+    val entrantsFromJson =
+      for {
+        json <- parse(eventJson.getLines().mkString)
+        entrants <- entrantsDecoder.decodeJson(json)
+      } yield entrants
+
+    assert(entrantsFromJson.map(_.take(2)).contains(expectedTwoFirstEntrants))
+  }
+
+  test("I can decode smash.gg standings"){
+    val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-standings.json")
+    val expectedTwoFirstPlayers = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
+
+    val standingsFromJson =
+      for {
+        json <- parse(eventJson.getLines().mkString)
+        standings <- standingsDecoder.decodeJson(json)
+      } yield standings
+
+    assert(standingsFromJson.map(_.take(2)).contains(expectedTwoFirstPlayers))
+  }
+
+  test("I can decode smash.gg phases") {
+    val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-phases.json")
+    val expectedTwoFirstPhases = List(Phase(991477,"Bracket Pools"), Phase(991478,"Top 16"))
+
+    val phasesFromJson =
+      for {
+        json <- parse(eventJson.getLines().mkString)
+        phases <- phasesDecoder.decodeJson(json)
+      } yield phases
+
+    assert(phasesFromJson.map(_.take(2)).contains(expectedTwoFirstPhases))
 
   }
+
 }

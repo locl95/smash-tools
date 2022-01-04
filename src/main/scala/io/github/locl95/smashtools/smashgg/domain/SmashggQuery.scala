@@ -65,4 +65,69 @@ object SmashggQuery {
      |}
      |}""".stripMargin
   )
+
+  def getEntrant(tournament: String, event: String):SmashggQuery = SmashggQuery (
+    s"""query getEntrants {
+       |event(slug: \"tournament/$tournament/event/$event\") {
+       |  id
+       |  entrants(query: {perPage: 500}) {
+       |    nodes {
+       |      id
+       |      name
+       |      participants {
+       |        id
+       |        player {
+       |          id
+       |        }
+       |      }
+       |    }
+       |  }
+       |}
+       |}""".stripMargin
+  )
+
+  def getStandings(tournament: String, event: String, page: Int):SmashggQuery = SmashggQuery (
+    s"""query getTournament {
+       |  event(slug: \"tournament/$tournament/event/$event\") {
+       |    id
+       |    standings(query: {
+       |      page: $page perPage: 50
+       |    } ) {
+       |      nodes {
+       |        placement
+       |        entrant {
+       |          id
+       |          participants {
+       |            gamerTag
+       |            player {
+       |              id
+       |            }
+       |          }
+       |        }
+       |      }
+       |   }
+       |  }
+       |}""".stripMargin
+  )
+
+  def getPhases(tournament: String, event: String):SmashggQuery = SmashggQuery(
+    s"""query getPhases{
+       |  event(slug: \"tournament/$tournament/event/$event\") {
+       |    phases {
+       |      id
+       |      name
+       |      bracketType
+       |      phaseGroups {
+       |        nodes {
+       |          id
+       |          wave {
+       |            id
+       |          }
+       |        }
+       |      }
+       |    }
+       |  }
+       |}""".stripMargin
+  )
+
 }

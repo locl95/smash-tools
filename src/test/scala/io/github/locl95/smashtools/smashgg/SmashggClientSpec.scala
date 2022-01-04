@@ -1,7 +1,7 @@
 package io.github.locl95.smashtools.smashgg
 
 import cats.effect.IO
-import io.github.locl95.smashtools.smashgg.domain.{Event, Participant, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.Smashgg._
 import munit.CatsEffectSuite
 import org.http4s.client.blaze.BlazeClientBuilder
@@ -44,4 +44,41 @@ class SmashggClientSpec extends CatsEffectSuite {
 
     assertIO(program.compile.lastOrError, Event("Ultimate Singles"))
   }
+
+  test("Should be able to retreat phases from smash.gg API") {
+    val program: fs2.Stream[IO, List[Phase]] = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      smashggClient = SmashggClient.impl(client)
+      phases <- fs2
+        .Stream
+        .eval(smashggClient.get[List[Phase]](SmashggQuery.getPhases("mst-4", "ultimate-singles")))
+    } yield phases
+
+    assertIO(program.compile.foldMonoid.map(i => i.contains(Phase(991477, "Bracket Pools"))), true)
+  }
+
+  test("Should be able to retreat standings from smash.gg API") {
+    val program: fs2.Stream[IO, List[PlayerStanding]] = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      smashggClient = SmashggClient.impl(client)
+      standings <- fs2
+        .Stream
+        .eval(smashggClient.get[List[PlayerStanding]](SmashggQuery.getStandings("mst-4", "ultimate-singles", 1)))
+    } yield standings
+
+    assertIO(program.compile.foldMonoid.map(i => i.contains(PlayerStanding(1,8232866))), true)
+  }
+
+  test("Should be able to retreat entrants from smash.gg API") {
+    val program: fs2.Stream[IO, List[Entrant]] = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      smashggClient = SmashggClient.impl(client)
+      entrants <- fs2
+        .Stream
+        .eval(smashggClient.get[List[Entrant]](SmashggQuery.getEntrant("mst-4", "ultimate-singles")))
+    } yield entrants
+
+    assertIO(program.compile.foldMonoid.map(i => i.contains(Entrant("Raiden's | Zandark"))), true)
+  }
+
 }
