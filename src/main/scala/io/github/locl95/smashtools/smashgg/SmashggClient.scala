@@ -1,6 +1,7 @@
 package io.github.locl95.smashtools.smashgg
 
-import io.github.locl95.smashtools.smashgg.domain.SmashggQuery
+
+import io.github.locl95.smashtools.smashgg.domain.{SmashggQuery}
 import org.http4s.Method.POST
 import org.http4s._
 import org.http4s.client.Client
@@ -8,6 +9,10 @@ import org.http4s.implicits.http4sLiteralsSyntax
 
 trait SmashggClient[F[_]] {
   def get[A](body: SmashggQuery)(implicit encoder: EntityEncoder[F, SmashggQuery], decoder: EntityDecoder[F, A]): F[A]
+
+  //def getTournament(tournamentName: String)(implicit decoder: EntityDecoder[F, List[Tournament]]): F[List[Tournament]]
+
+  override def toString: String = s"SmashggClient"
 }
 
 case class SmashggClientError(t: Throwable) extends RuntimeException
@@ -30,5 +35,7 @@ object SmashggClient {
 
       C.expect[A](request)
     }
+
+   // override def getTournament(tournamentName: String)(implicit decoder: EntityDecoder[F, List[Tournament]]): F[List[Tournament]] = ???
   }
 }
