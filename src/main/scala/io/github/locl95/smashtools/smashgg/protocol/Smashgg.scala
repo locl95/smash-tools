@@ -4,7 +4,7 @@ import cats.Traverse
 import cats.effect.Sync
 import io.circe.generic.semiauto.deriveEncoder
 import io.circe.{Decoder, Encoder, HCursor, Json}
-import io.github.locl95.smashtools.smashgg.domain.{Event, Participant, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.{EntityDecoder, EntityEncoder}
 
@@ -18,7 +18,8 @@ object Smashgg {
       name <- c.downField("data").downField("tournament").downField("name").as[String]
     } yield Tournament(name)
   }
-  implicit def tournamentEntityDecoder[F[_]: Sync]: EntityDecoder[F, Tournament] = jsonOf
+
+  implicit def tournamentEntityDecoder[F[_] : Sync]: EntityDecoder[F, Tournament] = jsonOf
 
   implicit val participantsDecoder: Decoder[List[Participant]] = (c: HCursor) => {
     for {
@@ -28,22 +29,103 @@ object Smashgg {
         .downField("participants")
         .downField("nodes")
         .as[List[Json]]
-      entrantsJson <- Traverse[List].traverse(nodesJson) { item => item.hcursor.downField("entrants").as[List[Json]] }
-      participantsJson <- Traverse[List].traverse(entrantsJson) { item =>
-        Traverse[List].traverse(item) { i => i.hcursor.downField("participants").as[List[Json]] }
-      }
-      ids <- Traverse[List].traverse(participantsJson) { item =>
-        Traverse[List].traverse(item) { i => Traverse[List].traverse(i) { i2 => i2.hcursor.downField("id").as[Int] } }
-      }
+      entrantsJson <-
+        Traverse[List]
+          .traverse(nodesJson) { item =>
+            item
+              .hcursor.downField("entrants")
+              .as[List[Json]]
+          }
+      participantsJson <-
+        Traverse[List]
+          .traverse(entrantsJson) { item =>
+            Traverse[List]
+              .traverse(item) { i =>
+                i
+                  .hcursor
+                  .downField("participants")
+                  .as[List[Json]]
+              }
+          }
+      ids <- Traverse[List]
+        .traverse(participantsJson) { item =>
+          Traverse[List]
+            .traverse(item) { i =>
+              Traverse[List]
+                .traverse(i) { i2 =>
+                  i2
+                    .hcursor
+                    .downField("id")
+                    .as[Int]
+                }
+            }
+        }
     } yield ids.flatten.map(Participant)
   }
-  implicit def participantsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[Participant]] = jsonOf
+
+  implicit def participantsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Participant]] = jsonOf
 
   implicit val eventDecoder: Decoder[Event] = (c: HCursor) => {
     for {
       name <- c.downField("data").downField("event").downField("name").as[String]
     } yield Event(name)
   }
-  implicit def eventEntityDecoder[F[_]: Sync]: EntityDecoder[F, Event] = jsonOf
 
+  implicit def eventEntityDecoder[F[_] : Sync]: EntityDecoder[F, Event] = jsonOf
+
+  implicit val entrantsDecoder: Decoder[List[Entrant]] = (c: HCursor) => {
+    for {
+      nodes <- c
+        .downField("data")
+        .downField("event")
+        .downField("entrants")
+        .downField("nodes")
+        .as[List[Json]]
+      entrants <- Traverse[List].traverse(nodes) { item =>
+        item.hcursor.downField("name").as[String]
+      }
+    } yield entrants.map(x => Entrant(x))
+  }
+
+  implicit def entrantsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Entrant]] = jsonOf
+
+  implicit val standingsDecoder: Decoder[List[PlayerStanding]] = (c: HCursor) => {
+    for {
+      nodes <- c
+        .downField("data")
+        .downField("event")
+        .downField("standings")
+        .downField("nodes")
+        .as[List[Json]]
+      playerPlacements <- Traverse[List].traverse(nodes) {item =>
+        item.hcursor.downField("placement").as[Int]
+      }
+      idEntrant <- Traverse[List].traverse(nodes) {
+        item => item.hcursor
+          .downField("entrant")
+          .downField("id")
+          .as[Int]
+      }
+    } yield playerPlacements.zip(idEntrant).map(x => PlayerStanding(x._1, x._2))
+  }
+
+  implicit def standingsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[PlayerStanding]] = jsonOf
+
+  implicit val phasesDecoder: Decoder[List[Phase]] = (c: HCursor) => {
+    for{
+      nodes <- c
+        .downField("data")
+        .downField("event")
+        .downField("phases")
+        .as[List[Json]]
+      id <- Traverse[List].traverse(nodes) {
+        item => item.hcursor.downField("id").as[Int]
+      }
+      name <- Traverse[List].traverse(nodes) {item =>
+        item.hcursor.downField("name").as[String]
+      }
+    } yield id.zip(name).map(x => Phase(x._1, x._2))
+  }
+
+  implicit def phaseEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Phase]] = jsonOf
 }
