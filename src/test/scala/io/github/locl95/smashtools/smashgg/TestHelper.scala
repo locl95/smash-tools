@@ -18,7 +18,7 @@ final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentReposito
 
   override def insert(tournaments: Tournament): F[Int] = {
     tournamentsList.append(tournaments).pure[F]
-    tournamentsList.size.pure[F]
+    1.pure[F]
   }
 
   /*
