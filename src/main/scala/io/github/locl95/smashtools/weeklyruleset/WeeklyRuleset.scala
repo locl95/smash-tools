@@ -2,9 +2,10 @@ package io.github.locl95.smashtools.weeklyruleset
 
 import com.danielasfregola.twitter4s.TwitterRestClient
 import com.danielasfregola.twitter4s.entities.{AccessToken, ConsumerToken}
+import org.joda.time.DateTime
 
-import scala.concurrent.ExecutionContext.global
-import scala.util.{Failure, Properties, Success}
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.{Failure, Properties, Random, Success}
 
 object WeeklyRuleset extends App {
 
@@ -22,10 +23,60 @@ object WeeklyRuleset extends App {
     case _ => throw new Exception("Error while gettint Twtitter environment variables")
   }
 
+  val stagesStartersPool: List[String] =
+    List(
+      "Battlefield",
+      "Small Battlefield",
+      "Final Destination",
+      "Pokemon Stadium 2",
+      "Smashville",
+      "Kalos Pokemon League",
+      "Town and City",
+      "Hollow Bastion"
+    )
+
+  val numberOfStarters = Random.between(3, 6)
+
+  val stagesCounterPicksPool: List[String] =
+    List(
+      "Kongo Jungle",
+      "Dream Land",
+      "Brinstar",
+      "Yoshi's Story",
+      "Fountain of Dreams",
+      "Frigate Orpheon",
+      "Halberd",
+      "Lylat Cruise",
+      "Castle Siege",
+      "Unova Pokemon League",
+      "Prism Tower",
+      "Duck Hunt",
+      "Wuhu Island"
+    )
+
+  val numberOfCounterPicks = Random.between(2, 6)
+
+  val forbiddenCharacters: List[String] = List("Steve", "Sonic", "Samus", "Ken", "Luigi")
+  val numberOfForbiddenCharacters = Random.between(1, 2)
+
+  val now = DateTime.now
+
+  val twitterBody: String =
+    s"Ruleset Semanal ${now.toString("dd-MM-yyyy")} - ${now
+      .plusDays(6)
+      .toString("dd-MM-yyyy")}:\nStarters: ${Random.shuffle(stagesStartersPool).take(numberOfStarters).mkString(", ")}\nCounterPicks: ${Random
+      .shuffle(stagesCounterPicksPool)
+      .take(numberOfCounterPicks)
+      .mkString(", ")}\nBans: ${(numberOfStarters + numberOfCounterPicks) / 2 + 1}\nPersonajes Baneados: ${Random.shuffle(forbiddenCharacters).take(numberOfForbiddenCharacters).mkString(", ")}"
+
   twitterClient
-    .createTweet("Hello World from Heroku")
-    .andThen {
-      case Success(tweet) => println(s"[WEEKLY-RULESET] Created tweet ${tweet.id} at ${tweet.created_at}")
-      case Failure(exception) => println(s"[WEEKLY-RULESET] Error while creating tweet: ${exception.getMessage}")
-    }(global)
+    .createTweet(twitterBody)
+    .onComplete {
+      case Success(tweet) =>
+        println(s"[WEEKLY-RULESET] Created tweet ${tweet.id} at ${tweet.created_at}")
+        sys.exit(0)
+      case Failure(exception) =>
+        println(s"[WEEKLY-RULESET] Error while creating tweet: ${exception.getMessage}")
+        sys.exit(0)
+    }
 }
