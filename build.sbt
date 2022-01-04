@@ -26,7 +26,10 @@ lazy val root = (project in file("."))
       "org.scalameta"   %% "svm-subs"            % "20.2.0",
       "org.tpolecat"    %% "doobie-core"         % DoobieVersion,
       "org.tpolecat"    %% "doobie-postgres"     % DoobieVersion,
-      "org.flywaydb"    % "flyway-core"          % "8.3.0"
+      "org.flywaydb"    % "flyway-core"          % "8.3.0",
+      "commons-codec"   % "commons-codec"        % "1.15",
+      "joda-time"       % "joda-time"            % "2.10.13",
+      "com.danielasfregola" %% "twitter4s"       % "7.0"
     ),
     addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.13.0" cross CrossVersion.full),
     addCompilerPlugin("com.olegpy"    %% "better-monadic-for" % "0.3.1"),
