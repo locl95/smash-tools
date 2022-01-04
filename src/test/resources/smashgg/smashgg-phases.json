@@ -1,0 +1,60 @@
+{
+  "data": {
+    "event": {
+      "phases": [
+        {
+          "id": 991477,
+          "name": "Bracket Pools",
+          "bracketType": "DOUBLE_ELIMINATION",
+          "phaseGroups": {
+            "nodes": [
+              {
+                "id": 1565268,
+                "wave": {
+                  "id": 56436
+                }
+              },
+              {
+                "id": 1565269,
+                "wave": {
+                  "id": 56437
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": 991478,
+          "name": "Top 16",
+          "bracketType": "DOUBLE_ELIMINATION",
+          "phaseGroups": {
+            "nodes": [
+              {
+                "id": 1565270,
+                "wave": null
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cacheControl": {
+      "version": 1,
+      "hints": [
+        {
+          "path": [
+            "event"
+          ],
+          "maxAge": 60,
+          "scope": "PRIVATE"
+        }
+      ]
+    },
+    "queryComplexity": 8
+  },
+  "actionRecords": [
+
+  ]
+}
