@@ -1,9 +1,9 @@
-package io.github.locl95.smashtools.weeklyruleset.protocol
+package io.github.locl95.smashtools.dailyruleset.protocol
 
 import cats.effect.Sync
 import io.circe.generic.semiauto.deriveEncoder
 import io.circe.{Decoder, Encoder, HCursor}
-import io.github.locl95.smashtools.weeklyruleset.domain.{TwitterRequest, TwitterResponse}
+import io.github.locl95.smashtools.dailyruleset.domain.{TwitterRequest, TwitterResponse}
 import org.http4s.{EntityDecoder, EntityEncoder}
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 

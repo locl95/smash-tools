@@ -1,4 +1,4 @@
-package io.github.locl95.smashtools.weeklyruleset
+package io.github.locl95.smashtools.dailyruleset
 
 import org.apache.commons.codec.binary.{Base64, Hex}
 
