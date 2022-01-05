@@ -60,7 +60,9 @@ object Smashgg {
                 }
             }
         }
-    } yield ids.flatten.map(Participant)
+    } yield {
+      ids.flatten.map(Participant)
+    }
   }
 
   implicit def participantsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Participant]] = jsonOf
