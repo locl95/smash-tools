@@ -1,12 +1,12 @@
-package io.github.locl95.smashtools.weeklyruleset
+package io.github.locl95.smashtools.dailyruleset
 
 import cats.effect.Sync
-import io.github.locl95.smashtools.weeklyruleset.domain.{TwitterRequest, TwitterResponse}
+import io.github.locl95.smashtools.dailyruleset.domain.{TwitterRequest, TwitterResponse}
 import org.http4s.Method.POST
 import org.http4s.client.Client
 import org.http4s.implicits.http4sLiteralsSyntax
 import org.http4s.{Header, Headers, Request}
-import io.github.locl95.smashtools.weeklyruleset.protocol.Twitter._
+import io.github.locl95.smashtools.dailyruleset.protocol.Twitter._
 import org.apache.commons.codec.binary.Base64
 import org.joda.time.DateTime
 

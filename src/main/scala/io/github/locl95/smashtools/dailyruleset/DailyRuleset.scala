@@ -1,4 +1,4 @@
-package io.github.locl95.smashtools.weeklyruleset
+package io.github.locl95.smashtools.dailyruleset
 
 import com.danielasfregola.twitter4s.TwitterRestClient
 import com.danielasfregola.twitter4s.entities.{AccessToken, ConsumerToken}
@@ -7,7 +7,7 @@ import org.joda.time.DateTime
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.util.{Failure, Properties, Random, Success}
 
-object WeeklyRuleset extends App {
+object DailyRuleset extends App {
 
   private val consumerToken = Properties.envOrNone("RULESET_CONSUMER_TOKEN")
   private val consumerSecret = Properties.envOrNone("RULESET_CONSUMER_SECRET")
@@ -62,9 +62,7 @@ object WeeklyRuleset extends App {
   val now = DateTime.now
 
   val twitterBody: String =
-    s"Ruleset Semanal ${now.toString("dd-MM-yyyy")} - ${now
-      .plusDays(6)
-      .toString("dd-MM-yyyy")}:\nStarters: ${Random.shuffle(stagesStartersPool).take(numberOfStarters).mkString(", ")}\nCounterPicks: ${Random
+    s"Ruleset Diario ${now.toString("dd-MM-yyyy")}:\nStarters: ${Random.shuffle(stagesStartersPool).take(numberOfStarters).mkString(", ")}\nCounterPicks: ${Random
       .shuffle(stagesCounterPicksPool)
       .take(numberOfCounterPicks)
       .mkString(", ")}\nBans: ${(numberOfStarters + numberOfCounterPicks) / 2 + 1}\nPersonajes Baneados: ${Random.shuffle(forbiddenCharacters).take(numberOfForbiddenCharacters).mkString(", ")}"

@@ -1,4 +1,4 @@
-package io.github.locl95.smashtools.weeklyruleset
+package io.github.locl95.smashtools.dailyruleset
 
 import munit.CatsEffectSuite
 

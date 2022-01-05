@@ -1,9 +1,9 @@
-package io.github.locl95.smashtools.weeklyruleset.protocol
+package io.github.locl95.smashtools.dailyruleset.protocol
 
 import io.circe.parser._
 import io.circe.syntax._
-import io.github.locl95.smashtools.weeklyruleset.domain.{TwitterRequest, TwitterResponse}
-import io.github.locl95.smashtools.weeklyruleset.protocol.Twitter._
+import io.github.locl95.smashtools.dailyruleset.domain.{TwitterRequest, TwitterResponse}
+import io.github.locl95.smashtools.dailyruleset.protocol.Twitter._
 import munit.CatsEffectSuite
 
 class TwitterSpec extends CatsEffectSuite {
