@@ -2,8 +2,8 @@ package io.github.locl95.smashtools.smashgg
 
 import cats.effect.Sync
 import cats.implicits.catsSyntaxApplicativeId
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Tournament}
-import io.github.locl95.smashtools.smashgg.repository.{EntrantRepository, EventRepository, TournamentRepository}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Tournament}
+import io.github.locl95.smashtools.smashgg.repository.{EntrantRepository, EventRepository, PhaseRepository, PlayerStandingRepository, TournamentRepository}
 
 import scala.collection.mutable
 
@@ -49,6 +49,30 @@ final class EventInMemoryRepository[F[_]: Sync] extends EventRepository[F] with 
     eventsArray.clearAndShrink()
 }
 
+final class PlayerStandingInMemoryRepository[F[_]: Sync] extends PlayerStandingRepository[F] with InMemoryRepository {
+  private val playerStandingsArray: mutable.ArrayDeque[PlayerStanding] = mutable.ArrayDeque.empty
+  override def toString:String =
+    "PlayerStandingInMemoryRepository"
+  override def insert(playerStanding: List[PlayerStanding]): F[Int] = {
+    playerStandingsArray.appendAll(playerStanding).pure[F]
+    playerStandingsArray.size.pure[F]
+  }
+  override def clean(): Unit =
+    playerStandingsArray.clearAndShrink()
+}
+
+final class PhaseInMemoryRepository[F[_]: Sync] extends PhaseRepository[F] with InMemoryRepository {
+  private val phashesArray: mutable.ArrayDeque[Phase] = mutable.ArrayDeque.empty
+  override def toString:String =
+    "PhaseInMemoryRepository"
+  override def insert(phases: List[Phase]): F[Int] = {
+    phashesArray.appendAll(phases).pure[F]
+    phashesArray.size.pure[F]
+  }
+  override def clean(): Unit =
+    phashesArray.clearAndShrink()
+}
+
 object TestHelper {
   val tournament: Tournament = Tournament("MST 4")
   val participants:List[Participant] =
@@ -59,4 +83,6 @@ object TestHelper {
     )
   val entrant: Entrant = Entrant("Raiden's | Zandark")
   val event: Event = Event("Ultimate Singles")
+  val playerStandings: List[PlayerStanding] = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
+  val phases: List[Phase] = List(Phase(991477, "Bracket Pools"), Phase(991478, "Top 16"))
 }
