@@ -4,7 +4,7 @@ import cats.Traverse
 import cats.effect.Sync
 import io.circe.generic.semiauto.deriveEncoder
 import io.circe.{Decoder, Encoder, HCursor, Json}
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Sets, SmashggQuery, Tournament}
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.{EntityDecoder, EntityEncoder}
 
@@ -130,4 +130,54 @@ object Smashgg {
   }
 
   implicit def phaseEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Phase]] = jsonOf
+
+  implicit val setsDecoder: Decoder[(List[Sets], List[(List[Int],List[Int])])] = (c: HCursor) => {
+    for {
+      idEvent <- c
+        .downField("data")
+        .downField("event")
+        .downField("id")
+        .as[Int]
+
+      nodes <- c
+        .downField("data")
+        .downField("event")
+        .downField("sets")
+        .downField("nodes")
+        .as[List[Json]]
+
+      idSets <- Traverse[List].traverse(nodes) {
+        item => item.hcursor.downField("id").as[Int]
+      }
+
+      slots <- Traverse[List].traverse(nodes) {
+        item => item.hcursor
+          .downField("slots")
+          .as[List[Json]]
+      }
+
+      idPlayers <- Traverse[List].traverse(slots) {
+        item => Traverse[List].traverse(item) {
+          i => i.hcursor
+            .downField("entrant")
+            .downField("id")
+            .as[Int]
+        }
+      }
+
+      scorePlayers <- Traverse[List].traverse(slots) {
+        item => Traverse[List].traverse(item) {
+          i => i.hcursor
+            .downField("standing")
+            .downField("stats")
+            .downField("score")
+            .downField("value")
+            .as[Int]
+        }
+      }
+    } yield {
+      val players = idPlayers.zip(scorePlayers)
+      (idSets.map(Sets(_, idEvent)), players)
+    }
+  }
 }

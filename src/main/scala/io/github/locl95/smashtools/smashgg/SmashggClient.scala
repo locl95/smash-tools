@@ -35,7 +35,5 @@ object SmashggClient {
 
       C.expect[A](request)
     }
-
-   // override def getTournament(tournamentName: String)(implicit decoder: EntityDecoder[F, List[Tournament]]): F[List[Tournament]] = ???
   }
 }

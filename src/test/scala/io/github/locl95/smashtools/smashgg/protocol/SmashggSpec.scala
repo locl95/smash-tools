@@ -3,7 +3,7 @@ package io.github.locl95.smashtools.smashgg.protocol
 import munit.CatsEffectSuite
 import io.circe.syntax._
 import io.circe.parser._
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Sets, SmashggQuery, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.Smashgg._
 
 class SmashggSpec extends CatsEffectSuite {
@@ -93,6 +93,19 @@ class SmashggSpec extends CatsEffectSuite {
 
     assert(phasesFromJson.map(_.take(2)).contains(expectedTwoFirstPhases))
 
+  }
+
+  test("I can decode smash.gg sets") {
+    val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-events.json")
+    val expectedTwoFirstSets = List(Sets(40865697,615463, 8232866, 8280489), Sets(40865698,615463, 8232866, 8280489))
+
+    val setsFromJson =
+      for {
+        json <- parse(eventJson.getLines().mkString)
+        sets <- setsDecoder.decodeJson(json)
+      } yield sets._1
+
+    assert(setsFromJson.map(_.take(2)).contains(expectedTwoFirstSets))
   }
 
 }
