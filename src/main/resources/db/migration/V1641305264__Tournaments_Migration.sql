@@ -1,3 +1,4 @@
 create table tournaments(
-    name text not null primary key
+    "id" integer not null primary key,
+    name text not null
 );

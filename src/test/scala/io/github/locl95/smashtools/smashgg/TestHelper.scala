@@ -74,7 +74,7 @@ final class PhaseInMemoryRepository[F[_]: Sync] extends PhaseRepository[F] with 
 }
 
 object TestHelper {
-  val tournament: Tournament = Tournament("MST 4")
+  val tournament: Tournament = Tournament(312932,"MST 4")
   val participants:List[Participant] =
     List(
       Participant(List(8022537)),

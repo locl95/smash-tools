@@ -4,7 +4,7 @@ import cats.Traverse
 import cats.effect.Sync
 import io.circe.generic.semiauto.deriveEncoder
 import io.circe.{Decoder, Encoder, HCursor, Json}
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Sets, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Score, Sets, SmashggQuery, Tournament}
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.{EntityDecoder, EntityEncoder}
 
@@ -15,8 +15,9 @@ object Smashgg {
 
   implicit val tournamentDecoder: Decoder[Tournament] = (c: HCursor) => {
     for {
+      id <- c.downField("data").downField("tournament").downField("id").as[Int]
       name <- c.downField("data").downField("tournament").downField("name").as[String]
-    } yield Tournament(name)
+    } yield Tournament(id,name)
   }
 
   implicit def tournamentEntityDecoder[F[_] : Sync]: EntityDecoder[F, Tournament] = jsonOf
@@ -129,7 +130,7 @@ object Smashgg {
 
   implicit def phaseEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Phase]] = jsonOf
 
-  implicit val setsDecoder: Decoder[(List[Sets], List[(List[Int],List[Int])])] = (c: HCursor) => {
+  implicit val setsDecoder: Decoder[List[Sets]] = (c: HCursor) => {
     for {
       idEvent <- c
         .downField("data")
@@ -174,8 +175,11 @@ object Smashgg {
         }
       }
     } yield {
-      val players = idPlayers.zip(scorePlayers)
-      (idSets.map(Sets(_, idEvent)), players)
+      val scores = idPlayers.zip(scorePlayers).map{
+        case (id1 :: id2 :: Nil, s1 :: s2 :: Nil) => (Score(id1, s1), Score(id2, s2))
+        case _ => (Score(0,0), Score(0,0)) //retornar DecodingFailure
+      }
+      idSets.zip(scores).map(x => Sets(x._1, idEvent, x._2))
     }
   }
 }
