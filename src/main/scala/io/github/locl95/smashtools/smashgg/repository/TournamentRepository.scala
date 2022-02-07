@@ -14,7 +14,7 @@ final class TournamentPostgresRepository[F[_]: Sync](transactor: Transactor[F]) 
   override def toString: String = "TournamentPostgresRepository"
 
   override def insert(tournament: Tournament): F[Int] =
-    sql"insert into tournaments (id,name) values ($tournament.id, $tournament.name)".update.run.transact(transactor)
+    sql"insert into tournaments (id,name) values (${tournament.id}, ${tournament.name})".update.run.transact(transactor)
 
   override def get: F[List[Tournament]] =
     sql"select name from tournaments"

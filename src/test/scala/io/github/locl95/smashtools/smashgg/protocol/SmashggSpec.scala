@@ -52,12 +52,12 @@ class SmashggSpec extends CatsEffectSuite {
         event <- eventDecoder.decodeJson(json)
       } yield event
 
-    assert(eventFromJson.contains(Event("Ultimate Singles")))
+    assert(eventFromJson.contains(Event(615463, "Ultimate Singles")))
   }
 
   test("I can decode smash.gg entrants"){
     val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-entrants.json")
-    val expectedTwoFirstEntrants = List(Entrant("Raiden's | Zandark"), Entrant("FS | Sevro"))
+    val expectedTwoFirstEntrants = List(Entrant(8348984, 615463, "Raiden's | Zandark"), Entrant(8346516, 615463, "FS | Sevro"))
 
     val entrantsFromJson =
       for {

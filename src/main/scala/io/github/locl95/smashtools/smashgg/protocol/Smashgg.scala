@@ -68,24 +68,32 @@ object Smashgg {
 
   implicit val eventDecoder: Decoder[Event] = (c: HCursor) => {
     for {
+      id <- c.downField("data").downField("event").downField("id").as[Int]
       name <- c.downField("data").downField("event").downField("name").as[String]
-    } yield Event(name)
+    } yield Event(id, name)
   }
 
   implicit def eventEntityDecoder[F[_] : Sync]: EntityDecoder[F, Event] = jsonOf
 
   implicit val entrantsDecoder: Decoder[List[Entrant]] = (c: HCursor) => {
     for {
+      idEvent <- c
+        .downField("data")
+        .downField("event")
+        .downField("id").as[Int]
       nodes <- c
         .downField("data")
         .downField("event")
         .downField("entrants")
         .downField("nodes")
         .as[List[Json]]
-      entrants <- Traverse[List].traverse(nodes) { item =>
+      entrantsName <- Traverse[List].traverse(nodes) { item =>
         item.hcursor.downField("name").as[String]
       }
-    } yield entrants.map(x => Entrant(x))
+      entrantsId <- Traverse[List].traverse(nodes) {
+        item => item.hcursor.downField("id").as[Int]
+      }
+    } yield entrantsName.zip(entrantsId).map(x => Entrant(x._2, idEvent, x._1))
   }
 
   implicit def entrantsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Entrant]] = jsonOf

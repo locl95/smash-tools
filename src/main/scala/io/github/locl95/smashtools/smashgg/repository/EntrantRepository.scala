@@ -12,5 +12,5 @@ trait EntrantRepository[F[_]] {
 final class EntrantPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends EntrantRepository[F]{
   override def toString: String = "EntrantPostgresRepository"
   override def insert(entrant: Entrant): F[Int] =
-    sql"insert into entrants (name) values ($entrant.name)".update.run.transact(transactor)
+    sql"insert into entrants (id, id_event, name) values (${entrant.id}, ${entrant.id}, ${entrant.name})".update.run.transact(transactor)
 }

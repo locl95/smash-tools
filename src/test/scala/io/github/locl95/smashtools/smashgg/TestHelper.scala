@@ -81,8 +81,8 @@ object TestHelper {
       Participant(List(7914930)),
       Participant(List(7919929, 7914930))
     )
-  val entrant: Entrant = Entrant("Raiden's | Zandark")
-  val event: Event = Event("Ultimate Singles")
+  val entrant: Entrant = Entrant(8348984, 615463, "Raiden's | Zandark")
+  val event: Event = Event(615463, "Ultimate Singles")
   val playerStandings: List[PlayerStanding] = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
   val phases: List[Phase] = List(Phase(991477, "Bracket Pools"), Phase(991478, "Top 16"))
 }

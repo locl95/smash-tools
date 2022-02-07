@@ -12,5 +12,5 @@ trait EventRepository [F[_]]{
 final class EventPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends EventRepository[F]{
   override def toString: String = "EventPostgresRepository"
   override def insert(event: Event): F[Int] =
-    sql"insert into events (name) values ($event)".update.run.transact(transactor)
+    sql"insert into events (id,name) values (${event.id}, ${event.name})".update.run.transact(transactor)
 }
