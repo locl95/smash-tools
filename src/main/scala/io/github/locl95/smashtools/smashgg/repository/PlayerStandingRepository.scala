@@ -9,6 +9,7 @@ import io.github.locl95.smashtools.smashgg.domain.PlayerStanding
 
 trait PlayerStandingRepository [F[_]]{
   def insert(playerStandings: List[PlayerStanding]): F[Int]
+  def getPlayerStandings: F[List[PlayerStanding]]
 }
 
 final class PlayerStandingPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends PlayerStandingRepository[F]{
@@ -19,4 +20,10 @@ final class PlayerStandingPostgresRepository[F[_]: Sync](transactor: Transactor[
       .updateMany(playerStandings)
       .transact(transactor)
   }
+
+  override def getPlayerStandings: F[List[PlayerStanding]] =
+    sql"select placement,id_entrant from player_standings"
+      .query[PlayerStanding]
+      .to[List]
+      .transact(transactor)
 }

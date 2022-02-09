@@ -28,7 +28,14 @@ class PlayerStandingRepositorySpec extends CatsEffectSuite{
       result <- repo.insert(TestHelper.playerStandings)
     } yield result == 2)
 
+  private val getTest = (repo: PlayerStandingRepository[IO]) =>
+    assertIOBoolean(for {
+      _ <- repo.insert(TestHelper.playerStandings)
+      result <- repo.getPlayerStandings
+    } yield result == TestHelper.playerStandings)
+
   repositories.foreach { r =>
     test(s"Given some player standings I can insert them with $r") { insertTest(r) }
+    test(s"Given some player standings I can retrieve them with $r") { getTest(r) }
   }
 }

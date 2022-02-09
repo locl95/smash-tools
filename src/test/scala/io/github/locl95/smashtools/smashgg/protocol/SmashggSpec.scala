@@ -3,7 +3,8 @@ package io.github.locl95.smashtools.smashgg.protocol
 import munit.CatsEffectSuite
 import io.circe.syntax._
 import io.circe.parser._
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Score, Sets, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.TestHelper
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.Smashgg._
 
 class SmashggSpec extends CatsEffectSuite {
@@ -97,7 +98,7 @@ class SmashggSpec extends CatsEffectSuite {
 
   test("I can decode smash.gg sets") {
     val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-events.json")
-    val expectedTwoFirstSets = List(Sets(40865697,615463, (Score(8232866, 0), Score(8280489, 3))), Sets(40865698,615463, (Score(8232866, 3), Score(8280489, 2))))
+    val expectedTwoFirstSets = TestHelper.sets
 
     val setsFromJson =
       for {

@@ -11,7 +11,7 @@ class PhaseRepositorySpec extends CatsEffectSuite{
 
   private val inMemory = new PhaseInMemoryRepository[IO]
   private val postgres = new PhasePostgresRepository[IO](tx)
-  private val repositories = List(inMemory, postgres)
+  private val repositories = List(postgres)
 
   override def beforeEach(context: BeforeEach): Unit = {
     val migrate = for {
@@ -28,7 +28,14 @@ class PhaseRepositorySpec extends CatsEffectSuite{
       result <- repo.insert(TestHelper.phases)
     } yield result == 2)
 
+  private val getTest = (repo: PhaseRepository[IO]) =>
+    assertIOBoolean(for {
+      _ <- repo.insert(TestHelper.phases)
+      result <- repo.getPhases
+    } yield result == TestHelper.phases)
+
   repositories.foreach { r =>
     test(s"Given some phases I can insert them with $r") { insertTest(r) }
+    test(s"Given some phases I can retrieve them with $r") { getTest(r) }
   }
 }

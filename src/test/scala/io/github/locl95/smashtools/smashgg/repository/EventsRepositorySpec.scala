@@ -29,8 +29,16 @@ class EventsRepositorySpec extends CatsEffectSuite{
       result <- repo.insert(TestHelper.event)
     } yield result == 1)
 
+  private val getTest = (repo: EventRepository[IO]) =>
+    assertIOBoolean(for {
+      _ <- repo.insert(TestHelper.event)
+      result <- repo.getEvents
+    } yield result == List(TestHelper.event))
+
+
   repositories.foreach { r =>
     test(s"Given some events I can insert them with $r") { insertTest(r) }
+    test(s"Given some events I can retrieve them with $r") { getTest(r) }
   }
 }
 

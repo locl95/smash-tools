@@ -2,8 +2,8 @@ package io.github.locl95.smashtools.smashgg
 
 import cats.effect.Sync
 import cats.implicits.catsSyntaxApplicativeId
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Tournament}
-import io.github.locl95.smashtools.smashgg.repository.{EntrantRepository, EventRepository, PhaseRepository, PlayerStandingRepository, TournamentRepository}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, Score, Sets, Tournament}
+import io.github.locl95.smashtools.smashgg.repository.{EntrantRepository, EventRepository, PhaseRepository, PlayerStandingRepository, SetsRepository, TournamentRepository}
 
 import scala.collection.mutable
 
@@ -23,16 +23,23 @@ final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentReposito
   }
   override def get: F[List[Tournament]] =
     tournamentsList.toList.pure[F]
+
+  override def get(name: String): F[Option[Tournament]] =
+    tournamentsList.find(_.name == name).pure[F]
 }
 
 final class EntrantInMemoryRepository[F[_]: Sync] extends EntrantRepository[F] with InMemoryRepository {
   private val entrantsArray: mutable.ArrayDeque[Entrant] = mutable.ArrayDeque.empty
   override def toString:String =
     "EntrantInMemoryRepository"
-  override def insert(entrant: Entrant): F[Int] = {
-    entrantsArray.append(entrant).pure[F]
-    1.pure[F]
+  override def insert(entrants: List[Entrant]): F[Int] = {
+    entrantsArray.appendAll(entrants).pure[F]
+    entrantsArray.size.pure[F]
   }
+
+  override def getEntrants: F[List[Entrant]] =
+    entrantsArray.toList.pure[F]
+
   override def clean(): Unit =
     entrantsArray.clearAndShrink()
 }
@@ -47,6 +54,9 @@ final class EventInMemoryRepository[F[_]: Sync] extends EventRepository[F] with 
   }
   override def clean(): Unit =
     eventsArray.clearAndShrink()
+
+  override def getEvents: F[List[Event]] =
+    eventsArray.toList.pure[F]
 }
 
 final class PlayerStandingInMemoryRepository[F[_]: Sync] extends PlayerStandingRepository[F] with InMemoryRepository {
@@ -59,6 +69,9 @@ final class PlayerStandingInMemoryRepository[F[_]: Sync] extends PlayerStandingR
   }
   override def clean(): Unit =
     playerStandingsArray.clearAndShrink()
+
+  override def getPlayerStandings: F[List[PlayerStanding]] =
+    playerStandingsArray.toList.pure[F]
 }
 
 final class PhaseInMemoryRepository[F[_]: Sync] extends PhaseRepository[F] with InMemoryRepository {
@@ -71,6 +84,25 @@ final class PhaseInMemoryRepository[F[_]: Sync] extends PhaseRepository[F] with 
   }
   override def clean(): Unit =
     phashesArray.clearAndShrink()
+
+  override def getPhases: F[List[Phase]] =
+    phashesArray.toList.pure[F]
+}
+
+final class SetsInMemoryRepository[F[_]: Sync] extends SetsRepository[F] with InMemoryRepository
+{
+  private val setsArray: mutable.ArrayDeque[Sets] = mutable.ArrayDeque.empty
+  override def toString:String =
+    "SetsInMemoryRepository"
+  override def insert(sets: List[Sets]): F[Int] = {
+    setsArray.appendAll(sets).pure[F]
+    setsArray.size.pure[F]
+  }
+  override def clean(): Unit =
+    setsArray.clearAndShrink()
+
+  override def getSets: F[List[Sets]] =
+    setsArray.toList.pure[F]
 }
 
 object TestHelper {
@@ -82,7 +114,10 @@ object TestHelper {
       Participant(List(7919929, 7914930))
     )
   val entrant: Entrant = Entrant(8348984, 615463, "Raiden's | Zandark")
+  val entrants: List[Entrant] = List(Entrant(8348984, 615463, "Raiden's | Zandark"), Entrant(8346516, 615463, "FS | Sevro"))
   val event: Event = Event(615463, "Ultimate Singles")
   val playerStandings: List[PlayerStanding] = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
   val phases: List[Phase] = List(Phase(991477, "Bracket Pools"), Phase(991478, "Top 16"))
+  val sets: List[Sets] = List(Sets(40865697,615463,(Score(8280489,0),Score(8232866,3))), Sets(40865698,615463,(Score(8232866,3),Score(8280489,2))))
+  val testSets: List[Sets] = List(Sets(40865697,615463, (Score(8232866, 3), Score(8280489, 0))), Sets(40865698,615463, (Score(8232866, 3), Score(8280489, 2))))
 }

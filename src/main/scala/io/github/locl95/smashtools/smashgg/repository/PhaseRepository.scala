@@ -9,6 +9,7 @@ import io.github.locl95.smashtools.smashgg.domain.{Phase}
 
 trait PhaseRepository [F[_]]{
   def insert(phases: List[Phase]): F[Int]
+  def getPhases: F[List[Phase]]
 }
 
 final class PhasePostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends PhaseRepository[F]{
@@ -19,6 +20,12 @@ final class PhasePostgresRepository[F[_]: Sync](transactor: Transactor[F]) exten
       .updateMany(playerStandings)
       .transact(transactor)
   }
+
+  override def getPhases: F[List[Phase]] =
+    sql"select id,name from phases"
+      .query[Phase]
+      .to[List]
+      .transact(transactor)
 }
 
 

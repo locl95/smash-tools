@@ -26,11 +26,18 @@ class EntrantsRepositorySpec extends CatsEffectSuite{
 
   private val insertTest = (repo: EntrantRepository[IO]) =>
     assertIOBoolean(for {
-      result <- repo.insert(TestHelper.entrant)
-    } yield result == 1)
+      result <- repo.insert(TestHelper.entrants)
+    } yield result == 2)
+
+  private val getTest = (repo: EntrantRepository[IO]) =>
+    assertIOBoolean(for {
+      _ <- repo.insert(TestHelper.entrants)
+      result <- repo.getEntrants
+    } yield result == TestHelper.entrants)
 
   repositories.foreach { r =>
     test(s"Given some entrants I can insert them with $r") { insertTest(r)}
+    test(s"Given some entrants I can retrieve them with $r") { getTest(r)}
   }
 
 }
