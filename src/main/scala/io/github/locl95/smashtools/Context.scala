@@ -8,6 +8,9 @@ import doobie.util.transactor.Transactor.Aux
 import io.github.locl95.smashtools.characters.{CharactersRoutes, KuroganeClient}
 import io.github.locl95.smashtools.characters.repository.{CharacterPostgresRepository, MovementPostgresRepository}
 import io.github.locl95.smashtools.characters.service.{CharactersService, MovementsService}
+import io.github.locl95.smashtools.smashgg.repository.TournamentPostgresRepository
+import io.github.locl95.smashtools.smashgg.service.TournamentService
+import io.github.locl95.smashtools.smashgg.{SmashggClient, SmashggRoutes}
 import org.flywaydb.core.Flyway
 import org.http4s.client.blaze.BlazeClientBuilder
 
@@ -47,5 +50,14 @@ final case class Context[F[_]: ContextShift: ConcurrentEffect]() {
     new CharactersService[F](new CharacterPostgresRepository[F](database.transactor), kuroganeClient),
     new MovementsService[F](new MovementPostgresRepository[F](database.transactor), kuroganeClient)
   )
+
+  val smashggRoutesProgram: fs2.Stream[F, SmashggRoutes[F]] =
+    for {
+      client <- BlazeClientBuilder[F](global).stream
+      smashggClient = SmashggClient.impl[F](client)
+      database <- fs2.Stream.eval(databaseProgram)
+    } yield new SmashggRoutes[F](
+      new TournamentService[F](new TournamentPostgresRepository[F](database.transactor), smashggClient)
+    )
 
 }
