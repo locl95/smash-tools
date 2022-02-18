@@ -17,14 +17,16 @@ object Smashgg {
     for {
       id <- c.downField("data").downField("tournament").downField("id").as[Int]
       name <- c.downField("data").downField("tournament").downField("name").as[String]
-    } yield Tournament(id,name)
+    } yield Tournament(id,name.map(x => if(x.toString.equals(" ")) '-' else x))
   }
+  implicit val tournamentsDecoder: Decoder[List[Tournament]] = Decoder.decodeList[Tournament]
+
+  implicit def tournamentEntityDecoder[F[_]: Sync]: EntityDecoder[F, Tournament] =
+    jsonOf
 
   implicit def tournamentsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[Tournament]] =
     jsonOf
-  implicit def tournamentEntityDecoder[F[_]: Sync]: EntityDecoder[F, Tournament] =
-    jsonOf
-  implicit val tournamentsDecoder: Decoder[List[Tournament]] = Decoder.decodeList[Tournament]
+
 
   implicit val tournamentEncoder: Encoder[Tournament] = deriveEncoder[Tournament]
   implicit val tournamentsEncoder: Encoder[List[Tournament]] = Encoder.encodeList

@@ -37,7 +37,7 @@ class TournamentRepositorySpec extends CatsEffectSuite{
   private val getTournamentByNameTest = (repo: TournamentRepository[IO]) =>
     assertIOBoolean(for {
       _ <- repo.insert(TestHelper.tournament)
-      result <- repo.get("MST 4")
+      result <- repo.get("MST-4")
     } yield result.get == TestHelper.tournament)
 
   repositories.foreach { r =>

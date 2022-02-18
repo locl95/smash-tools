@@ -7,7 +7,7 @@ import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, Kurogan
 import io.github.locl95.smashtools.characters.service.{CharactersService, MovementsService}
 import munit.CatsEffectSuite
 import org.http4s.implicits.{http4sKleisliResponseSyntaxOptionT, http4sLiteralsSyntax}
-import org.http4s.{EntityDecoder, Method, Request, Status}
+import org.http4s.{EntityDecoder, HttpRoutes, Method, Request, Response, Status}
 import io.github.locl95.smashtools.characters.protocol.Kurogane.kuroganeCharactersEntityDecoder
 import org.http4s.circe.jsonOf
 
@@ -21,13 +21,13 @@ class CharactersRoutesSpecs extends CatsEffectSuite {
   private val modifiedEntityDecoderForMoves: EntityDecoder[IO, List[KuroganeCharacterMove]] = jsonOf
   private val kc: KuroganeClient[IO] = new KuroganeClientMock[IO]
 
-  private val router = new CharactersRoutes[IO](
+  private val router: HttpRoutes[IO] = new CharactersRoutes[IO](
     CharactersService(new CharactersInMemoryRepository[IO], kc),
     MovementsService(new MovementsInMemoryRepository[IO], kc)
   ).characterRoutes
 
   test("/characters should return characters") {
-    val response = router
+    val response: IO[Response[IO]] = router
       .orNotFound
       .run(Request[IO](method = Method.GET, uri = uri"/characters"))
     assertEquals(TestHelper.check[List[KuroganeCharacter]](response, Status.Ok, Some(TestHelper.characters)), true)

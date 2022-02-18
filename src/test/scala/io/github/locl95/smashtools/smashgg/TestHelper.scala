@@ -106,14 +106,15 @@ final class SetsInMemoryRepository[F[_]: Sync] extends SetsRepository[F] with In
     setsArray.toList.pure[F]
 }
 
-//final class SmashggClientMock[F[_]: Applicative] extends SmashggClient[F]{
+//final class SmashggClientMock[F[_]] extends SmashggClient[F]{
 //  override def get[A](body: SmashggQuery)(implicit encoder: EntityEncoder[F, SmashggQuery], decoder: EntityDecoder[F, A]): F[A] = ???
 //}
 
 
 object TestHelper {
-  val tournament: Tournament = Tournament(312932,"MST 4")
-  val tournaments: List[Tournament] = List(Tournament(312932,"MST 4"))
+  val tournament: Tournament = Tournament(312932,"MST-4")
+  val tournaments: List[Tournament] = List(Tournament(312932,"MST-4"))
+
   val participants:List[Participant] =
     List(
       Participant(List(8022537)),
@@ -128,17 +129,12 @@ object TestHelper {
   val sets: List[Sets] = List(Sets(40865697,615463,(Score(8280489,0),Score(8232866,3))), Sets(40865698,615463,(Score(8232866,3),Score(8280489,2))))
   val testSets: List[Sets] = List(Sets(40865697,615463, (Score(8232866, 3), Score(8280489, 0))), Sets(40865698,615463, (Score(8232866, 3), Score(8280489, 2))))
 
-  def check[A](
-                actual: IO[Response[IO]],
+  def check[A](actual: IO[Response[IO]],
                 expectedStatus: Status,
-                expectedBody: Option[A]
-              )(
-                implicit ev: EntityDecoder[IO, A]
-              ): Boolean = {
+                expectedBody: Option[A])(
+                implicit ev: EntityDecoder[IO, A]): Boolean = {
     val actualResp = actual.unsafeRunSync()
-    actualResp.status == expectedStatus && expectedBody.fold[Boolean](
-      actualResp.body.compile.toVector.unsafeRunSync().isEmpty
-    )(expected => {
+    actualResp.status == expectedStatus && expectedBody.fold[Boolean](actualResp.body.compile.toVector.unsafeRunSync().isEmpty)(expected => {
       val a = actualResp.as[A].unsafeRunSync()
       a == expected
     })

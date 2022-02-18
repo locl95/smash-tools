@@ -18,7 +18,7 @@ class SmashggClientSpec extends CatsEffectSuite {
         .eval(smashggClient.get[Tournament](SmashggQuery.getTournamentQuery("mst-4")))
     } yield tournament
 
-    assertIO(program.compile.lastOrError, Tournament(312932,"MST 4"))
+    assertIO(program.compile.lastOrError, Tournament(312932,"MST-4"))
   }
 
   test("Should be able to retreat participants from smash.gg API") {

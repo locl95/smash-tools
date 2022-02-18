@@ -21,7 +21,6 @@ class CharactersServiceSpec extends CatsEffectSuite {
     } yield (apiCharacters, dbCharacters)
     assertIO(program._1F, TestHelper.characters)
     assertIO(program._2F, TestHelper.characters)
-
   }
 
   test("Get Movements should retrieve them from api and insert them in database when cache is false") {
