@@ -107,7 +107,19 @@ final class SetsInMemoryRepository[F[_]: Sync] extends SetsRepository[F] with In
 }
 
 //final class SmashggClientMock[F[_]] extends SmashggClient[F]{
-//  override def get[A](body: SmashggQuery)(implicit encoder: EntityEncoder[F, SmashggQuery], decoder: EntityDecoder[F, A]): F[A] = ???
+//  override def get[A](body: SmashggQuery)(implicit encoder: EntityEncoder[F, SmashggQuery], decoder: EntityDecoder[F, A]): F[A] =
+//    body match {
+//      case SmashggQuery(query) if query.contains("getTournament") => {
+//
+//        val tournamentJson: BufferedSource = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-tournament.json")
+//        val tournamentFromJson: Either[circe.Error, A] =
+//          for {
+//            json <- parse(tournamentJson.getLines().mkString)
+//            tournament <- tournamentDecoder.decodeJson(json)
+//          } yield tournament
+//
+//      }
+//    }
 //}
 
 
