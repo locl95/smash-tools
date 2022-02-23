@@ -24,7 +24,6 @@ class SmashggSpec extends CatsEffectSuite {
       } yield tournament
 
     assert(tournamentFromJson.contains(expectedTournament))
-
   }
 
   test("I can decode smash.gg participants") {

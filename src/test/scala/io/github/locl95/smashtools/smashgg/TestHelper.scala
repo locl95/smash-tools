@@ -56,8 +56,11 @@ final class EventInMemoryRepository[F[_]: Sync] extends EventRepository[F] with 
   override def clean(): Unit =
     eventsArray.clearAndShrink()
 
-  override def getEvents: F[List[Event]] =
+  override def get: F[List[Event]] =
     eventsArray.toList.pure[F]
+
+  override def getEvents(tournament: Int): F[List[Event]] =
+    eventsArray.toList.filter(_.idTournament == tournament).pure[F]
 }
 
 final class PlayerStandingInMemoryRepository[F[_]: Sync] extends PlayerStandingRepository[F] with InMemoryRepository {
@@ -136,6 +139,7 @@ object TestHelper {
   val entrant: Entrant = Entrant(8348984, 615463, "Raiden's | Zandark")
   val entrants: List[Entrant] = List(Entrant(8348984, 615463, "Raiden's | Zandark"), Entrant(8346516, 615463, "FS | Sevro"))
   val event: Event = Event(615463, "Ultimate Singles")
+  val events: List[Event] = List(Event(615463, "Ultimate Singles", 312932))
   val playerStandings: List[PlayerStanding] = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
   val phases: List[Phase] = List(Phase(991477, "Bracket Pools"), Phase(991478, "Top 16"))
   val sets: List[Sets] = List(Sets(40865697,615463,(Score(8280489,0),Score(8232866,3))), Sets(40865698,615463,(Score(8232866,3),Score(8280489,2))))

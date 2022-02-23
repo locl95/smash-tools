@@ -32,7 +32,7 @@ class EventsRepositorySpec extends CatsEffectSuite{
   private val getTest = (repo: EventRepository[IO]) =>
     assertIOBoolean(for {
       _ <- repo.insert(TestHelper.event)
-      result <- repo.getEvents
+      result <- repo.get
     } yield result == List(TestHelper.event))
 
 
