@@ -38,6 +38,9 @@ final class EntrantInMemoryRepository[F[_]: Sync] extends EntrantRepository[F] w
     entrantsArray.size.pure[F]
   }
 
+  override def getEntrants(eventID: Int): F[List[Entrant]] =
+    entrantsArray.filter(x => x.idEvent == eventID).toList.pure[F]
+
   override def getEntrants: F[List[Entrant]] =
     entrantsArray.toList.pure[F]
 
@@ -142,8 +145,8 @@ object TestHelper {
   val events: List[Event] = List(Event(615463, "Ultimate Singles", 312932))
   val playerStandings: List[PlayerStanding] = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
   val phases: List[Phase] = List(Phase(991477, "Bracket Pools"), Phase(991478, "Top 16"))
-  val sets: List[Sets] = List(Sets(40865697,615463,(Score(8280489,0),Score(8232866,3))), Sets(40865698,615463,(Score(8232866,3),Score(8280489,2))))
-  val testSets: List[Sets] = List(Sets(40865697,615463, (Score(8232866, 3), Score(8280489, 0))), Sets(40865698,615463, (Score(8232866, 3), Score(8280489, 2))))
+  val sets: List[Sets] = List(Sets(40865697,615463,List(Score(8280489,0),Score(8232866,3))), Sets(40865698,615463,List(Score(8232866,3),Score(8280489,2))))
+  val testSets: List[Sets] = List(Sets(40865697,615463, List(Score(8232866, 3), Score(8280489, 0))), Sets(40865698,615463, List(Score(8232866, 3), Score(8280489, 2))))
 
   def check[A](actual: IO[Response[IO]],
                 expectedStatus: Status,

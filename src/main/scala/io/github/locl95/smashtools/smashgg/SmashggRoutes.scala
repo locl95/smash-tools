@@ -2,27 +2,19 @@ package io.github.locl95.smashtools.smashgg
 
 import cats.effect.Async
 import cats.implicits._
-import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 import io.circe.syntax._
-import io.circe.{Decoder, Encoder}
-import io.github.locl95.smashtools.smashgg.domain.{Event, Tournament}
-import io.github.locl95.smashtools.smashgg.service.{EventService, TournamentService}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Tournament}
+import io.github.locl95.smashtools.smashgg.protocol.SmashggRoutesImpl._
+import io.github.locl95.smashtools.smashgg.service._
+import org.http4s.HttpRoutes
 import org.http4s.circe._
 import org.http4s.dsl.Http4sDsl
-import org.http4s.{EntityDecoder, HttpRoutes}
 
 final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
-                                       eventService: EventService[F]) extends Http4sDsl[F]{
-
-  implicit private val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
-  implicit private val entityDecoderForTournament: EntityDecoder[F, Tournament] =
-    jsonOf
-  implicit private val encoderForTournament: Encoder[Tournament] = deriveEncoder[Tournament]
-
-  implicit private val decoderForEvent: Decoder[Event] = deriveDecoder[Event]
-  implicit private val entityDecoderForEvent: EntityDecoder[F, Event] =
-    jsonOf
-  implicit private val encoderForEvent: Encoder[Event] = deriveEncoder[Event]
+                                       eventService: EventService[F],
+                                       entrantService: EntrantService[F],
+                                       phaseService: PhaseService[F],
+                                       setsService: SetsService[F]) extends Http4sDsl[F]{
 
   val smashggRoutes: HttpRoutes[F] = {
     HttpRoutes.of[F] {
@@ -65,6 +57,37 @@ final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
         for {
           events <- eventService.getEvents(tournamentID.toInt)
           resp <- Ok(events.asJson).adaptError(SmashggClientError(_))
+        } yield resp
+
+      case req @ POST -> Root / "events" / "entrants" =>
+        for {
+          entrants <- req.as[List[Entrant]]
+          i <- entrantService.insert(entrants)
+          resp <- Ok(i.asJson)
+        } yield resp
+
+      case GET -> Root / "events" / "entrants" =>
+        for {
+          entrants <- entrantService.getEntrants
+          resp <- Ok(entrants.asJson).adaptError(SmashggClientError(_))
+        } yield resp
+
+      case GET -> Root / "events" / eventID / "entrants" =>
+        for{
+          entrants <- entrantService.getEntrants(eventID.toInt)
+          resp <- Ok(entrants.asJson).adaptError(SmashggClientError(_))
+        } yield resp
+
+      case GET -> Root / "phases" =>
+        for {
+          phases <- phaseService.getPhases
+          resp <- Ok(phases.asJson).adaptError(SmashggClientError(_))
+        } yield resp
+
+      case GET -> Root / "sets" =>
+        for {
+          sets <- setsService.getSets
+          resp <- Ok(sets.asJson).adaptError(SmashggClientError(_))
         } yield resp
     }
   }

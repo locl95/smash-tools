@@ -20,10 +20,10 @@ final class SetsPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extend
 
     val sqlSets = sets.map{
       case Sets(id, idEvent, scores) =>
-        if (scores._1.score > scores._2.score)
-          sqlSet(id, idEvent, scores._1.idPlayer, scores._2.idPlayer, scores._1.score, scores._2.score)
+        if (scores(1).score > scores(2).score)
+          sqlSet(id, idEvent, scores(1).idPlayer, scores(2).idPlayer, scores(1).score, scores(2).score)
         else
-          sqlSet(id, idEvent, scores._2.idPlayer, scores._1.idPlayer, scores._2.score, scores._1.score)
+          sqlSet(id, idEvent, scores(2).idPlayer, scores(1).idPlayer, scores(2).score, scores(1).score)
     }
 
     val sql = "insert into sets (id, id_event, id_winner, id_loser, score_winner, score_loser) values (?,?,?,?,?,?)"
@@ -39,6 +39,6 @@ final class SetsPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extend
       .transact(transactor)
       .map(x => x.map{
         case sqlSet(id, idEvent, idWinner, idLoser, scoreWinner, scoreLoser) =>
-          Sets(id, idEvent, (Score(idWinner, scoreWinner), Score(idLoser, scoreLoser)))
+          Sets(id, idEvent, List(Score(idWinner, scoreWinner), Score(idLoser, scoreLoser)))
       })
 }

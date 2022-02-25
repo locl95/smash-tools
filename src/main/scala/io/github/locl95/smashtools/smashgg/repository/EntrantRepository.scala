@@ -10,6 +10,7 @@ import io.github.locl95.smashtools.smashgg.domain.Entrant
 trait EntrantRepository[F[_]] {
   def insert(entrants: List[Entrant]): F[Int]
   def getEntrants: F[List[Entrant]]
+  def getEntrants(eventID:Int): F[List[Entrant]]
 }
 
 final class EntrantPostgresRepository[F[_]: Sync](transactor: Transactor[F]) extends EntrantRepository[F]{
@@ -23,6 +24,12 @@ final class EntrantPostgresRepository[F[_]: Sync](transactor: Transactor[F]) ext
 
   override def getEntrants: F[List[Entrant]] =
     sql"""select id,id_event,name from entrants"""
+      .query[Entrant]
+      .to[List]
+      .transact(transactor)
+
+  override def getEntrants(eventID: Int): F[List[Entrant]] =
+    sql"""select id,id_event,name from entrants where id_event = ${eventID}"""
       .query[Entrant]
       .to[List]
       .transact(transactor)

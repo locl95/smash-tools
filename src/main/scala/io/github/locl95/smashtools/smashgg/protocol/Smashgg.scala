@@ -10,7 +10,6 @@ import org.http4s.{EntityDecoder, EntityEncoder}
 
 object Smashgg {
   implicit val smashggQueryEncoder: Encoder[SmashggQuery] = deriveEncoder[SmashggQuery]
-
   implicit def smashggQueryEntityEncoder[F[_]]: EntityEncoder[F, SmashggQuery] = jsonEncoderOf
 
   implicit val tournamentDecoder: Decoder[Tournament] = (c: HCursor) => {
@@ -20,14 +19,8 @@ object Smashgg {
     } yield Tournament(id,name.map(x => if(x.toString.equals(" ")) '-' else x))
   }
   implicit val tournamentsDecoder: Decoder[List[Tournament]] = Decoder.decodeList[Tournament]
-
-  implicit def tournamentEntityDecoder[F[_]: Sync]: EntityDecoder[F, Tournament] =
-    jsonOf
-
-  implicit def tournamentsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[Tournament]] =
-    jsonOf
-
-
+  implicit def tournamentEntityDecoder[F[_]: Sync]: EntityDecoder[F, Tournament] = jsonOf
+  implicit def tournamentsEntityDecoder[F[_]: Sync]: EntityDecoder[F, List[Tournament]] = jsonOf
   implicit val tournamentEncoder: Encoder[Tournament] = deriveEncoder[Tournament]
   implicit val tournamentsEncoder: Encoder[List[Tournament]] = Encoder.encodeList
 
@@ -72,16 +65,13 @@ object Smashgg {
         }
     } yield ids.flatten.map(Participant)
   }
-
   implicit def participantsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Participant]] = jsonOf
-
   implicit val eventDecoder: Decoder[Event] = (c: HCursor) => {
     for {
       id <- c.downField("data").downField("event").downField("id").as[Int]
       name <- c.downField("data").downField("event").downField("name").as[String]
     } yield Event(id, name)
   }
-
   implicit def eventEntityDecoder[F[_] : Sync]: EntityDecoder[F, Event] = jsonOf
 
   implicit val entrantsDecoder: Decoder[List[Entrant]] = (c: HCursor) => {
@@ -104,7 +94,6 @@ object Smashgg {
       }
     } yield entrantsName.zip(entrantsId).map(x => Entrant(x._2, idEvent, x._1))
   }
-
   implicit def entrantsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Entrant]] = jsonOf
 
   implicit val standingsDecoder: Decoder[List[PlayerStanding]] = (c: HCursor) => {
@@ -126,7 +115,6 @@ object Smashgg {
       }
     } yield playerPlacements.zip(idEntrant).map(x => PlayerStanding(x._1, x._2))
   }
-
   implicit def standingsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[PlayerStanding]] = jsonOf
 
   implicit val phasesDecoder: Decoder[List[Phase]] = (c: HCursor) => {
@@ -144,7 +132,6 @@ object Smashgg {
       }
     } yield id.zip(name).map(x => Phase(x._1, x._2))
   }
-
   implicit def phaseEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Phase]] = jsonOf
 
   implicit val setsDecoder: Decoder[List[Sets]] = (c: HCursor) => {
@@ -193,13 +180,11 @@ object Smashgg {
       }
     } yield {
       val scores = idPlayers.zip(scorePlayers).map{
-        case (id1 :: id2 :: Nil, s1 :: s2 :: Nil) => (Score(id1, s1), Score(id2, s2))
-        case _ => (Score(0,0), Score(0,0)) //retornar DecodingFailure
+        case (id1 :: id2 :: Nil, s1 :: s2 :: Nil) => List(Score(id1, s1), Score(id2, s2))
+        case _ => List(Score(0,0), Score(0,0)) //retornar DecodingFailure
       }
       idSets.zip(scores).map(x => Sets(x._1, idEvent, x._2))
     }
   }
-
   implicit def setsEntityDecoder[F[_] : Sync]: EntityDecoder[F, List[Sets]] = jsonOf
-
 }

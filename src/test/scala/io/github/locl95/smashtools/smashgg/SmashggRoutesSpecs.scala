@@ -4,7 +4,7 @@ import cats.effect._
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 import io.github.locl95.smashtools.Context
-import io.github.locl95.smashtools.smashgg.domain.{Event, SmashggQuery, Tournament}
+import io.github.locl95.smashtools.smashgg.domain._
 import munit.CatsEffectSuite
 import org.http4s._
 import org.http4s.circe.CirceEntityCodec.circeEntityEncoder
@@ -18,14 +18,14 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
 
   implicit private val smashggQueryEncoder: Encoder[SmashggQuery] = deriveEncoder[SmashggQuery]
   implicit private def smashggQueryEntityEncoder[F[_]]: EntityEncoder[F, SmashggQuery] = jsonEncoderOf
-  implicit val entityDecoderForInt: EntityDecoder[IO, Int] = jsonOf
+  implicit private val entityDecoderForInt: EntityDecoder[IO, Int] = jsonOf
 
   val ctx = new Context[IO]
   val tx = ctx.databaseProgram.unsafeRunSync().transactor
   val smashggRouter: SmashggRoutes[IO] = ctx.smashggRoutesProgram.compile.lastOrError.unsafeRunSync()
   val router: HttpRoutes[IO] = smashggRouter.smashggRoutes
 
-  test("POST /tournaments/<tournament> should insert the tournament info from smashgg API"){
+  test("POST /tournaments/<tournament> should insert a tournament into tournaments migration"){
 
     import io.github.locl95.smashtools.smashgg.protocol.Smashgg.tournamentDecoder
     implicit val entityDecoderForTournament: EntityDecoder[IO, Tournament] =
@@ -49,7 +49,7 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[Int](response, Status.Ok, Some(1)), true)
   }
 
-  test("GET /tournaments/MST-4 should return MST-4 tournament info from Smashgg Routes") {
+  test("GET /tournaments/MST-4 should return MST-4 tournament from tournaments migration") {
 
     implicit  val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
     implicit  val entityDecoderForTournament: EntityDecoder[IO, Tournament] =
@@ -62,7 +62,7 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[Tournament](response, Status.Ok, Some(TestHelper.tournament)), true)
   }
 
-  test("GET /tournaments should return tournaments from Smashgg Routes") {
+  test("GET /tournaments should return tournaments from tournaments migration") {
     implicit  val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
     implicit  val decoderForTournaments: Decoder[List[Tournament]] =
       Decoder.decodeList[Tournament](decoderForTournament)
@@ -76,7 +76,7 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[List[Tournament]](response, Status.Ok, Some(TestHelper.tournaments)), true)
   }
 
-  test("POST /tournaments/<tournament>/events/<event> should insert an event to events"){
+  test("POST /tournaments/<tournament>/events/<event> should insert an event to events migration"){
 
     import io.github.locl95.smashtools.smashgg.protocol.Smashgg.eventDecoder
     implicit val entityDecoder: EntityDecoder[IO, Event] = jsonOf
@@ -98,7 +98,7 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[Int](response, Status.Ok, Some(1)), true)
   }
 
-  test("GET /tournaments/<tournament>/events should return all events from <tournament>"){
+  test("GET /tournaments/<tournament>/events should return all events from <tournament> from events migration"){
     implicit val decoderForEvent: Decoder[Event] = deriveDecoder[Event]
     implicit val decoderForEvents: Decoder[List[Event]] = Decoder.decodeList[Event](decoderForEvent)
     implicit val entityDecoderForEvents: EntityDecoder[IO, List[Event]] = jsonOf
@@ -110,7 +110,7 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[List[Event]](response, Status.Ok, Some(TestHelper.events)), true)
   }
 
-  test("GET /events should return all events"){
+  test("GET /events should return all events from events migration"){
     implicit val decoderForEvent: Decoder[Event] = deriveDecoder[Event]
     implicit val decoderForEvents: Decoder[List[Event]] = Decoder.decodeList[Event](decoderForEvent)
     implicit val entityDecoderForEvents: EntityDecoder[IO, List[Event]] = jsonOf
@@ -122,4 +122,77 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[List[Event]](response, Status.Ok, Some(TestHelper.events)), true)
   }
 
+  test("POST /events/entrants should insert a list of entrants to entrants migration"){
+    import io.github.locl95.smashtools.smashgg.protocol.Smashgg.entrantsDecoder
+    implicit val entityDecoderForEntrants: EntityDecoder[IO, List[Entrant]] =
+      jsonOf
+    implicit val encoderForEntrant: Encoder[Entrant] = deriveEncoder[Entrant]
+    implicit val encoderForEntrants: Encoder[List[Entrant]] = Encoder.encodeList[Entrant](encoderForEntrant)
+
+    val program: fs2.Stream[IO, List[Entrant]] = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      smashggClient = SmashggClient.impl(client)
+      entrants <- fs2
+        .Stream
+        .eval(smashggClient.get[List[Entrant]](SmashggQuery.getEntrant("mst-4", "ultimate-singles")))
+    } yield entrants
+
+    val response = for {
+      entrants <- program.compile.lastOrError
+      resp <- router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/events/entrants").withEntity(entrants))
+    } yield resp
+
+    assertEquals(TestHelper.check[Int](response, Status.Ok, Some(46)), true)
+  }
+
+  test("GET /events/entrants should retrieve all entrants from entrants migration"){
+    implicit val decoderForEntrant: Decoder[Entrant] = deriveDecoder[Entrant]
+    implicit val decoderForEntrants: Decoder[List[Entrant]] = Decoder.decodeList[Entrant](decoderForEntrant)
+    implicit val entityDecoderForEntrants: EntityDecoder[IO, List[Entrant]] =
+      jsonOf
+
+    val response: IO[Response[IO]] = router
+      .orNotFound
+      .run(Request[IO](method = Method.GET, uri = uri"/events/entrants"))
+
+    assert(response.unsafeRunSync().as[List[Entrant]].unsafeRunSync().take(2) == TestHelper.entrants)
+  }
+
+  test("GET /events/<eventID>/entrants should retrieve all entrants that belong to <eventID> from entrants migration"){
+    implicit val decoderForEntrant: Decoder[Entrant] = deriveDecoder[Entrant]
+    implicit val decoderForEntrants: Decoder[List[Entrant]] = Decoder.decodeList[Entrant](decoderForEntrant)
+    implicit val entityDecoderForEntrants: EntityDecoder[IO, List[Entrant]] =
+      jsonOf
+
+    val response: IO[Response[IO]] = router
+      .orNotFound
+      .run(Request[IO](method = Method.GET, uri = uri"/events" /"615463" /"entrants"))
+
+    assert(response.unsafeRunSync().as[List[Entrant]].unsafeRunSync().contains(TestHelper.entrant))
+  }
+
+  test("GET /phases should retrieve all phases from phases migration"){
+
+    implicit val decoderForPhase: Decoder[Phase] = deriveDecoder[Phase]
+    implicit val decoderForPhases: Decoder[List[Phase]] = Decoder.decodeList[Phase](decoderForPhase)
+    implicit val entityDecoderForPhases: EntityDecoder[IO, List[Phase]] = jsonOf
+
+    val response: IO[Response[IO]] = router
+      .orNotFound
+      .run(Request[IO](method = Method.GET, uri = uri"/phases"))
+
+    assertEquals(TestHelper.check[List[Phase]](response, Status.Ok, Some(TestHelper.phases)), true)
+  }
+
+//  test("GET /sets should retrieve all sets from sets migration"){
+//    implicit val decoderForSet: Decoder[Sets] = deriveDecoder[Sets]
+//    implicit val decoderForSets: Decoder[List[Sets]] = Decoder.decodeList[Sets](decoderForSet)
+//    implicit val entityDecoderForSets: EntityDecoder[IO, List[Sets]] = jsonOf
+//
+//    val response: IO[Response[IO]] = router
+//      .orNotFound
+//      .run(Request[IO](method = Method.GET, uri = uri"/sets"))
+//
+//    assert(response.unsafeRunSync().as[List[Sets]].unsafeRunSync().contains(TestHelper.testSets.take(1)))
+//  }
 }
