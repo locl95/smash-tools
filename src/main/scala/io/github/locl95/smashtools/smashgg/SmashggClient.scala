@@ -1,5 +1,6 @@
 package io.github.locl95.smashtools.smashgg
 
+
 import io.github.locl95.smashtools.smashgg.domain.SmashggQuery
 import org.http4s.Method.POST
 import org.http4s._

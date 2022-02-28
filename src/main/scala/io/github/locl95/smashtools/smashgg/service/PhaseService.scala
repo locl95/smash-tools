@@ -7,6 +7,9 @@ import io.github.locl95.smashtools.smashgg.repository.PhaseRepository
 final case class PhaseService[F[_]](phaseRepository: PhaseRepository[F],
                                     client: SmashggClient[F]) {
 
+  def insert(phases: List[Phase]): F[Int] =
+    phaseRepository.insert(phases)
+
   def getPhases: F[List[Phase]] =
     phaseRepository.getPhases
 }

@@ -3,7 +3,7 @@ package io.github.locl95.smashtools.smashgg
 import cats.effect.Async
 import cats.implicits._
 import io.circe.syntax._
-import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Tournament}
+import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Phase, Sets, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.SmashggRoutesImpl._
 import io.github.locl95.smashtools.smashgg.service._
 import org.http4s.HttpRoutes
@@ -78,10 +78,24 @@ final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
           resp <- Ok(entrants.asJson).adaptError(SmashggClientError(_))
         } yield resp
 
+      case req @ POST -> Root / "phases" =>
+        for {
+          r <- req.as[List[Phase]]
+          i <- phaseService.insert(r)
+          resp <- Ok(i.asJson)
+        } yield resp
+
       case GET -> Root / "phases" =>
         for {
           phases <- phaseService.getPhases
           resp <- Ok(phases.asJson).adaptError(SmashggClientError(_))
+        } yield resp
+
+      case req @ POST -> Root / "sets" =>
+        for {
+          r <- req.as[List[Sets]]
+          i <- setsService.insert(r)
+          resp <- Ok(i.asJson)
         } yield resp
 
       case GET -> Root / "sets" =>

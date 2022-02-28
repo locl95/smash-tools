@@ -1,14 +1,16 @@
 package io.github.locl95.smashtools.smashgg
 
 import cats.effect._
+import io.circe.generic.auto._
 import io.circe.generic.semiauto.{deriveDecoder, deriveEncoder}
 import io.circe.{Decoder, Encoder}
 import io.github.locl95.smashtools.Context
 import io.github.locl95.smashtools.smashgg.domain._
+import io.github.locl95.smashtools.smashgg.protocol.Smashgg.smashggQueryEntityEncoder
 import munit.CatsEffectSuite
 import org.http4s._
 import org.http4s.circe.CirceEntityCodec.circeEntityEncoder
-import org.http4s.circe.{jsonEncoderOf, jsonOf}
+import org.http4s.circe.jsonOf
 import org.http4s.client.blaze.BlazeClientBuilder
 import org.http4s.implicits.{http4sKleisliResponseSyntaxOptionT, http4sLiteralsSyntax}
 
@@ -16,14 +18,21 @@ import scala.concurrent.ExecutionContext.global
 
 class SmashggRoutesSpecs extends CatsEffectSuite{
 
-  implicit private val smashggQueryEncoder: Encoder[SmashggQuery] = deriveEncoder[SmashggQuery]
-  implicit private def smashggQueryEntityEncoder[F[_]]: EntityEncoder[F, SmashggQuery] = jsonEncoderOf
   implicit private val entityDecoderForInt: EntityDecoder[IO, Int] = jsonOf
 
   val ctx = new Context[IO]
   val tx = ctx.databaseProgram.unsafeRunSync().transactor
   val smashggRouter: SmashggRoutes[IO] = ctx.smashggRoutesProgram.compile.lastOrError.unsafeRunSync()
   val router: HttpRoutes[IO] = smashggRouter.smashggRoutes
+
+  override def beforeAll(): Unit = {
+    val migrate = for {
+      dbProgram <- ctx.databaseProgram
+      _ = dbProgram.flyway.clean()
+      _ = dbProgram.flyway.migrate()
+    } yield ()
+    migrate.unsafeRunSync()
+  }
 
   test("POST /tournaments/<tournament> should insert a tournament into tournaments migration"){
 
@@ -171,10 +180,30 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assert(response.unsafeRunSync().as[List[Entrant]].unsafeRunSync().contains(TestHelper.entrant))
   }
 
-  test("GET /phases should retrieve all phases from phases migration"){
+  test("POST /phases should insert phases to phases migration"){
+    import io.github.locl95.smashtools.smashgg.protocol.Smashgg.phasesDecoder
+    implicit val entityDecoderForPhases: EntityDecoder[IO, List[Phase]] =
+      jsonOf
+    implicit val encoderForPhases: Encoder[List[Phase]] = Encoder.encodeList[Phase]
 
-    implicit val decoderForPhase: Decoder[Phase] = deriveDecoder[Phase]
-    implicit val decoderForPhases: Decoder[List[Phase]] = Decoder.decodeList[Phase](decoderForPhase)
+    val program: fs2.Stream[IO, List[Phase]] = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      smashggClient = SmashggClient.impl(client)
+      phases <- fs2
+        .Stream
+        .eval(smashggClient.get[List[Phase]](SmashggQuery.getPhases("mst-4", "ultimate-singles")))
+    } yield phases
+
+    val response = for {
+      phases <- program.compile.lastOrError
+      resp <- router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/phases").withEntity(phases))
+    } yield resp
+
+    assertEquals(TestHelper.check[Int](response, Status.Ok, Some(2)), true)
+  }
+
+  test("GET /phases should retrieve all phases from phases migration"){
+    implicit val decoderForPhases: Decoder[List[Phase]] = Decoder.decodeList[Phase]
     implicit val entityDecoderForPhases: EntityDecoder[IO, List[Phase]] = jsonOf
 
     val response: IO[Response[IO]] = router
@@ -184,15 +213,37 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     assertEquals(TestHelper.check[List[Phase]](response, Status.Ok, Some(TestHelper.phases)), true)
   }
 
-//  test("GET /sets should retrieve all sets from sets migration"){
-//    implicit val decoderForSet: Decoder[Sets] = deriveDecoder[Sets]
-//    implicit val decoderForSets: Decoder[List[Sets]] = Decoder.decodeList[Sets](decoderForSet)
-//    implicit val entityDecoderForSets: EntityDecoder[IO, List[Sets]] = jsonOf
-//
-//    val response: IO[Response[IO]] = router
-//      .orNotFound
-//      .run(Request[IO](method = Method.GET, uri = uri"/sets"))
-//
-//    assert(response.unsafeRunSync().as[List[Sets]].unsafeRunSync().contains(TestHelper.testSets.take(1)))
-//  }
+  test("POST /sets should insert sets to sets migration"){
+    import io.github.locl95.smashtools.smashgg.protocol.Smashgg.setsDecoder
+    implicit def entityDecoderForSets: EntityDecoder[IO, List[Sets]] =
+      jsonOf
+    implicit val encoderForSets: Encoder[List[Sets]] = Encoder.encodeList[Sets]
+
+
+    val program: fs2.Stream[IO, List[Sets]] = for {
+      client <- BlazeClientBuilder[IO](global).stream
+      smashggClient = SmashggClient.impl(client)
+      event <- fs2
+        .Stream
+        .eval(smashggClient.get[List[Sets]](SmashggQuery.getEvent("mst-4", "ultimate-singles", 1)))
+    } yield event
+
+    val response = for {
+      sets <- program.compile.lastOrError
+      resp <- router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/sets").withEntity(sets))
+    } yield resp
+
+    assertEquals(TestHelper.check[Int](response, Status.Ok, Some(50)), true)
+  }
+
+  test("GET /sets should retrieve all sets from sets migration"){
+    implicit val decoderForSets: Decoder[List[Sets]] = Decoder.decodeList[Sets]
+    implicit def entityDecoderForSets: EntityDecoder[IO, List[Sets]] = jsonOf
+
+    val response: IO[Response[IO]] = router
+      .orNotFound
+      .run(Request[IO](method = Method.GET, uri = uri"/sets"))
+
+    assert(response.unsafeRunSync().as[List[Sets]].unsafeRunSync().take(2) == TestHelper.testSets)
+  }
 }
