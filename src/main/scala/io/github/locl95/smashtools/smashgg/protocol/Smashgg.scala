@@ -12,11 +12,17 @@ object Smashgg {
   implicit val smashggQueryEncoder: Encoder[SmashggQuery] = deriveEncoder[SmashggQuery]
   implicit def smashggQueryEntityEncoder[F[_]]: EntityEncoder[F, SmashggQuery] = jsonEncoderOf
 
+
+
   implicit val tournamentDecoder: Decoder[Tournament] = (c: HCursor) => {
     for {
       id <- c.downField("data").downField("tournament").downField("id").as[Int]
-      name <- c.downField("data").downField("tournament").downField("name").as[String]
-    } yield Tournament(id,name.map(x => if(x.toString.equals(" ")) '-' else x))
+      slug <- c.downField("data").downField("tournament").downField("slug").as[String]
+    } yield
+      Tournament(
+        id,
+        slug.split("/").toList.last.toUpperCase
+      )
   }
   implicit val tournamentsDecoder: Decoder[List[Tournament]] = Decoder.decodeList[Tournament]
   implicit def tournamentEntityDecoder[F[_]: Sync]: EntityDecoder[F, Tournament] = jsonOf

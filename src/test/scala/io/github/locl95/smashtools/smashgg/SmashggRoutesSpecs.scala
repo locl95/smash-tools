@@ -35,12 +35,10 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
   }
 
   test("POST /tournaments/<tournament> should insert a tournament into tournaments migration"){
-
     import io.github.locl95.smashtools.smashgg.protocol.Smashgg.tournamentDecoder
     implicit val entityDecoderForTournament: EntityDecoder[IO, Tournament] =
       jsonOf
     implicit val encoderForTournament: Encoder[Tournament] = deriveEncoder[Tournament]
-
 
     val program: fs2.Stream[IO, Tournament] = for {
       client <- BlazeClientBuilder[IO](global).stream
@@ -59,7 +57,6 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
   }
 
   test("GET /tournaments/MST-4 should return MST-4 tournament from tournaments migration") {
-
     implicit  val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
     implicit  val entityDecoderForTournament: EntityDecoder[IO, Tournament] =
       jsonOf
@@ -86,7 +83,6 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
   }
 
   test("POST /tournaments/<tournament>/events/<event> should insert an event to events migration"){
-
     import io.github.locl95.smashtools.smashgg.protocol.Smashgg.eventDecoder
     implicit val entityDecoder: EntityDecoder[IO, Event] = jsonOf
     implicit val encoderForEvent: Encoder[Event] = deriveEncoder[Event]
@@ -218,7 +214,6 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     implicit def entityDecoderForSets: EntityDecoder[IO, List[Sets]] =
       jsonOf
     implicit val encoderForSets: Encoder[List[Sets]] = Encoder.encodeList[Sets]
-
 
     val program: fs2.Stream[IO, List[Sets]] = for {
       client <- BlazeClientBuilder[IO](global).stream

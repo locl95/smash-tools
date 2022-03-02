@@ -39,5 +39,4 @@ class EntrantsRepositorySpec extends CatsEffectSuite{
     test(s"Given some entrants I can insert them with $r") { insertTest(r)}
     test(s"Given some entrants I can retrieve them with $r") { getTest(r)}
   }
-
 }

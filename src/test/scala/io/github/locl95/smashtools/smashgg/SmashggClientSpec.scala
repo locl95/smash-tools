@@ -9,6 +9,7 @@ import org.http4s.client.blaze.BlazeClientBuilder
 import scala.concurrent.ExecutionContext.global
 
 class SmashggClientSpec extends CatsEffectSuite {
+
   test("Should be able to retreat a tournament from smash.gg API") {
     val program: fs2.Stream[IO, Tournament] = for {
       client <- BlazeClientBuilder[IO](global).stream

@@ -15,7 +15,7 @@ class SmashggSpec extends CatsEffectSuite {
 
   test("I can decode smash.gg tournament") {
     val tournamentJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-tournament.json")
-    val expectedTournament = Tournament(312932,"MST 4")
+    val expectedTournament = Tournament(312932,"MST-4")
 
     val tournamentFromJson =
       for {
