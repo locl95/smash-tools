@@ -7,6 +7,9 @@ val DoobieVersion = "0.12.1"
 
 enablePlugins(JavaAppPackaging)
 
+Test / parallelExecution := false
+Test / testOptions += Tests.Argument(TestFrameworks.MUnit, "-b")
+
 lazy val root = (project in file("."))
   .settings(
     organization := "io.github.locl95",

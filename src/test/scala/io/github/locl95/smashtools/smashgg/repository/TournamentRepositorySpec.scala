@@ -9,9 +9,9 @@ class TournamentRepositorySpec extends CatsEffectSuite{
   val ctx = new Context[IO]
   val tx = ctx.databaseProgram.unsafeRunSync().transactor
 
-  private val inMemory = new TournamentsInMemoryRepository[IO]
-  private val postgres = new TournamentPostgresRepository[IO](tx)
-  private val repositories = List(inMemory, postgres)
+  private def inMemory = new TournamentsInMemoryRepository[IO]
+  private def postgres = new TournamentPostgresRepository[IO](tx)
+  private def repositories: List[TournamentRepository[IO]] = List(inMemory, postgres)
 
   override def beforeEach(context: BeforeEach): Unit = {
     val migrate = for {
@@ -20,13 +20,12 @@ class TournamentRepositorySpec extends CatsEffectSuite{
       _ = dbProgram.flyway.migrate()
     } yield ()
     migrate.unsafeRunSync()
-    inMemory.clean()
   }
 
   private val insertTournamentTest = (repo: TournamentRepository[IO]) =>
     assertIOBoolean(for {
       result <- repo.insert(TestHelper.tournament)
-    } yield result == 1)
+    } yield result == TestHelper.tournament.id)
 
   private val getTournamentsTest = (repo: TournamentRepository[IO]) =>
     assertIOBoolean(for {
@@ -34,14 +33,13 @@ class TournamentRepositorySpec extends CatsEffectSuite{
       result <- repo.get
     } yield result.take(1) == List(TestHelper.tournament))
 
-  private val getTournamentByNameTest = (repo: TournamentRepository[IO]) =>
+  private val getTournamentByIdTest = (repo: TournamentRepository[IO]) =>
     assertIOBoolean(for {
       _ <- repo.insert(TestHelper.tournament)
-      result <- repo.get("MST-4")
+      result <- repo.get(312932)
     } yield result.get == TestHelper.tournament)
 
-  repositories.foreach { r =>
-    test(s"Given some tournaments I can insert them with $r") { insertTournamentTest(r)}
-    test(s"Given some tournaments in bdd I can retrieve them with $r") { getTournamentsTest(r)}
-    test(s"Given some tournaments in bdd I can retrieve certain tournament by with $r") { getTournamentByNameTest(r)}}
+  repositories.foreach (r => test(s"Given some tournaments I can insert them with $r") { insertTournamentTest(r)})
+  repositories.foreach (r => test(s"Given some tournaments in bdd I can retrieve them with $r") { getTournamentsTest(r)})
+  repositories.foreach (r => test(s"Given some tournaments in bdd I can retrieve certain tournament by with $r") { getTournamentByIdTest(r)})
 }

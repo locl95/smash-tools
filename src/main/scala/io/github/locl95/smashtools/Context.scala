@@ -63,5 +63,4 @@ final case class Context[F[_]: ContextShift: ConcurrentEffect]() {
       new PhaseService[F](new PhasePostgresRepository[F](database.transactor), smashggClient),
       new SetsService[F](new SetsPostgresRepository[F](database.transactor), smashggClient)
     )
-
 }

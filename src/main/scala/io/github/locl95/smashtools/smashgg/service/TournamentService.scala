@@ -5,14 +5,13 @@ import io.github.locl95.smashtools.smashgg.domain.Tournament
 import io.github.locl95.smashtools.smashgg.repository.TournamentRepository
 
 final case class TournamentService[F[_]](tournamentRepository: TournamentRepository[F],
-                                         client: SmashggClient[F]) {
+                                               client: SmashggClient[F]) {
 
-  def insert(tournament: Tournament): F[Int] = {
+  def insert(tournament: Tournament): F[Int] =
     tournamentRepository.insert(tournament)
-  }
 
-  def getTournament(tournament: String): F[Option[Tournament]] =
-    tournamentRepository.get(tournament)
+  def getTournament(tournamentID: Int): F[Option[Tournament]] =
+    tournamentRepository.get(tournamentID)
 
   def get: F[List[Tournament]] =
     tournamentRepository.get

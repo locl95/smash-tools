@@ -4,7 +4,7 @@ import cats.effect.{IO, Sync}
 import cats.implicits._
 import io.github.locl95.smashtools.smashgg.domain._
 import io.github.locl95.smashtools.smashgg.repository._
-import org.http4s.{EntityDecoder, Response, Status}
+import org.http4s.{EntityDecoder, Header, Headers, Response, Status}
 
 import scala.collection.mutable
 
@@ -17,7 +17,7 @@ final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentReposito
   override def toString: String = "TournamentsInMemoryRepository"
   override def insert(tournament: Tournament): F[Int] = {
     tournamentsList.append(tournament).pure[F]
-    1.pure[F]
+    tournament.id.pure[F]
   }
   override def clean(): Unit = {
     tournamentsList.clearAndShrink()
@@ -25,8 +25,8 @@ final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentReposito
   override def get: F[List[Tournament]] =
     tournamentsList.toList.pure[F]
 
-  override def get(name: String): F[Option[Tournament]] =
-    tournamentsList.find(_.name == name).pure[F]
+  override def get(id: Int): F[Option[Tournament]] =
+    tournamentsList.find(_.id == id).pure[F]
 }
 
 final class EntrantInMemoryRepository[F[_]: Sync] extends EntrantRepository[F] with InMemoryRepository {
@@ -54,7 +54,7 @@ final class EventInMemoryRepository[F[_]: Sync] extends EventRepository[F] with 
     "EventInMemoryRepository"
   override def insert(event: Event): F[Int] = {
     eventsArray.append(event).pure[F]
-    1.pure[F]
+    event.id.pure[F]
   }
   override def clean(): Unit =
     eventsArray.clearAndShrink()
@@ -125,20 +125,29 @@ object TestHelper {
   val entrant: Entrant = Entrant(8348984, 615463, "Raiden's | Zandark")
   val entrants: List[Entrant] = List(Entrant(8348984, 615463, "Raiden's | Zandark"), Entrant(8346516, 615463, "FS | Sevro"))
   val event: Event = Event(615463, "Ultimate Singles")
+  val testEvent: Event = Event(615463, "Ultimate Singles", 312932)
   val events: List[Event] = List(Event(615463, "Ultimate Singles", 312932))
   val playerStandings: List[PlayerStanding] = List(PlayerStanding(1,8232866), PlayerStanding(2,8280489))
   val phases: List[Phase] = List(Phase(991477, "Bracket Pools"), Phase(991478, "Top 16"))
   val sets: List[Sets] = List(Sets(40865697,615463,List(Score(8280489,0),Score(8232866,3))), Sets(40865698,615463,List(Score(8232866,3),Score(8280489,2))))
   val testSets: List[Sets] = List(Sets(40865697,615463, List(Score(8232866, 3), Score(8280489, 0))), Sets(40865698,615463, List(Score(8232866, 3), Score(8280489, 2))))
 
-  def check[A](actual: IO[Response[IO]],
-                expectedStatus: Status,
-                expectedBody: Option[A])(
-                implicit ev: EntityDecoder[IO, A]): Boolean = {
-    val actualResp = actual.unsafeRunSync()
-    actualResp.status == expectedStatus && expectedBody.fold[Boolean](actualResp.body.compile.toVector.unsafeRunSync().isEmpty)(expected => {
-      val a = actualResp.as[A].unsafeRunSync()
-      a == expected
-    })
+  val headers: Headers = Headers.apply(
+    Header("Authorization", "Bearer 3305177ceda157c60fbc09b79e2ff987")
+  )
+
+  def check[A](actual:        IO[Response[IO]],
+               expectedStatus: Status,
+               expectedBody:   Option[A])(
+                implicit ev: EntityDecoder[IO, A]
+              ): Boolean =  {
+    val actualResp         = actual.unsafeRunSync()
+    val statusCheck        = actualResp.status == expectedStatus
+    val bodyCheck          = expectedBody.fold[Boolean](
+      // Verify Response's body is empty.
+      actualResp.body.compile.toVector.unsafeRunSync().isEmpty)(
+      expected => actualResp.as[A].unsafeRunSync() == expected
+    )
+    statusCheck && bodyCheck
   }
 }

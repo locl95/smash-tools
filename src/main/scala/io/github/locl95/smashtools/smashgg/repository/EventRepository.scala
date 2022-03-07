@@ -15,7 +15,9 @@ final class EventPostgresRepository[F[_]: Sync](transactor: Transactor[F]) exten
   override def toString: String = "EventPostgresRepository"
 
   override def insert(event: Event): F[Int] =
-    sql"insert into events (id,name,id_tournament) values (${event.id}, ${event.name}, ${event.idTournament})".update.run.transact(transactor)
+    sql"insert into events (id,name,id_tournament) values (${event.id}, ${event.name}, ${event.idTournament})"
+      .update.withUniqueGeneratedKeys[Int]("id")
+      .transact(transactor)
 
   override def getEvents(tournament: Int): F[List[Event]] = {
     sql"select id, name, id_tournament from events where id_tournament = ${tournament}"
