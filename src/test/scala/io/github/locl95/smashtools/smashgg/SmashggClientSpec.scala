@@ -9,6 +9,7 @@ import org.http4s.client.blaze.BlazeClientBuilder
 import scala.concurrent.ExecutionContext.global
 
 class SmashggClientSpec extends CatsEffectSuite {
+
   test("Should be able to retreat a tournament from smash.gg API") {
     val program: fs2.Stream[IO, Tournament] = for {
       client <- BlazeClientBuilder[IO](global).stream
@@ -18,7 +19,7 @@ class SmashggClientSpec extends CatsEffectSuite {
         .eval(smashggClient.get[Tournament](SmashggQuery.getTournamentQuery("mst-4")))
     } yield tournament
 
-    assertIO(program.compile.lastOrError, Tournament("MST 4"))
+    assertIO(program.compile.lastOrError, Tournament(312932,"MST-4"))
   }
 
   test("Should be able to retreat participants from smash.gg API") {
@@ -42,7 +43,7 @@ class SmashggClientSpec extends CatsEffectSuite {
         .eval(smashggClient.get[Event](SmashggQuery.getEvent("mst-4", "ultimate-singles", 1)))
     } yield participants
 
-    assertIO(program.compile.lastOrError, Event("Ultimate Singles"))
+    assertIO(program.compile.lastOrError, Event(615463, "Ultimate Singles"))
   }
 
   test("Should be able to retreat phases from smash.gg API") {
@@ -78,7 +79,7 @@ class SmashggClientSpec extends CatsEffectSuite {
         .eval(smashggClient.get[List[Entrant]](SmashggQuery.getEntrant("mst-4", "ultimate-singles")))
     } yield entrants
 
-    assertIO(program.compile.foldMonoid.map(i => i.contains(Entrant("Raiden's | Zandark"))), true)
+    assertIO(program.compile.foldMonoid.map(i => i.contains(Entrant(8348984, 615463, "Raiden's | Zandark"))), true)
   }
 
 }
