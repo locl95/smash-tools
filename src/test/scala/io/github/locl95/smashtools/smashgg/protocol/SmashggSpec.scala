@@ -3,6 +3,7 @@ package io.github.locl95.smashtools.smashgg.protocol
 import munit.CatsEffectSuite
 import io.circe.syntax._
 import io.circe.parser._
+import io.github.locl95.smashtools.smashgg.TestHelper
 import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Participant, Phase, PlayerStanding, SmashggQuery, Tournament}
 import io.github.locl95.smashtools.smashgg.protocol.Smashgg._
 
@@ -14,7 +15,7 @@ class SmashggSpec extends CatsEffectSuite {
 
   test("I can decode smash.gg tournament") {
     val tournamentJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-tournament.json")
-    val expectedTournament = Tournament("MST 4")
+    val expectedTournament = Tournament(312932,"MST-4")
 
     val tournamentFromJson =
       for {
@@ -23,7 +24,6 @@ class SmashggSpec extends CatsEffectSuite {
       } yield tournament
 
     assert(tournamentFromJson.contains(expectedTournament))
-
   }
 
   test("I can decode smash.gg participants") {
@@ -52,12 +52,12 @@ class SmashggSpec extends CatsEffectSuite {
         event <- eventDecoder.decodeJson(json)
       } yield event
 
-    assert(eventFromJson.contains(Event("Ultimate Singles")))
+    assert(eventFromJson.contains(Event(615463, "Ultimate Singles")))
   }
 
   test("I can decode smash.gg entrants"){
     val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-entrants.json")
-    val expectedTwoFirstEntrants = List(Entrant("Raiden's | Zandark"), Entrant("FS | Sevro"))
+    val expectedTwoFirstEntrants = List(Entrant(8348984, 615463, "Raiden's | Zandark"), Entrant(8346516, 615463, "FS | Sevro"))
 
     val entrantsFromJson =
       for {
@@ -94,5 +94,19 @@ class SmashggSpec extends CatsEffectSuite {
     assert(phasesFromJson.map(_.take(2)).contains(expectedTwoFirstPhases))
 
   }
+
+  test("I can decode smash.gg sets") {
+    val eventJson = scala.io.Source.fromFile(s"src/test/resources/smashgg/smashgg-events.json")
+    val expectedTwoFirstSets = TestHelper.sets
+
+    val setsFromJson =
+      for {
+        json <- parse(eventJson.getLines().mkString)
+        sets <- setsDecoder.decodeJson(json)
+      } yield sets
+
+    assert(setsFromJson.map(_.take(2)).contains(expectedTwoFirstSets))
+  }
+
 
 }

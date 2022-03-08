@@ -1,6 +1,7 @@
 package io.github.locl95.smashtools
 
 import cats.effect.{Async, ConcurrentEffect, ContextShift, Timer}
+import cats.implicits.toSemigroupKOps
 import fs2.Stream
 import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
 import org.http4s.server.blaze.BlazeServerBuilder
@@ -18,8 +19,9 @@ object SmashtoolsServer {
       database <- Stream.eval(context.databaseProgram)
       _ = database.flyway.migrate()
       charactersRoutes <- context.charactersRoutesProgram
+      smashggRoutes <- context.smashggRoutesProgram
 
-      httpApp = (charactersRoutes.characterRoutes).orNotFound
+      httpApp = (charactersRoutes.characterRoutes <+> smashggRoutes.smashggRoutes).orNotFound
 
       // With Middlewares in place
       finalHttpApp = Logger.httpApp(true, true)(httpApp)
