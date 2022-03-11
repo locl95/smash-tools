@@ -150,4 +150,20 @@ object TestHelper {
     )
     statusCheck && bodyCheck
   }
+
+  def checkF[A](actualResp:        Response[IO],
+               expectedStatus: Status,
+               expectedBody:   Option[A])(
+                implicit ev: EntityDecoder[IO, A]
+              ): IO[Boolean] =  {
+
+    val statusCheck        = actualResp.status == expectedStatus
+    val bodyCheck          = expectedBody.fold[IO[Boolean]](
+      // Verify Response's body is empty.
+      actualResp.body.compile.toVector.map(_.isEmpty))(
+      expected => actualResp.as[A].map(_ == expected)
+    )
+
+    bodyCheck.map(_ && statusCheck)
+  }
 }

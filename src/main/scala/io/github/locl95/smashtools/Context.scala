@@ -1,6 +1,6 @@
 package io.github.locl95.smashtools
 
-import cats.effect.{Async, Blocker, ConcurrentEffect, ContextShift}
+import cats.effect.{Async, Blocker, ConcurrentEffect, ContextShift, Resource}
 import cats.implicits._
 import doobie.Transactor
 import doobie.util.ExecutionContexts
@@ -42,20 +42,20 @@ final case class Context[F[_]: ContextShift: ConcurrentEffect]() {
       .load()
   )
 
-  val charactersRoutesProgram: fs2.Stream[F, CharactersRoutes[F]] = for {
-    client <- BlazeClientBuilder[F](global).stream
+  val charactersRoutesProgram: Resource[F, CharactersRoutes[F]] = for {
+    client <- BlazeClientBuilder[F](global).resource
     kuroganeClient = KuroganeClient.impl[F](client)
-    database <- fs2.Stream.eval(databaseProgram)
+    database <- Resource.eval(databaseProgram)
   } yield new CharactersRoutes[F](
     new CharactersService[F](new CharacterPostgresRepository[F](database.transactor), kuroganeClient),
     new MovementsService[F](new MovementPostgresRepository[F](database.transactor), kuroganeClient)
   )
 
-  val smashggRoutesProgram: fs2.Stream[F, SmashggRoutes[F]] =
+  val smashggRoutesProgram: Resource[F, SmashggRoutes[F]] =
     for {
-      client <- BlazeClientBuilder[F](global).stream
+      client <- BlazeClientBuilder[F](global).resource
       smashggClient = SmashggClient.impl[F](client)
-      database <- fs2.Stream.eval(databaseProgram)
+      database <- Resource.eval(databaseProgram)
     } yield new SmashggRoutes[F](
       new TournamentService[F](new TournamentPostgresRepository[F](database.transactor), smashggClient),
       new EventService[F](new EventPostgresRepository[F](database.transactor), smashggClient),

@@ -31,7 +31,8 @@ lazy val root = (project in file("."))
       "org.flywaydb"    % "flyway-core"          % "8.3.0",
       "commons-codec"   % "commons-codec"        % "1.15",
       "joda-time"       % "joda-time"            % "2.10.13",
-      "com.danielasfregola" %% "twitter4s"       % "7.0"
+      "com.danielasfregola" %% "twitter4s"       % "7.0",
+      "org.reactormonk" %% "cryptobits"          % "1.3"
     ),
     Compile / Keys.mainClass := Some("casaametller.Runner"),
     addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.13.0" cross CrossVersion.full),

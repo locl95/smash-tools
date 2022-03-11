@@ -18,8 +18,8 @@ object SmashtoolsServer {
     for {
       database <- Stream.eval(context.databaseProgram)
       _ = database.flyway.migrate()
-      charactersRoutes <- context.charactersRoutesProgram
-      smashggRoutes <- context.smashggRoutesProgram
+      charactersRoutes <- Stream.resource(context.charactersRoutesProgram)
+      smashggRoutes <- Stream.resource(context.smashggRoutesProgram)
 
       httpApp = (charactersRoutes.characterRoutes <+> smashggRoutes.smashggRoutes).orNotFound
 

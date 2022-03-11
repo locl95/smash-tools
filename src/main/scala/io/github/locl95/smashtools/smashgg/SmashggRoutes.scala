@@ -6,10 +6,9 @@ import io.circe.syntax._
 import io.github.locl95.smashtools.smashgg.domain._
 import io.github.locl95.smashtools.smashgg.protocol.SmashggRoutesImpl._
 import io.github.locl95.smashtools.smashgg.service._
+import org.http4s.HttpRoutes
 import org.http4s.circe._
 import org.http4s.dsl.Http4sDsl
-import org.http4s.headers.Authorization
-import org.http4s.{Header, HttpRoutes}
 
 final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
                                        eventService: EventService[F],
@@ -17,25 +16,24 @@ final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
                                        phaseService: PhaseService[F],
                                        setsService: SetsService[F]) extends Http4sDsl[F]{
 
+//  val authedSmashhggRoutes: AuthedRoutes[AuthToken, F] =
+//    AuthedRoutes.of[AuthToken, F] {
+//      case req @ POST -> Root / "tournaments" as _ =>
+//        for {
+//          r <- req.req.as[Tournament]
+//          i <- tournamentService.insert(r)
+//          resp <- Ok(i.asJson)
+//        }yield resp
+//    }
+
   val smashggRoutes: HttpRoutes[F] = {
     HttpRoutes.of[F] {
       case req @ POST -> Root / "tournaments" =>
-
-        val header: Option[Header] = req.headers.get(Authorization)
-        header match {
-          case Some(h) => h.value match {
-            case "Bearer 3305177ceda157c60fbc09b79e2ff987" =>
-              for {
-                r <- req.as[Tournament]
-                i <- tournamentService.insert(r)
-                resp <- Ok(i.asJson)
-            } yield resp
-
-            case _ => Forbidden()
-          }
-          case None => Forbidden()//hauria de ser unauth
-        }
-
+        for {
+          r <- req.as[String]
+          i <- tournamentService.insert(r)
+          resp <- Ok(i.asJson)
+        }yield resp
 
       case GET -> Root / "tournaments" / tournament =>
         for {
