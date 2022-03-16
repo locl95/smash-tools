@@ -1,11 +1,15 @@
 package io.github.locl95.smashtools
 
+import cats.data.Kleisli
 import cats.effect.{Async, ConcurrentEffect, ContextShift, Timer}
-import cats.implicits.toSemigroupKOps
 import fs2.Stream
+import cats.implicits.toSemigroupKOps
+import io.github.locl95.smashtools.smashgg.{User, UsersInMemoryRepository}
 import org.http4s.implicits.http4sKleisliResponseSyntaxOptionT
+import org.http4s.server.AuthMiddleware
 import org.http4s.server.blaze.BlazeServerBuilder
 import org.http4s.server.middleware.Logger
+import org.http4s.{Request, Response}
 
 import scala.concurrent.ExecutionContext.global
 
@@ -14,14 +18,22 @@ object SmashtoolsServer {
   def stream[F[_]: ConcurrentEffect: ContextShift](implicit T: Timer[F]): Stream[F, Nothing] = {
 
     val context = new Context[F]
+    val users = new UsersInMemoryRepository[F]
+    users.insert(User(1212, "3305177ceda157c60fbc09b79e2ff987"))
 
     for {
       database <- Stream.eval(context.databaseProgram)
       _ = database.flyway.migrate()
-      charactersRoutes <- Stream.resource(context.charactersRoutesProgram)
+
+      authMiddleware: AuthMiddleware[F, User] = SmashggAuth.make[F](users).middleware
+
+      //charactersRoutes <- Stream.resource(context.charactersRoutesProgram)
       smashggRoutes <- Stream.resource(context.smashggRoutesProgram)
 
-      httpApp = (charactersRoutes.characterRoutes <+> smashggRoutes.smashggRoutes).orNotFound
+      httpApp: Kleisli[F, Request[F], Response[F]] =
+        (smashggRoutes.smashggRoutes <+> authMiddleware(smashggRoutes.authedSmashhggRoutes)).orNotFound
+
+      //httpApp = (charactersRoutes.characterRoutes).orNotFound
 
       // With Middlewares in place
       finalHttpApp = Logger.httpApp(true, true)(httpApp)

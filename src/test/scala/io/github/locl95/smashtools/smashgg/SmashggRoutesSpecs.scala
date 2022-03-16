@@ -25,19 +25,17 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
     migrate.unsafeRunSync()
   }
 
-  test("POST /tournaments/<tournament> should insert a tournament into tournaments migration") {
-    implicit def entityDecoderForTournaments: EntityDecoder[IO, Tournament] = jsonOf
+  test("Authed POST /tournaments/<tournament> should insert a tournament into tournaments migration") {
 
     ctx.smashggRoutesProgram.use { router =>
       for {
-        responseInsert <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/tournaments").withEntity(TestHelper.tournament.name))
-        responseGet <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.GET, uri = uri"/tournaments" / TestHelper.tournament.id.toString))
-        responseOkInsert <- TestHelper.checkF[Int](responseInsert, Status.Ok, Some(TestHelper.tournament.id))
-        responseOkGet <- TestHelper.checkF[Tournament](responseGet, Status.Ok, Some(TestHelper.tournament))
-      } yield {
+       responseInsert <-
+          router.authedSmashhggRoutes.orNotFound
+            .run(AuthedRequest[IO, User](User(1212, "3305177ceda157c60fbc09b79e2ff987"),Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament.name)))
+       responseOkInsert <- TestHelper.checkF[Int](responseInsert, Status.Ok, Some(TestHelper.tournament.id))
+      } yield
         assertEquals(responseOkInsert, true)
-        assertEquals(responseOkGet, true)
-      }
+
     }
 
   }

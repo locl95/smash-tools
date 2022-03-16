@@ -5,9 +5,9 @@ import cats.implicits._
 import doobie.Transactor
 import doobie.util.ExecutionContexts
 import doobie.util.transactor.Transactor.Aux
-import io.github.locl95.smashtools.characters.{CharactersRoutes, KuroganeClient}
 import io.github.locl95.smashtools.characters.repository.{CharacterPostgresRepository, MovementPostgresRepository}
 import io.github.locl95.smashtools.characters.service.{CharactersService, MovementsService}
+import io.github.locl95.smashtools.characters.{CharactersRoutes, KuroganeClient}
 import io.github.locl95.smashtools.smashgg.repository.{EntrantPostgresRepository, EventPostgresRepository, PhasePostgresRepository, SetsPostgresRepository, TournamentPostgresRepository}
 import io.github.locl95.smashtools.smashgg.service.{EntrantService, EventService, PhaseService, SetsService, TournamentService}
 import io.github.locl95.smashtools.smashgg.{SmashggClient, SmashggRoutes}
@@ -63,4 +63,6 @@ final case class Context[F[_]: ContextShift: ConcurrentEffect]() {
       new PhaseService[F](new PhasePostgresRepository[F](database.transactor), smashggClient),
       new SetsService[F](new SetsPostgresRepository[F](database.transactor), smashggClient)
     )
+
+
 }

@@ -1,10 +1,9 @@
 package io.github.locl95.smashtools.smashgg.service
-//
+
 //import cats.effect.{IO, Resource}
 //import cats.implicits.catsSyntaxFunctorTuple2Ops
 //import io.github.locl95.smashtools.smashgg.{SmashggClient, TestHelper, TournamentsInMemoryRepository}
 //import munit.CatsEffectSuite
-//import org.http4s.client.Client
 //import org.http4s.client.blaze.BlazeClientBuilder
 //
 //import scala.concurrent.ExecutionContext.global
