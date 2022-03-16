@@ -17,8 +17,9 @@ final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
                                        setsService: SetsService[F]) extends Http4sDsl[F]{
 
   val authedSmashhggRoutes: AuthedRoutes[User, F] =
-    AuthedRoutes.of[User, F] {
-      case req @ POST -> Root / "tournaments" as _ =>
+    AuthedRoutes.of {
+      case req @ POST -> Root / "tournaments" as user =>
+        println(s"inserting tournament by $user")
         for {
           r <- req.req.as[String]
           i <- tournamentService.insert(r)

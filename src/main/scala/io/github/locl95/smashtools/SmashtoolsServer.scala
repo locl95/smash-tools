@@ -19,7 +19,6 @@ object SmashtoolsServer {
 
     val context = new Context[F]
     val users = new UsersInMemoryRepository[F]
-    users.insert(User(1212, "3305177ceda157c60fbc09b79e2ff987"))
 
     for {
       database <- Stream.eval(context.databaseProgram)

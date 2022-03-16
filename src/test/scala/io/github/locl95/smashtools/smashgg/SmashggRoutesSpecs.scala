@@ -3,12 +3,13 @@ package io.github.locl95.smashtools.smashgg
 import cats.effect._
 import io.circe.{Decoder, Encoder}
 import io.circe.generic.auto._
-import io.github.locl95.smashtools.Context
+import io.github.locl95.smashtools.{Context, SmashggAuth}
 import io.github.locl95.smashtools.smashgg.domain.{Entrant, Event, Phase, Sets, Tournament}
 import munit.CatsEffectSuite
 import org.http4s._
 import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.implicits.{http4sKleisliResponseSyntaxOptionT, http4sLiteralsSyntax}
+import org.http4s.server.AuthMiddleware
 
 class SmashggRoutesSpecs extends CatsEffectSuite{
 
@@ -26,16 +27,20 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
   }
 
   test("Authed POST /tournaments/<tournament> should insert a tournament into tournaments migration") {
+    val users = new UsersInMemoryRepository[IO]
+    users.insert(User(1212, "3305177ceda157c60fbc09b79e2ff987"))
+
+    val authMiddleware: AuthMiddleware[IO, User] = SmashggAuth.make[IO](users).middleware
 
     ctx.smashggRoutesProgram.use { router =>
       for {
-       responseInsert <-
-          router.authedSmashhggRoutes.orNotFound
-            .run(AuthedRequest[IO, User](User(1212, "3305177ceda157c60fbc09b79e2ff987"),Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament.name)))
+        responseInsert <-
+          authMiddleware(router.authedSmashhggRoutes).orNotFound
+            .run(Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament.name))
+
        responseOkInsert <- TestHelper.checkF[Int](responseInsert, Status.Ok, Some(TestHelper.tournament.id))
       } yield
         assertEquals(responseOkInsert, true)
-
     }
 
   }
