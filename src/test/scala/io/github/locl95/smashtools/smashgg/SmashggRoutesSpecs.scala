@@ -28,7 +28,7 @@ class SmashggRoutesSpecs extends CatsEffectSuite{
 
   test("Authed POST /tournaments/<tournament> should insert a tournament into tournaments migration") {
     val users = new UsersInMemoryRepository[IO]
-    users.insert(User(1212, "3305177ceda157c60fbc09b79e2ff987"))
+    users.insert(User(1212, "3305177ceda157c60fbc09b79e2ff98"))
 
     val authMiddleware: AuthMiddleware[IO, User] = SmashggAuth.make[IO](users).middleware
 

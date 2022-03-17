@@ -26,13 +26,11 @@ object SmashtoolsServer {
 
       authMiddleware: AuthMiddleware[F, User] = SmashggAuth.make[F](users).middleware
 
-      //charactersRoutes <- Stream.resource(context.charactersRoutesProgram)
+      charactersRoutes <- Stream.resource(context.charactersRoutesProgram)
       smashggRoutes <- Stream.resource(context.smashggRoutesProgram)
 
       httpApp: Kleisli[F, Request[F], Response[F]] =
-        (smashggRoutes.smashggRoutes <+> authMiddleware(smashggRoutes.authedSmashhggRoutes)).orNotFound
-
-      //httpApp = (charactersRoutes.characterRoutes).orNotFound
+        (charactersRoutes.characterRoutes <+> smashggRoutes.smashggRoutes <+> authMiddleware(smashggRoutes.authedSmashhggRoutes)).orNotFound
 
       // With Middlewares in place
       finalHttpApp = Logger.httpApp(true, true)(httpApp)
