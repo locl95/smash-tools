@@ -41,6 +41,8 @@ final class CharactersInMemoryRepository[F[_]: Sync] extends CharactersRepositor
 
 final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[F] with InMemoryRepository {
   private val movementsList: mutable.ArrayDeque[KuroganeCharacterMove] = mutable.ArrayDeque.empty
+  private val cachedChars: mutable.ArrayDeque[String] = mutable.ArrayDeque.empty
+  private val cacheCharacterMovements = (character: String) => s"${character}_movements"
 
   override def toString: String = "MovementsInMemoryRepository"
 
@@ -49,12 +51,16 @@ final class MovementsInMemoryRepository[F[_]: Sync] extends MovementsRepository[
     movementsList.size.pure[F]
   }
 
-  override def isCached(character: String): F[Boolean] = false.pure[F]
+  override def isCached(character: String): F[Boolean] =
+    cachedChars.contains(cacheCharacterMovements(character)).pure[F]
 
   override def getMoves(character: String): F[List[KuroganeCharacterMove]] =
     movementsList.toList.filter(_.character.toLowerCase == character).pure[F]
 
-  override def cache(character: String): F[Int] = 1.pure[F]
+  override def cache(character: String): F[Int] = {
+    cachedChars.prepend(cacheCharacterMovements(character))
+    cachedChars.size.pure[F]
+  }
 
   override def clean(): Unit = {
     movementsList.clearAndShrink()
