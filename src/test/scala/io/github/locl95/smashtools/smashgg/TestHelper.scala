@@ -2,6 +2,7 @@ package io.github.locl95.smashtools.smashgg
 
 import cats.effect.{IO, Sync}
 import cats.implicits._
+import io.github.locl95.smashtools.JdbcDatabaseConfiguration
 import io.github.locl95.smashtools.smashgg.domain._
 import io.github.locl95.smashtools.smashgg.repository._
 import org.http4s.{EntityDecoder, Header, Headers, Response, Status}

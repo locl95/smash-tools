@@ -5,12 +5,12 @@ import cats.implicits.catsSyntaxApplicativeId
 
 import scala.collection.mutable
 
-trait Users[F[_]] {
+trait UsersRepository[F[_]] {
   def insert(user: User): F[Int]
-  def get(token: String): F[Either[String,User]]
+  def get(id: Int): F[Either[String,User]]
 }
 
-final class UsersInMemoryRepository[F[_]: Monad] extends Users[F]{
+final class UsersInMemoryRepository[F[_]: Monad] extends UsersRepository[F]{
   private val usersArray: mutable.ArrayDeque[User] = mutable.ArrayDeque.empty
 
   override def insert(user: User): F[Int] = {
@@ -18,7 +18,7 @@ final class UsersInMemoryRepository[F[_]: Monad] extends Users[F]{
     user.id.pure[F]
   }
 
-  override def get(token: String): F[Either[String,User]] = {
-    usersArray.find(_.token == token).toRight("Token invalid").pure[F]
+  override def get(id: Int): F[Either[String,User]] = {
+    usersArray.find(_.id == id).toRight("Id invalid").pure[F]
   }
 }

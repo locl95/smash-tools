@@ -28,6 +28,7 @@ lazy val root = (project in file("."))
       "org.scalameta"   %% "svm-subs"            % "20.2.0",
       "org.tpolecat"    %% "doobie-core"         % DoobieVersion,
       "org.tpolecat"    %% "doobie-postgres"     % DoobieVersion,
+      "org.tpolecat"    %% "doobie-hikari"       % DoobieVersion,
       "org.flywaydb"    % "flyway-core"          % "8.3.0",
       "commons-codec"   % "commons-codec"        % "1.15",
       "joda-time"       % "joda-time"            % "2.10.13",
