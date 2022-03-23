@@ -1,42 +1,43 @@
 package io.github.locl95.smashtools.smashgg.repository
 
-import cats.effect.IO
-import io.github.locl95.smashtools.Context
+import cats.effect.{Blocker, Async, ContextShift, IO, Resource, Sync}
+import io.github.locl95.smashtools.JdbcTestTransactor
 import io.github.locl95.smashtools.smashgg.{EntrantInMemoryRepository, TestHelper}
 import munit.CatsEffectSuite
 
 class EntrantsRepositorySpec extends CatsEffectSuite{
 
-  val ctx = new Context[IO]
-  val tx = ctx.databaseProgram.unsafeRunSync().transactor
+  private val databaseConf = TestHelper.databaseTestConfig
 
-  private val inMemory = new EntrantInMemoryRepository[IO]
-  private val postgres = new EntrantPostgresRepository[IO](tx)
-  private val repositories = List(inMemory, postgres)
-
-  override def beforeEach(context: BeforeEach): Unit = {
-    val migrate = for {
-      dbProgram <- ctx.databaseProgram
-      _ = dbProgram.flyway.clean()
-      _ = dbProgram.flyway.migrate()
-    } yield ()
-    migrate.unsafeRunSync()
-    inMemory.clean()
-  }
+  private def inMemory[F[_]: Sync]: Resource[F, EntrantInMemoryRepository[F]] =
+    Resource.eval(Sync[F].pure(new EntrantInMemoryRepository[F]))
+  private def postgres[F[_]: Async: ContextShift]: Resource[F, EntrantPostgresRepository[F]] =
+    for {
+      blocker <- Blocker.apply
+      transactor <- {
+        implicit val b: Blocker = blocker
+        JdbcTestTransactor.transactorResource(databaseConf)
+      }
+    } yield new EntrantPostgresRepository[F](transactor)
+  private def repositories[F[_]: Async: ContextShift]: List[(String, Resource[F, EntrantRepository[F]])] = List("in memory" -> inMemory, "postgres" -> postgres)
 
   private val insertTest = (repo: EntrantRepository[IO]) =>
     assertIOBoolean(for {
       result <- repo.insert(TestHelper.entrants)
-    } yield result == 2)
+    } yield result == TestHelper.entrants.size)
 
   private val getTest = (repo: EntrantRepository[IO]) =>
     assertIOBoolean(for {
       _ <- repo.insert(TestHelper.entrants)
       result <- repo.getEntrants
-    } yield result == TestHelper.entrants)
+    } yield result.take(TestHelper.entrants.size) == TestHelper.entrants)
 
-  repositories.foreach { r =>
-    test(s"Given some entrants I can insert them with $r") { insertTest(r)}
-    test(s"Given some entrants I can retrieve them with $r") { getTest(r)}
+  repositories[IO].foreach { case (name, r) =>
+    test(s"Given some Entrants I can insert them with $name"){
+      r.use(repo => insertTest(repo))
+    }
+    test(s"Given some Entrants in repo $name I can retrieve them"){
+      r.use(repo => getTest(repo))
+    }
   }
 }

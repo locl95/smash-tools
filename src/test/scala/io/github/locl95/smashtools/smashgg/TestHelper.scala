@@ -105,6 +105,8 @@ final class SetsInMemoryRepository[F[_]: Sync] extends SetsRepository[F] with In
 }
 
 object TestHelper {
+  val databaseTestConfig: JdbcDatabaseConfiguration = JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10)
+
   val tournament: Tournament = Tournament(312932,"MST-4")
   val tournaments: List[Tournament] = List(Tournament(312932,"MST-4"))
 

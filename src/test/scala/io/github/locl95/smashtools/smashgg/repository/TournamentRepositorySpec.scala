@@ -1,26 +1,25 @@
 package io.github.locl95.smashtools.smashgg.repository
 
-import cats.effect.IO
-import io.github.locl95.smashtools.Context
+import cats.effect.{Blocker, ConcurrentEffect, ContextShift, IO, Resource, Sync}
+import io.github.locl95.smashtools.JdbcTestTransactor
 import io.github.locl95.smashtools.smashgg.{TestHelper, TournamentsInMemoryRepository}
 import munit.CatsEffectSuite
 
 class TournamentRepositorySpec extends CatsEffectSuite{
-  val ctx = new Context[IO]
-  val tx = ctx.databaseProgram.unsafeRunSync().transactor
 
-  private def inMemory = new TournamentsInMemoryRepository[IO]
-  private def postgres = new TournamentPostgresRepository[IO](tx)
-  private def repositories: List[TournamentRepository[IO]] = List(inMemory, postgres)
+  private val databaseConf = TestHelper.databaseTestConfig
 
-  override def beforeEach(context: BeforeEach): Unit = {
-    val migrate = for {
-      dbProgram <- ctx.databaseProgram
-      _ = dbProgram.flyway.clean()
-      _ = dbProgram.flyway.migrate()
-    } yield ()
-    migrate.unsafeRunSync()
-  }
+  private def inMemory[F[_]: Sync]: Resource[F, TournamentsInMemoryRepository[F]] =
+    Resource.eval(Sync[F].pure(new TournamentsInMemoryRepository[F]))
+  private def postgres[F[_]: ConcurrentEffect: ContextShift]: Resource[F, TournamentPostgresRepository[F]] =
+    for {
+      blocker <- Blocker.apply
+      transactor <- {
+        implicit val b: Blocker = blocker
+        JdbcTestTransactor.transactorResource(databaseConf)
+      }
+    } yield new TournamentPostgresRepository[F](transactor)
+  private def repositories[F[_]: ConcurrentEffect: ContextShift]: List[(String, Resource[F, TournamentRepository[F]])] = List("in memory" -> inMemory, "postgres" -> postgres)
 
   private val insertTournamentTest = (repo: TournamentRepository[IO]) =>
     assertIOBoolean(for {
@@ -39,7 +38,15 @@ class TournamentRepositorySpec extends CatsEffectSuite{
       result <- repo.get(312932)
     } yield result.get == TestHelper.tournament)
 
-  repositories.foreach (r => test(s"Given some tournaments I can insert them with $r") { insertTournamentTest(r)})
-  repositories.foreach (r => test(s"Given some tournaments in bdd I can retrieve them with $r") { getTournamentsTest(r)})
-  repositories.foreach (r => test(s"Given some tournaments in bdd I can retrieve certain tournament by with $r") { getTournamentByIdTest(r)})
+  repositories[IO].foreach { case (name, r) =>
+    test(s"Given a tournament I can insert it with $name"){
+      r.use(repo => insertTournamentTest(repo))
+    }
+    test(s"Given a tournament in repo $name I can retrieve it"){
+      r.use(repo => getTournamentByIdTest(repo))
+    }
+    test(s"Given tournaments in repo $name i can retrieve them") {
+      r.use(repo => getTournamentsTest(repo))
+    }
+  }
 }

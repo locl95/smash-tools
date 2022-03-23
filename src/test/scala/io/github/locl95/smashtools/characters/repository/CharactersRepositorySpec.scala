@@ -1,10 +1,9 @@
 package io.github.locl95.smashtools.characters.repository
 
 import cats.effect.{Async, Blocker, ContextShift, IO, Resource, Sync}
-import io.github.locl95.smashtools.{JdbcTestTransactor}
+import io.github.locl95.smashtools.JdbcTestTransactor
 import io.github.locl95.smashtools.characters.{CharactersInMemoryRepository, TestHelper}
 import munit.CatsEffectSuite
-import cats.implicits._
 
 class CharactersRepositorySpec extends CatsEffectSuite {
 
@@ -19,7 +18,6 @@ class CharactersRepositorySpec extends CatsEffectSuite {
     }
   } yield new CharacterPostgresRepository[F](transactor)
 
-
   private def repositories[F[_]: Async: ContextShift]: List[(String, Resource[F, CharactersRepository[F]])] = List("in memory" -> inMemory, "postgres" -> postgres)
 
   private val insertTest = (repo: CharactersRepository[IO]) =>
@@ -31,7 +29,7 @@ class CharactersRepositorySpec extends CatsEffectSuite {
     assertIOBoolean(for {
       _ <- repo.insert(TestHelper.characters)
       result <- repo.get
-    } yield result == TestHelper.characters)
+    } yield result.take(TestHelper.characters.size) == TestHelper.characters)
 
   private val cacheTest: CharactersRepository[IO] => IO[Unit] = (repo: CharactersRepository[IO]) =>
     assertIOBoolean(for {
@@ -39,15 +37,15 @@ class CharactersRepositorySpec extends CatsEffectSuite {
       result <- repo.isCached
     } yield result)
 
-
-  //test(s"Given I have inserted some characters I can retrieve them with $r") { getTest(r) }
   repositories[IO].foreach { case (name, r) =>
+    test(s"Given a character I can insert a character with $name"){
+      r.use(repo => insertTest(repo))
+    }
+    test(s"Given characters in repo $name I can retrieve them"){
+      r.use(repo => getTest(repo))
+    }
     test(s"Given I cached a table, isCached should return true with $name") {
       r.use(repo => cacheTest(repo))
     }
   }
-
-//  repositories.foreach (r => test(s"Given some tournaments I can insert them with $r") { insertTournamentTest(r)})
-//  repositories.foreach (r => test(s"Given some tournaments in bdd I can retrieve them with $r") { getTournamentsTest(r)})
-//  repositories.foreach (r => test(s"Given some tournaments in bdd I can retrieve certain tournament by with $r") { getTournamentByIdTest(r)})
 }

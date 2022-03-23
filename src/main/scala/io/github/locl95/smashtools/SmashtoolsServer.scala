@@ -24,9 +24,6 @@ object SmashtoolsServer {
 
     for {
 
-      //database <- Stream.eval(context.databaseProgram)
-      //_ = database.flyway.migrate()
-
       ctx <- Stream.resource(context)
       charactersRoutes <- Stream.resource(ctx.charactersRoutesProgram)
       smashggRoutes <- Stream.resource(ctx.smashggRoutesProgram)
