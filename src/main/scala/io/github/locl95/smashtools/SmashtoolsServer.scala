@@ -23,7 +23,6 @@ object SmashtoolsServer {
     val authMiddleware: AuthMiddleware[F, User] = SmashggAuth.make[F](new UsersInMemoryRepository[F],new CredentialsInMemoryRepository[F]).middleware
 
     for {
-
       ctx <- Stream.resource(context)
       charactersRoutes <- Stream.resource(ctx.charactersRoutesProgram)
       smashggRoutes <- Stream.resource(ctx.smashggRoutesProgram)
