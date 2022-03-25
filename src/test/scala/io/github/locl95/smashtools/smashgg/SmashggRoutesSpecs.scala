@@ -1,173 +1,247 @@
 package io.github.locl95.smashtools.smashgg
 
 import cats.effect._
-import io.circe.Decoder
 import io.circe.generic.auto._
-import io.circe.generic.semiauto.deriveDecoder
-import io.github.locl95.smashtools.Context
+import io.circe.{Decoder, Encoder}
 import io.github.locl95.smashtools.smashgg.domain._
+import io.github.locl95.smashtools.{Context, JdbcDatabaseConfiguration, SmashggAuth}
 import munit.CatsEffectSuite
 import org.http4s._
-import org.http4s.circe.CirceEntityCodec.circeEntityEncoder
-import org.http4s.circe.jsonOf
+import org.http4s.circe.{jsonEncoderOf, jsonOf}
 import org.http4s.implicits.{http4sKleisliResponseSyntaxOptionT, http4sLiteralsSyntax}
+import org.http4s.server.AuthMiddleware
 
 class SmashggRoutesSpecs extends CatsEffectSuite{
 
   implicit private val entityDecoderForInt: EntityDecoder[IO, Int] = jsonOf
 
-  val ctx = new Context[IO]
-  val smashggRouter: SmashggRoutes[IO] = ctx.smashggRoutesProgram.compile.lastOrError.unsafeRunSync()
-  val router: HttpRoutes[IO] = smashggRouter.smashggRoutes
+  val context: Resource[IO, Context[IO]] = Context.test[IO](JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10))
 
-  override def beforeAll(): Unit = {
-    val migrate = for {
-      dbProgram <- ctx.databaseProgram
-      _ = dbProgram.flyway.clean()
-      _ = dbProgram.flyway.migrate()
-    } yield ()
-    migrate.unsafeRunSync()
-  }
+  val users = new UsersInMemoryRepository[IO]
+  users.insert(User(1212))
 
-  test("POST /tournaments/<tournament> should insert a tournament into tournaments migration"){
-    import io.github.locl95.smashtools.smashgg.protocol.Smashgg.tournamentEncoder
-    implicit  val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
-    implicit  val entityDecoderForTournament: EntityDecoder[IO, Tournament] =
-      jsonOf
+  val credentials = new CredentialsInMemoryRepository[IO]
+  credentials.insert(Credential(1212, "3305177ceda157c60fbc09b79e2ff987"))
 
-    val responseInsert =
-      router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament))
+  val authMiddleware: AuthMiddleware[IO, User] = SmashggAuth.make[IO](users, credentials).middleware
 
-    val responseGet =
-      router.orNotFound.run(Request[IO](method = Method.GET, uri = uri"/tournaments" / TestHelper.tournament.id.toString))
+  test("Authed POST /tournaments/<tournament> should insert a tournament into tournaments migration") {
+    context.use{
+      ctx => ctx.smashggRoutesProgram.use { router =>
+        for {
+          responseInsert <-
+            authMiddleware(router.authedSmashhggRoutes).orNotFound
+              .run(Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament.name))
 
-    assertEquals(TestHelper.check[Int](responseInsert, Status.Ok, Some(TestHelper.tournament.id)), true)
-    assertEquals(TestHelper.check[Tournament](responseGet, Status.Ok, Some(TestHelper.tournament)), true)
+          responseOkInsert <- TestHelper.checkF[Int](responseInsert, Status.Ok, Some(TestHelper.tournament.id))
+        } yield
+          assertEquals(responseOkInsert, true)
+      }
+    }
   }
 
   test("GET /tournaments/312932 should return MST-4 tournament from tournaments migration") {
-    implicit  val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
     implicit  val entityDecoderForTournament: EntityDecoder[IO, Tournament] =
       jsonOf
 
-    val response = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/tournaments/312932"))
-
-    assertEquals(TestHelper.check[Tournament](response, Status.Ok, Some(TestHelper.tournament)), true)
+    context.use{
+      ctx =>
+        ctx.smashggRoutesProgram.use { router =>
+        for {
+          _ <- authMiddleware(router.authedSmashhggRoutes).orNotFound
+              .run(Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament.name))
+          resp <- router.smashggRoutes.orNotFound
+            .run(Request[IO](method = Method.GET, uri = uri"/tournaments/312932"))
+          respOk <- TestHelper.checkF[Tournament](resp, Status.Ok, Some(TestHelper.tournament))
+        } yield assertEquals(respOk, true)
+      }
+    }
   }
 
   test("GET /tournaments should return tournaments from tournaments migration") {
-    implicit  val decoderForTournament: Decoder[Tournament] = deriveDecoder[Tournament]
-    implicit  val decoderForTournaments: Decoder[List[Tournament]] =
-      Decoder.decodeList[Tournament](decoderForTournament)
     implicit  val entityDecoderForTournaments: EntityDecoder[IO, List[Tournament]] =
       jsonOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/tournaments"))
-
-    assertEquals(TestHelper.check[List[Tournament]](response, Status.Ok, Some(TestHelper.tournaments)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use { router =>
+          for {
+            _ <- authMiddleware(router.authedSmashhggRoutes).orNotFound
+              .run(Request[IO](method = Method.POST, uri = uri"/tournaments", headers = TestHelper.headers).withEntity(TestHelper.tournament.name))
+            resp <- router.smashggRoutes.orNotFound
+              .run(Request[IO](method = Method.GET, uri = uri"/tournaments"))
+            respOk <- TestHelper.checkF[List[Tournament]](resp, Status.Ok, Some(List(TestHelper.tournament)))
+          } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("POST /tournaments/<tournament>/events/<event> should insert an event to events migration"){
-    val resp =
-      router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/tournaments" / "312932" / "events" ).withEntity(TestHelper.testEvent))
+    implicit val entityEncoderForEvent: EntityEncoder[IO, Event] = jsonEncoderOf
 
-    assertEquals(TestHelper.check[Int](resp, Status.Ok, Some(615463)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use {
+          router =>
+            for {
+              resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/tournaments" / "312932" / "events").withEntity(TestHelper.testEvent))
+              respOk <- TestHelper.checkF[Int](resp, Status.Ok, Some(615463))
+            } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("GET /tournaments/<tournament>/events should return all events from <tournament> from events migration"){
-    implicit val decoderForEvent: Decoder[Event] = deriveDecoder[Event]
-    implicit val decoderForEvents: Decoder[List[Event]] = Decoder.decodeList[Event](decoderForEvent)
+    implicit val decoderForEvents: Decoder[List[Event]] = Decoder.decodeList[Event]
     implicit val entityDecoderForEvents: EntityDecoder[IO, List[Event]] = jsonOf
+    implicit val entityEncoderForEvent: EntityEncoder[IO, Event] = jsonEncoderOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/tournaments" /"312932" /"events"))
-
-    assertEquals(TestHelper.check[List[Event]](response, Status.Ok, Some(TestHelper.events)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use {
+          router =>
+            for {
+              _ <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/tournaments" / "312932" / "events").withEntity(TestHelper.testEvent))
+              resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.GET, uri = uri"/tournaments" / "312932" / "events"))
+              respOk <- TestHelper.checkF[List[Event]](resp, Status.Ok, Some(TestHelper.events))
+            } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("GET /events should return all events from events migration"){
-    implicit val decoderForEvent: Decoder[Event] = deriveDecoder[Event]
-    implicit val decoderForEvents: Decoder[List[Event]] = Decoder.decodeList[Event](decoderForEvent)
+    implicit val decoderForEvents: Decoder[List[Event]] = Decoder.decodeList[Event]
     implicit val entityDecoderForEvents: EntityDecoder[IO, List[Event]] = jsonOf
+    implicit val entityEncoderForEvent: EntityEncoder[IO, Event] = jsonEncoderOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/events"))
-
-    assertEquals(TestHelper.check[List[Event]](response, Status.Ok, Some(TestHelper.events)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use {
+          router =>
+            for {
+              _ <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/tournaments" / "312932" / "events").withEntity(TestHelper.testEvent))
+              resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.GET, uri = uri"/events"))
+              respOk <- TestHelper.checkF[List[Event]](resp, Status.Ok, Some(TestHelper.events))
+            } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("POST /events/entrants should insert a list of entrants to entrants migration"){
-    val response =
-      router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/events/entrants").withEntity(TestHelper.entrants))
+    implicit val encoderForEntrants: Encoder[List[Entrant]] = Encoder.encodeList[Entrant]
+    implicit def entityEncoderEntrants: EntityEncoder[IO, List[Entrant]] = jsonEncoderOf
 
-    assertEquals(TestHelper.check[Int](response, Status.Ok, Some(2)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use {
+          router =>
+            for {
+              resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/events/entrants").withEntity(TestHelper.entrants))
+              respOk <- TestHelper.checkF[Int](resp, Status.Ok, Some(2))
+            } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("GET /events/entrants should retrieve all entrants from entrants migration"){
-    implicit val decoderForEntrant: Decoder[Entrant] = deriveDecoder[Entrant]
-    implicit val decoderForEntrants: Decoder[List[Entrant]] = Decoder.decodeList[Entrant](decoderForEntrant)
+    implicit val decoderForEntrants: Decoder[List[Entrant]] = Decoder.decodeList[Entrant]
     implicit val entityDecoderForEntrants: EntityDecoder[IO, List[Entrant]] =
       jsonOf
+    implicit val encoderForEntrants: Encoder[List[Entrant]] = Encoder.encodeList[Entrant]
+    implicit def entityEncoderEntrants: EntityEncoder[IO, List[Entrant]] = jsonEncoderOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/events/entrants"))
-
-    assert(response.unsafeRunSync().as[List[Entrant]].unsafeRunSync().take(2) == TestHelper.entrants)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use { router =>
+          for {
+            _ <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/events/entrants").withEntity(TestHelper.entrants))
+            resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.GET, uri = uri"/events/entrants"))
+            respOk <- TestHelper.checkF[List[Entrant]](resp, Status.Ok, Some(TestHelper.entrants))
+          } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("GET /events/<eventID>/entrants should retrieve all entrants that belong to <eventID> from entrants migration"){
-    implicit val decoderForEntrant: Decoder[Entrant] = deriveDecoder[Entrant]
-    implicit val decoderForEntrants: Decoder[List[Entrant]] = Decoder.decodeList[Entrant](decoderForEntrant)
+    implicit val decoderForEntrants: Decoder[List[Entrant]] = Decoder.decodeList[Entrant]
     implicit val entityDecoderForEntrants: EntityDecoder[IO, List[Entrant]] =
       jsonOf
+    implicit val encoderForEntrants: Encoder[List[Entrant]] = Encoder.encodeList[Entrant]
+    implicit def entityEncoderEntrants: EntityEncoder[IO, List[Entrant]] = jsonEncoderOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/events" /"615463" /"entrants"))
-
-    assert(response.unsafeRunSync().as[List[Entrant]].unsafeRunSync().contains(TestHelper.entrant))
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use { router =>
+          for {
+            _ <- router.smashggRoutes.orNotFound
+              .run(Request[IO](method = Method.POST, uri = uri"/events/entrants").withEntity(TestHelper.entrants))
+            resp <- router.smashggRoutes.orNotFound
+              .run(Request[IO](method = Method.GET, uri = uri"/events" / "615463" / "entrants"))
+            respOk <- TestHelper.checkF[List[Entrant]](resp, Status.Ok, Some(TestHelper.entrants))
+          } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("POST /phases should insert phases to phases migration"){
-    val response =
-      router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/phases").withEntity(TestHelper.phases))
+    implicit def entityEncoderForSets: EntityEncoder[IO, List[Phase]] = jsonEncoderOf
 
-    assertEquals(TestHelper.check[Int](response, Status.Ok, Some(2)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use { router =>
+          for {
+            resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/phases").withEntity(TestHelper.phases))
+            respOk <- TestHelper.checkF[Int](resp, Status.Ok, Some(2))
+          } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("GET /phases should retrieve all phases from phases migration"){
-    implicit val decoderForPhases: Decoder[List[Phase]] = Decoder.decodeList[Phase]
     implicit val entityDecoderForPhases: EntityDecoder[IO, List[Phase]] = jsonOf
+    implicit def entityEncoderForSets: EntityEncoder[IO, List[Phase]] = jsonEncoderOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/phases"))
-
-    assertEquals(TestHelper.check[List[Phase]](response, Status.Ok, Some(TestHelper.phases)), true)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use { router =>
+          for {
+            _ <- router.smashggRoutes.orNotFound
+              .run(Request[IO](method = Method.POST, uri = uri"/phases").withEntity(TestHelper.phases))
+            resp <- router.smashggRoutes.orNotFound
+              .run(Request[IO](method = Method.GET, uri = uri"/phases"))
+            respOk <- TestHelper.checkF[List[Phase]](resp, Status.Ok, Some(TestHelper.phases))
+          } yield assertEquals(respOk, true)
+        }
+    }
   }
 
   test("POST /sets should insert sets to sets migration"){
-    val response =
-      router.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/sets").withEntity(TestHelper.sets))
+    implicit def entityEncoderForSets: EntityEncoder[IO, List[Sets]] = jsonEncoderOf
 
-    assertEquals(TestHelper.check[Int](response, Status.Ok, Some(2)), true)
+    context.use{
+      ctx =>
+        ctx.smashggRoutesProgram.use(router =>
+        for {
+          resp <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/sets").withEntity(TestHelper.sets))
+          respOk <- TestHelper.checkF[Int](resp, Status.Ok, Some(2))
+        } yield assertEquals(respOk, true)
+    )}
   }
 
-  test("GET /sets should retrieve all sets from sets migration"){
-    implicit val decoderForSets: Decoder[List[Sets]] = Decoder.decodeList[Sets]
+  test("GET /sets should retrieve all sets from sets migration") {
     implicit def entityDecoderForSets: EntityDecoder[IO, List[Sets]] = jsonOf
+    implicit def entityEncoderForSets: EntityEncoder[IO, List[Sets]] = jsonEncoderOf
 
-    val response: IO[Response[IO]] = router
-      .orNotFound
-      .run(Request[IO](method = Method.GET, uri = uri"/sets"))
-
-    assert(response.unsafeRunSync().as[List[Sets]].unsafeRunSync().take(2) == TestHelper.testSets)
+    context.use {
+      ctx =>
+        ctx.smashggRoutesProgram.use(router =>
+          for {
+            _ <- router.smashggRoutes.orNotFound.run(Request[IO](method = Method.POST, uri = uri"/sets").withEntity(TestHelper.sets))
+            resp <- router.smashggRoutes.orNotFound
+              .run(Request[IO](method = Method.GET, uri = uri"/sets"))
+            respOk <- TestHelper.checkF[List[Sets]](resp, Status.Ok, Some(TestHelper.testSets))
+          } yield assertEquals(respOk, true)
+        )
+    }
   }
 }

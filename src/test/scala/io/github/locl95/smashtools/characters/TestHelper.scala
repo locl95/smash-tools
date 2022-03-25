@@ -5,6 +5,7 @@ import cats.effect.{IO, Sync}
 import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
 import io.github.locl95.smashtools.characters.repository.{CharactersRepository, MovementsRepository}
 import cats.implicits._
+import io.github.locl95.smashtools.JdbcDatabaseConfiguration
 import org.http4s.{EntityDecoder, Response, Status}
 
 import scala.collection.mutable
@@ -79,6 +80,9 @@ final class KuroganeClientMock[F[_]: Applicative] extends KuroganeClient[F] {
 
 object TestHelper {
 
+  val databaseTestConfig = JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10)
+
+
   val characters: List[KuroganeCharacter] =
     List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))
 
@@ -104,3 +108,5 @@ object TestHelper {
     })
   }
 }
+
+

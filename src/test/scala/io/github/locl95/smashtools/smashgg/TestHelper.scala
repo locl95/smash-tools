@@ -2,6 +2,7 @@ package io.github.locl95.smashtools.smashgg
 
 import cats.effect.{IO, Sync}
 import cats.implicits._
+import io.github.locl95.smashtools.JdbcDatabaseConfiguration
 import io.github.locl95.smashtools.smashgg.domain._
 import io.github.locl95.smashtools.smashgg.repository._
 import org.http4s.{EntityDecoder, Header, Headers, Response, Status}
@@ -24,7 +25,6 @@ final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentReposito
   }
   override def get: F[List[Tournament]] =
     tournamentsList.toList.pure[F]
-
   override def get(id: Int): F[Option[Tournament]] =
     tournamentsList.find(_.id == id).pure[F]
 }
@@ -37,13 +37,10 @@ final class EntrantInMemoryRepository[F[_]: Sync] extends EntrantRepository[F] w
     entrantsArray.appendAll(entrants).pure[F]
     entrantsArray.size.pure[F]
   }
-
   override def getEntrants(eventID: Int): F[List[Entrant]] =
     entrantsArray.filter(x => x.idEvent == eventID).toList.pure[F]
-
   override def getEntrants: F[List[Entrant]] =
     entrantsArray.toList.pure[F]
-
   override def clean(): Unit =
     entrantsArray.clearAndShrink()
 }
@@ -58,10 +55,8 @@ final class EventInMemoryRepository[F[_]: Sync] extends EventRepository[F] with 
   }
   override def clean(): Unit =
     eventsArray.clearAndShrink()
-
   override def get: F[List[Event]] =
     eventsArray.toList.pure[F]
-
   override def getEvents(tournament: Int): F[List[Event]] =
     eventsArray.toList.filter(_.idTournament == tournament).pure[F]
 }
@@ -76,7 +71,6 @@ final class PlayerStandingInMemoryRepository[F[_]: Sync] extends PlayerStandingR
   }
   override def clean(): Unit =
     playerStandingsArray.clearAndShrink()
-
   override def getPlayerStandings: F[List[PlayerStanding]] =
     playerStandingsArray.toList.pure[F]
 }
@@ -91,7 +85,6 @@ final class PhaseInMemoryRepository[F[_]: Sync] extends PhaseRepository[F] with 
   }
   override def clean(): Unit =
     phashesArray.clearAndShrink()
-
   override def getPhases: F[List[Phase]] =
     phashesArray.toList.pure[F]
 }
@@ -107,12 +100,13 @@ final class SetsInMemoryRepository[F[_]: Sync] extends SetsRepository[F] with In
   }
   override def clean(): Unit =
     setsArray.clearAndShrink()
-
   override def getSets: F[List[Sets]] =
     setsArray.toList.pure[F]
 }
 
 object TestHelper {
+  val databaseTestConfig: JdbcDatabaseConfiguration = JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10)
+
   val tournament: Tournament = Tournament(312932,"MST-4")
   val tournaments: List[Tournament] = List(Tournament(312932,"MST-4"))
 
@@ -136,18 +130,19 @@ object TestHelper {
     Header("Authorization", "Bearer 3305177ceda157c60fbc09b79e2ff987")
   )
 
-  def check[A](actual:        IO[Response[IO]],
+  def checkF[A](actualResp:        Response[IO],
                expectedStatus: Status,
                expectedBody:   Option[A])(
                 implicit ev: EntityDecoder[IO, A]
-              ): Boolean =  {
-    val actualResp         = actual.unsafeRunSync()
+              ): IO[Boolean] =  {
+
     val statusCheck        = actualResp.status == expectedStatus
-    val bodyCheck          = expectedBody.fold[Boolean](
+    val bodyCheck          = expectedBody.fold[IO[Boolean]](
       // Verify Response's body is empty.
-      actualResp.body.compile.toVector.unsafeRunSync().isEmpty)(
-      expected => actualResp.as[A].unsafeRunSync() == expected
+      actualResp.body.compile.toVector.map(_.isEmpty))(
+      expected => actualResp.as[A].map(_ == expected)
     )
-    statusCheck && bodyCheck
+
+    bodyCheck.map(_ && statusCheck)
   }
 }

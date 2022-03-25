@@ -1,28 +1,25 @@
 package io.github.locl95.smashtools.smashgg.repository
 
-import cats.effect.IO
-import io.github.locl95.smashtools.Context
+import cats.effect.{Async, Blocker, ContextShift, IO, Resource, Sync}
+import io.github.locl95.smashtools.JdbcTestTransactor
 import io.github.locl95.smashtools.smashgg.{EventInMemoryRepository, TestHelper}
 import munit.CatsEffectSuite
 
 class EventsRepositorySpec extends CatsEffectSuite{
 
-  val ctx = new Context[IO]
-  val tx = ctx.databaseProgram.unsafeRunSync().transactor
+  private val databaseConf = TestHelper.databaseTestConfig
 
-  private val inMemory = new EventInMemoryRepository[IO]
-  private val postgres = new EventPostgresRepository[IO](tx)
-  private val repositories = List(inMemory, postgres)
-
-  override def beforeEach(context: BeforeEach): Unit = {
-    val migrate = for {
-      dbProgram <- ctx.databaseProgram
-      _ = dbProgram.flyway.clean()
-      _ = dbProgram.flyway.migrate()
-    } yield ()
-    migrate.unsafeRunSync()
-    inMemory.clean()
-  }
+  private def inMemory[F[_]: Sync]: Resource[F, EventInMemoryRepository[F]] =
+    Resource.eval(Sync[F].pure(new EventInMemoryRepository[F]))
+  private def postgres[F[_]: Async: ContextShift]: Resource[F, EventPostgresRepository[F]] =
+    for {
+      blocker <- Blocker.apply
+      transactor <- {
+        implicit val b: Blocker = blocker
+        JdbcTestTransactor.transactorResource(databaseConf)
+      }
+    } yield new EventPostgresRepository[F](transactor)
+  private def repositories[F[_]: Async: ContextShift]: List[(String, Resource[F, EventRepository[F]])] = List("in memory" -> inMemory, "postgres" -> postgres)
 
   private val insertTest = (repo: EventRepository[IO]) =>
     assertIOBoolean(for {
@@ -33,12 +30,15 @@ class EventsRepositorySpec extends CatsEffectSuite{
     assertIOBoolean(for {
       _ <- repo.insert(TestHelper.event)
       result <- repo.get
-    } yield result == List(TestHelper.event))
+    } yield result.take(1) == List(TestHelper.event))
 
-
-  repositories.foreach { r =>
-    test(s"Given some events I can insert them with $r") { insertTest(r) }
-    test(s"Given some events I can retrieve them with $r") { getTest(r) }
+  repositories[IO].foreach { case (name, r) =>
+    test(s"Given some Sets I can insert them with $name"){
+      r.use(repo => insertTest(repo))
+    }
+    test(s"Given some Sets in repo $name I can retrieve them"){
+      r.use(repo => getTest(repo))
+    }
   }
 }
 
