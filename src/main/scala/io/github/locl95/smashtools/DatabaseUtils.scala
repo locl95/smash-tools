@@ -21,7 +21,7 @@ final case class JdbcDatabaseConfiguration(
 
 object JdbcTransactor {
   def transactorResource[F[_]: Async: ContextShift](config: JdbcDatabaseConfiguration, beforeAll: Flyway => F[Unit])(implicit blocker: Blocker): Resource[F, HikariTransactor[F]] = for {
-    ec <-  ExecutionContexts.fixedThreadPool[F](config.maxConnections)
+    ec <- ExecutionContexts.fixedThreadPool[F](config.maxConnections)
     hikariDs <- Resource.fromAutoCloseable(Async[F].delay(new HikariDataSource(hikariConfiguration(config))))
     transactor <- Resource.eval(Async[F].delay(Transactor.fromDataSource[F](hikariDs,ec,blocker)))
     flyway <- Resource.eval(Async[F].delay(Flyway.configure().dataSource(hikariDs).load()))

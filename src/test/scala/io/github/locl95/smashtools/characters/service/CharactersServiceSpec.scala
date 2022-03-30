@@ -1,6 +1,6 @@
 package io.github.locl95.smashtools.characters.service
 
-import cats.effect.IO
+import cats.effect.{IO, Resource}
 import cats.implicits._
 import io.github.locl95.smashtools.characters.{
   CharactersInMemoryRepository,
@@ -13,24 +13,42 @@ import munit.CatsEffectSuite
 class CharactersServiceSpec extends CatsEffectSuite {
 
   val kuroganeClient = new KuroganeClientMock[IO]
+
+  val charactersService: Resource[IO, CharactersService[IO]] =
+    for {
+      charRepo <- Resource.eval(CharactersInMemoryRepository[IO])
+    } yield new CharactersService[IO](charRepo, kuroganeClient)
+
+  val movementsService: Resource[IO, MovementsService[IO]] =
+    for {
+      movsRepo <- Resource.eval(MovementsInMemoryRepository[IO])
+    } yield new MovementsService[IO](movsRepo, kuroganeClient)
+
   test("Get Characters should retrieve them from api and insert them in database when cache is false") {
-    val repository = new CharactersInMemoryRepository[IO]
-    val program = for {
-      apiCharacters <- CharactersService(repository, kuroganeClient).get
-      dbCharacters <- repository.get
-    } yield (apiCharacters, dbCharacters)
-    assertIO(program._1F, TestHelper.characters)
-    assertIO(program._2F, TestHelper.characters)
+    charactersService.use(
+      service => {
+        val apiDbCharacters =
+          for {
+            apiCharacters <- service.get
+            dbCharacters <- service.get
+          } yield (apiCharacters, dbCharacters)
+        assertIO(apiDbCharacters._1F, TestHelper.characters)
+        assertIO(apiDbCharacters._2F, TestHelper.characters)
+      }
+    )
   }
 
   test("Get Movements should retrieve them from api and insert them in database when cache is false") {
-    val repository = new MovementsInMemoryRepository[IO]
-    val program = for {
-      apiMovements <- MovementsService(repository, kuroganeClient).getMoves("joker")
-      dbMovements <- repository.getMoves("joker")
-    } yield (apiMovements, dbMovements)
-
-    assertIO(program._1F, TestHelper.movements)
-    assertIO(program._2F, TestHelper.movements)
+    movementsService.use(
+      service => {
+        val apiDbMovements =
+          for {
+            apiMovements <- service.getMoves("joker")
+            dbMovements <- service.getMoves("joker")
+          } yield (apiMovements, dbMovements)
+        assertIO(apiDbMovements._1F, TestHelper.movements)
+        assertIO(apiDbMovements._2F, TestHelper.movements)
+      }
+    )
   }
 }
