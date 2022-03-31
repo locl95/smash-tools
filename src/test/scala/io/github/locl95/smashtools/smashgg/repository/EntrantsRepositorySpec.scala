@@ -10,7 +10,7 @@ class EntrantsRepositorySpec extends CatsEffectSuite{
   private val databaseConf = TestHelper.databaseTestConfig
 
   private def inMemory[F[_]: Sync]: Resource[F, EntrantInMemoryRepository[F]] =
-    Resource.eval(Sync[F].pure(new EntrantInMemoryRepository[F]))
+    Resource.eval(EntrantInMemoryRepository[F])
   private def postgres[F[_]: Async: ContextShift]: Resource[F, EntrantPostgresRepository[F]] =
     for {
       blocker <- Blocker.apply

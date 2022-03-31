@@ -10,7 +10,7 @@ class TournamentRepositorySpec extends CatsEffectSuite{
   private val databaseConf = TestHelper.databaseTestConfig
 
   private def inMemory[F[_]: Sync]: Resource[F, TournamentsInMemoryRepository[F]] =
-    Resource.eval(Sync[F].pure(new TournamentsInMemoryRepository[F]))
+    Resource.eval(TournamentsInMemoryRepository[F])
   private def postgres[F[_]: ConcurrentEffect: ContextShift]: Resource[F, TournamentPostgresRepository[F]] =
     for {
       blocker <- Blocker.apply

@@ -10,7 +10,7 @@ class EventsRepositorySpec extends CatsEffectSuite{
   private val databaseConf = TestHelper.databaseTestConfig
 
   private def inMemory[F[_]: Sync]: Resource[F, EventInMemoryRepository[F]] =
-    Resource.eval(Sync[F].pure(new EventInMemoryRepository[F]))
+    Resource.eval(EventInMemoryRepository[F])
   private def postgres[F[_]: Async: ContextShift]: Resource[F, EventPostgresRepository[F]] =
     for {
       blocker <- Blocker.apply

@@ -1,107 +1,120 @@
 package io.github.locl95.smashtools.smashgg
 
+import cats.effect.concurrent.Ref
 import cats.effect.{IO, Sync}
 import cats.implicits._
 import io.github.locl95.smashtools.JdbcDatabaseConfiguration
 import io.github.locl95.smashtools.smashgg.domain._
 import io.github.locl95.smashtools.smashgg.repository._
-import org.http4s.{EntityDecoder, Header, Headers, Response, Status}
+import org.http4s._
 
-import scala.collection.mutable
-
-trait InMemoryRepository {
-  def clean(): Unit
-}
-
-final class TournamentsInMemoryRepository[F[_]: Sync] extends TournamentRepository[F] with InMemoryRepository{
-  private val tournamentsList: mutable.ArrayDeque[Tournament] = mutable.ArrayDeque.empty
+final class TournamentsInMemoryRepository[F[_]: Sync](ref: Ref[F, List[Tournament]]) extends TournamentRepository[F] {
   override def toString: String = "TournamentsInMemoryRepository"
-  override def insert(tournament: Tournament): F[Int] = {
-    tournamentsList.append(tournament).pure[F]
-    tournament.id.pure[F]
-  }
-  override def clean(): Unit = {
-    tournamentsList.clearAndShrink()
-  }
+
+  override def insert(tournament: Tournament): F[Int] =
+    for {
+      _ <- ref.update(_ ++ List(tournament))
+      tournaments <- ref.get
+    } yield tournaments.find(_.id == tournament.id).get.id
+
   override def get: F[List[Tournament]] =
-    tournamentsList.toList.pure[F]
+    ref.get
+
   override def get(id: Int): F[Option[Tournament]] =
-    tournamentsList.find(_.id == id).pure[F]
+    ref.get.map(_.find(_.id == id))
 }
 
-final class EntrantInMemoryRepository[F[_]: Sync] extends EntrantRepository[F] with InMemoryRepository {
-  private val entrantsArray: mutable.ArrayDeque[Entrant] = mutable.ArrayDeque.empty
+object TournamentsInMemoryRepository {
+  def apply[F[_]: Sync]: F[TournamentsInMemoryRepository[F]] =
+    Ref.of[F, List[Tournament]](List.empty).map(new TournamentsInMemoryRepository[F](_))
+}
+
+final class EntrantInMemoryRepository[F[_]: Sync](ref: Ref[F, List[Entrant]]) extends EntrantRepository[F] {
+
   override def toString:String =
     "EntrantInMemoryRepository"
+
   override def insert(entrants: List[Entrant]): F[Int] = {
-    entrantsArray.appendAll(entrants).pure[F]
-    entrantsArray.size.pure[F]
+    for {
+      _ <- ref.update(_ ++ entrants)
+      _entrants <- ref.get
+    } yield _entrants.size
   }
   override def getEntrants(eventID: Int): F[List[Entrant]] =
-    entrantsArray.filter(x => x.idEvent == eventID).toList.pure[F]
+    ref.get.map(_.filter(x => x.idEvent == eventID))
+
   override def getEntrants: F[List[Entrant]] =
-    entrantsArray.toList.pure[F]
-  override def clean(): Unit =
-    entrantsArray.clearAndShrink()
+    ref.get
+
 }
 
-final class EventInMemoryRepository[F[_]: Sync] extends EventRepository[F] with InMemoryRepository {
-  private val eventsArray: mutable.ArrayDeque[Event] = mutable.ArrayDeque.empty
+object EntrantInMemoryRepository {
+  def apply[F[_]: Sync]: F[EntrantInMemoryRepository[F]] =
+    Ref.of[F, List[Entrant]](List.empty).map(new EntrantInMemoryRepository[F](_))
+}
+
+
+final class EventInMemoryRepository[F[_]: Sync](ref: Ref[F, List[Event]]) extends EventRepository[F] {
+
   override def toString:String =
     "EventInMemoryRepository"
-  override def insert(event: Event): F[Int] = {
-    eventsArray.append(event).pure[F]
-    event.id.pure[F]
-  }
-  override def clean(): Unit =
-    eventsArray.clearAndShrink()
+
+  override def insert(event: Event): F[Int] =
+    for {
+      _ <- ref.update(_ ++ List(event))
+      events <- ref.get
+    } yield events.find(_.id == event.id).get.id
+
+
   override def get: F[List[Event]] =
-    eventsArray.toList.pure[F]
+    ref.get
+
   override def getEvents(tournament: Int): F[List[Event]] =
-    eventsArray.toList.filter(_.idTournament == tournament).pure[F]
+    ref.get.map(_.filter(_.idTournament == tournament))
 }
 
-final class PlayerStandingInMemoryRepository[F[_]: Sync] extends PlayerStandingRepository[F] with InMemoryRepository {
-  private val playerStandingsArray: mutable.ArrayDeque[PlayerStanding] = mutable.ArrayDeque.empty
-  override def toString:String =
-    "PlayerStandingInMemoryRepository"
-  override def insert(playerStanding: List[PlayerStanding]): F[Int] = {
-    playerStandingsArray.appendAll(playerStanding).pure[F]
-    playerStandingsArray.size.pure[F]
-  }
-  override def clean(): Unit =
-    playerStandingsArray.clearAndShrink()
-  override def getPlayerStandings: F[List[PlayerStanding]] =
-    playerStandingsArray.toList.pure[F]
+object EventInMemoryRepository {
+  def apply[F[_]: Sync]: F[EventInMemoryRepository[F]] =
+    Ref.of[F, List[Event]](List.empty).map(new EventInMemoryRepository[F](_))
 }
 
-final class PhaseInMemoryRepository[F[_]: Sync] extends PhaseRepository[F] with InMemoryRepository {
-  private val phashesArray: mutable.ArrayDeque[Phase] = mutable.ArrayDeque.empty
+final class PhaseInMemoryRepository[F[_]: Sync](ref: Ref[F, List[Phase]]) extends PhaseRepository[F]{
+
   override def toString:String =
     "PhaseInMemoryRepository"
-  override def insert(phases: List[Phase]): F[Int] = {
-    phashesArray.appendAll(phases).pure[F]
-    phashesArray.size.pure[F]
-  }
-  override def clean(): Unit =
-    phashesArray.clearAndShrink()
+
+  override def insert(phases: List[Phase]): F[Int] =
+    for {
+      _ <- ref.update(_ ++ phases)
+      _phases <- ref.get
+    } yield _phases.size
+
   override def getPhases: F[List[Phase]] =
-    phashesArray.toList.pure[F]
+    ref.get
 }
 
-final class SetsInMemoryRepository[F[_]: Sync] extends SetsRepository[F] with InMemoryRepository
-{
-  private val setsArray: mutable.ArrayDeque[Sets] = mutable.ArrayDeque.empty
+object PhaseInMemoryRepository {
+  def apply[F[_]: Sync]: F[PhaseInMemoryRepository[F]] =
+    Ref.of[F, List[Phase]](List.empty).map(new PhaseInMemoryRepository[F](_))
+}
+
+final class SetsInMemoryRepository[F[_]: Sync](ref: Ref[F, List[Sets]]) extends SetsRepository[F]{
   override def toString:String =
     "SetsInMemoryRepository"
-  override def insert(sets: List[Sets]): F[Int] = {
-    setsArray.appendAll(sets).pure[F]
-    setsArray.size.pure[F]
-  }
-  override def clean(): Unit =
-    setsArray.clearAndShrink()
+
+  override def insert(sets: List[Sets]): F[Int] =
+    for {
+      _ <- ref.update(_ ++ sets)
+      _sets <- ref.get
+    } yield _sets.size
+
   override def getSets: F[List[Sets]] =
-    setsArray.toList.pure[F]
+    ref.get
+}
+
+object SetsInMemoryRepository {
+  def apply[F[_]: Sync]: F[SetsInMemoryRepository[F]] =
+    Ref.of[F, List[Sets]](List.empty).map(new SetsInMemoryRepository[F](_))
 }
 
 object TestHelper {
