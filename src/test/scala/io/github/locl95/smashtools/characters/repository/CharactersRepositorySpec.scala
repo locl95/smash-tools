@@ -9,13 +9,15 @@ class CharactersRepositorySpec extends CatsEffectSuite {
 
   private val databaseConf = TestHelper.databaseTestConfig
 
-  private def inMemory[F[_]: Sync]: Resource[F, CharactersInMemoryRepository[F]] = Resource.eval(Sync[F].pure(new CharactersInMemoryRepository[F]))
-  private def postgres[F[_]: Async: ContextShift]: Resource[F, CharacterPostgresRepository[F]] =for {
-    blocker <- Blocker.apply
-    transactor <- {
-      implicit val b: Blocker = blocker
-      JdbcTestTransactor.transactorResource(databaseConf)
-    }
+  private def inMemory[F[_]: Sync]: Resource[F, CharactersInMemoryRepository[F]] =
+    Resource.eval(CharactersInMemoryRepository[F])
+  private def postgres[F[_]: Async: ContextShift]: Resource[F, CharacterPostgresRepository[F]] =
+    for {
+      blocker <- Blocker.apply
+      transactor <- {
+        implicit val b: Blocker = blocker
+        JdbcTestTransactor.transactorResource(databaseConf)
+      }
   } yield new CharacterPostgresRepository[F](transactor)
 
   private def repositories[F[_]: Async: ContextShift]: List[(String, Resource[F, CharactersRepository[F]])] = List("in memory" -> inMemory, "postgres" -> postgres)
@@ -23,7 +25,7 @@ class CharactersRepositorySpec extends CatsEffectSuite {
   private val insertTest = (repo: CharactersRepository[IO]) =>
     assertIOBoolean(for {
       result <- repo.insert(TestHelper.characters)
-    } yield result == 2)
+    } yield result == TestHelper.characters.size)
 
   private val getTest = (repo: CharactersRepository[IO]) =>
     assertIOBoolean(for {

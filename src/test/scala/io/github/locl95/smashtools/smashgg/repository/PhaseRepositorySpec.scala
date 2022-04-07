@@ -10,7 +10,7 @@ class PhaseRepositorySpec extends CatsEffectSuite{
   private val databaseConf = TestHelper.databaseTestConfig
 
   private def inMemory[F[_]: Sync]: Resource[F, PhaseInMemoryRepository[F]] =
-    Resource.eval(Sync[F].pure(new PhaseInMemoryRepository[F]))
+    Resource.eval(PhaseInMemoryRepository[F])
   private def postgres[F[_]: Async: ContextShift]: Resource[F, PhasePostgresRepository[F]] =
     for {
       blocker <- Blocker.apply
