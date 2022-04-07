@@ -18,7 +18,7 @@ final class SmashggRoutes[F[_]: Async](tournamentService: TournamentService[F],
 
   val authedSmashhggRoutes: AuthedRoutes[User, F] =
     AuthedRoutes.of {
-      case req @ POST -> Root / "tournaments" as user =>
+      case req @ POST -> Root / "tournaments" as _ =>
         for {
           r <- req.req.as[String]
           i <- tournamentService.insert(r)

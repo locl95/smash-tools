@@ -42,7 +42,6 @@ final class CharactersRoutes[F[_]: Async](characterService: CharactersService[F]
               case Right(l) => Ok(l.asJson)
             }
           )
-
         } yield resp
     }
   }

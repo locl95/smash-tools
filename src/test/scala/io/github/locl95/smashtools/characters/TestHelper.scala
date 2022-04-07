@@ -2,11 +2,12 @@ package io.github.locl95.smashtools.characters
 
 import cats.Applicative
 import cats.effect.concurrent.Ref
-import cats.effect.{IO, Sync}
+import cats.effect.{IO, Resource, Sync}
 import cats.implicits._
 import io.github.locl95.smashtools.JdbcDatabaseConfiguration
 import io.github.locl95.smashtools.characters.domain.{KuroganeCharacter, KuroganeCharacterMove}
 import io.github.locl95.smashtools.characters.repository.{CharactersRepository, MovementsRepository}
+import io.github.locl95.smashtools.characters.service.{CharactersService, MovementsService}
 import org.http4s.{EntityDecoder, Response, Status}
 
 final class CharactersInMemoryRepository[F[_]: Sync](ref: Ref[F, List[KuroganeCharacter]]) extends CharactersRepository[F] {
@@ -80,8 +81,20 @@ final class KuroganeClientMock[F[_]: Applicative] extends KuroganeClient[F] {
 
 object TestHelper {
 
-  val databaseTestConfig: JdbcDatabaseConfiguration =
-    JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10)
+  def ContextTest: Resource[IO, CharactersRoutes[IO]] =
+    {
+      val kc: KuroganeClient[IO] = new KuroganeClientMock[IO]
+
+      for {
+        repoChar <- Resource.eval(CharactersInMemoryRepository[IO])
+        repoMovs <- Resource.eval(MovementsInMemoryRepository[IO])
+      } yield new CharactersRoutes[IO](
+        CharactersService(repoChar, kc),
+        MovementsService(repoMovs, kc)
+      )
+    }
+
+  val databaseTestConfig: JdbcDatabaseConfiguration = JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10)
 
   val characters: List[KuroganeCharacter] =
     List(KuroganeCharacter("Bowser"), KuroganeCharacter("DarkPit"))

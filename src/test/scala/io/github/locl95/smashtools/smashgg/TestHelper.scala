@@ -1,12 +1,16 @@
 package io.github.locl95.smashtools.smashgg
 
 import cats.effect.concurrent.Ref
-import cats.effect.{IO, Sync}
+import cats.effect.{ConcurrentEffect, IO, Resource, Sync}
 import cats.implicits._
 import io.github.locl95.smashtools.JdbcDatabaseConfiguration
 import io.github.locl95.smashtools.smashgg.domain._
 import io.github.locl95.smashtools.smashgg.repository._
+import io.github.locl95.smashtools.smashgg.service._
 import org.http4s._
+import org.http4s.client.blaze.BlazeClientBuilder
+
+import scala.concurrent.ExecutionContext.global
 
 final class TournamentsInMemoryRepository[F[_]: Sync](ref: Ref[F, List[Tournament]]) extends TournamentRepository[F] {
   override def toString: String = "TournamentsInMemoryRepository"
@@ -118,6 +122,24 @@ object SetsInMemoryRepository {
 }
 
 object TestHelper {
+  def ContextTest[F[_]: ConcurrentEffect]: Resource[F, SmashggRoutes[F]] = {
+    for {
+      client <- BlazeClientBuilder[F](global).resource
+      smashggClient = SmashggClient.impl[F](client)
+      tournament <- Resource.eval(TournamentsInMemoryRepository[F])
+      events <- Resource.eval(EventInMemoryRepository[F])
+      phases <- Resource.eval(PhaseInMemoryRepository[F])
+      entrants <- Resource.eval(EntrantInMemoryRepository[F])
+      sets <- Resource.eval(SetsInMemoryRepository[F])
+    } yield new SmashggRoutes[F](
+        new TournamentService[F](tournament, smashggClient),
+        new EventService[F](events, smashggClient),
+        new EntrantService[F](entrants, smashggClient),
+        new PhaseService[F](phases, smashggClient),
+        new SetsService[F](sets, smashggClient)
+    )
+  }
+
   val databaseTestConfig: JdbcDatabaseConfiguration = JdbcDatabaseConfiguration("org.postgresql.Driver", "jdbc:postgresql:smashtools", "test", "test", 5, 10)
 
   val tournament: Tournament = Tournament(312932,"MST-4")
